@@ -81,28 +81,12 @@ Especificações:
 - GPU: N/A
 - GPU Memória: N/A
 
-TIER 5 - DESENVOLVIMENTO/TESTE
------------------------------------------------------------------
-Características: Ambientes não produtivos
-AWS: Amazon RDS
-Azure: Azure Database for PostgreSQL - Single Server
-OCI: Oracle Database Cloud Service - Standard Edition
-
-Especificações:
-- vCPU: 1 core (mínimo) / 4 cores (máximo)
-- Performance baseline por vCPU: 30%
-- Escalabilidade: Manual vertical
-- Largura de banda: 1 Gbps (mínimo) / 2 Gbps (máximo)
-- Instância Memória: 8 GB (mínimo) / 32 GB (máximo)
-- GPU: N/A
-- GPU Memória: N/A
-
 CONSIDERAÇÕES ADICIONAIS
 -----------------------------------------------------------------
 1. Backup e Recuperação:
    - Tier 0-1: Backup contínuo + replicação síncrona
    - Tier 2-3: Backup diário + replicação assíncrona
-   - Tier 4-5: Backup diário
+   - Tier 4: Backup diário
 
 2. Disponibilidade:
    - Tier 0: 99.999% (5 noves)
@@ -110,7 +94,6 @@ CONSIDERAÇÕES ADICIONAIS
    - Tier 2: 99.95%
    - Tier 3: 99.9%
    - Tier 4: 99.5%
-   - Tier 5: 99%
 
 3. RTO (Recovery Time Objective):
    - Tier 0: < 1 minuto
@@ -118,7 +101,6 @@ CONSIDERAÇÕES ADICIONAIS
    - Tier 2: < 1 hora
    - Tier 3: < 2 horas
    - Tier 4: < 4 horas
-   - Tier 5: < 8 horas
 
 4. RPO (Recovery Point Objective):
    - Tier 0: 0 (zero data loss)
@@ -126,4 +108,3 @@ CONSIDERAÇÕES ADICIONAIS
    - Tier 2: < 15 minutos
    - Tier 3: < 1 hora
    - Tier 4: < 4 horas
-   - Tier 5: < 24 horas

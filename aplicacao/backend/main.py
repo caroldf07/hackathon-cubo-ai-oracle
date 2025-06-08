@@ -1,10 +1,11 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import requests
 from typing import List, Dict
 import json
 from pathlib import Path
+import uvicorn
 
 app = FastAPI()
 
@@ -24,24 +25,23 @@ def mock_ddos_protection(request_ip: str) -> bool:
 # Função para ler os dados do Apptio e Guardrails
 def load_data():
     base_path = Path(__file__).parent.parent.parent
-    
-    # Carregar dados do Datadog
+      # Carregar dados do Datadog
     datadog_path = base_path / "datadog_synthetic_metrics.csv"
-    datadog_df = pd.read_csv(datadog_path)
+    datadog_df = pd.read_csv(datadog_path, encoding='utf-8')
     
     # Carregar dados do Apptio
     finops_path = base_path / "synthetic_finops_data.csv"
-    finops_df = pd.read_csv(finops_path)
+    finops_df = pd.read_csv(finops_path, encoding='utf-8')
     
     # Carregar Guardrails
     guardrails_path = base_path / "database_infrastructure_guardrails.txt"
-    with open(guardrails_path, 'r') as f:
+    with open(guardrails_path, 'r', encoding='utf-8') as f:
         guardrails = f.read()
     
     return datadog_df, finops_df, guardrails
 
-@app.post("/analyze_resource")
-async def analyze_resource(resource_id: str):
+@app.get("/analyze_resource")
+async def analyze_resource(resource_name: str = Query(..., description="Nome do recurso a ser analisado")):
     # Mock do DDoS Protection
     if not mock_ddos_protection("127.0.0.1"):
         raise HTTPException(status_code=403, detail="Potential DDoS attack detected")
@@ -53,8 +53,14 @@ async def analyze_resource(resource_id: str):
         raise HTTPException(status_code=500, detail=f"Error loading data: {str(e)}")
     
     # Filtrar dados relevantes
-    resource_datadog = datadog_df[datadog_df['resource_id'] == resource_id].to_dict('records')
-    resource_finops = finops_df[finops_df['resource_id'] == resource_id].to_dict('records')
+    resource_datadog = datadog_df[datadog_df['resource_name'] == resource_name].to_dict('records')
+    
+    # Para demo, vamos usar o primeiro registro de FinOps disponível
+    # Em um cenário real, haveria uma correspondência entre os sistemas
+    if resource_datadog:
+        resource_finops = finops_df.head(1).to_dict('records')  # Pega o primeiro registro como exemplo
+    else:
+        resource_finops = []
     
     if not resource_datadog or not resource_finops:
         raise HTTPException(status_code=404, detail="Resource not found")
@@ -63,7 +69,7 @@ async def analyze_resource(resource_id: str):
     messages = [
         {
             "role": "system",
-            "content": "Você é um especialista em devops e finops que deve analisar os documentos do apptio e o documento de guardrail para avaliar se o recurso em questão no datadog está apto ou não a ser redimensionado. Considere que o guardrail é uma medida de controle de configurações mínimas e máxima do recurso. Caso o recurso seja elegível de ser redimensionado considerando as informações advindas do datadog e do apptio, avalie se ele também atende os guardrails. Se atender a tudo, retorne a resposta como recurso elegível e quais as sugestões de configurações novas, caso contrário retorne a resposta como recurso inelegível e justifique o porquê"
+            "content": "Você é um especialista em devops e finops que deve analisar os documentos do apptio e o documento de guardrail para avaliar se o recurso em questão no datadog está apto ou não a ser redimensionado. Considere que o guardrail é uma medida de controle de configurações mínimas e máxima do recurso, se a configuração atual do recurso estiver fora dos limites estipulados pelos guardrails ou se a sugestão de alteração estiver fora dos guardrails, considere como inelegível para alterações."
         },
         {
             "role": "user",
@@ -84,7 +90,7 @@ async def analyze_resource(resource_id: str):
         analysis = response.json()
         
         return {
-            "resource_id": resource_id,
+            "resource_name": resource_name,
             "analysis": analysis,
             "raw_data": {
                 "datadog": resource_datadog,
@@ -98,11 +104,11 @@ async def analyze_resource(resource_id: str):
 async def list_resources():
     try:
         datadog_df, finops_df, _ = load_data()
-        resources = datadog_df['resource_id'].unique().tolist()
+        resources = datadog_df['resource_name'].unique().tolist()
         return {"resources": resources}
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error loading resources: {str(e)}")
 
 if __name__ == "__main__":
-    import uvicorn
+    
     uvicorn.run(app, host="0.0.0.0", port=8000)
