@@ -1,0 +1,129 @@
+GUARDRAILS DE CONFIGURAÇÃO DE INFRAESTRUTURA DE BANCO DE DADOS
+=================================================================
+
+TIER 0 - CRÍTICO (Ex: Sistemas de Pagamento PIX, Core Banking)
+-----------------------------------------------------------------
+Características: Aplicações críticas com altíssima demanda, zero downtime tolerável
+AWS: Amazon RDS/Aurora com Multi-AZ
+Azure: Azure Database for PostgreSQL - Hyperscale (Citus)
+OCI: Oracle Exadata Database Service
+
+Especificações mínimas:
+- vCPU: 32 cores (mínimo) / 96 cores (máximo)
+- Performance baseline por vCPU: 100%
+- Escalabilidade: Automática vertical e horizontal
+- Largura de banda: 25 Gbps (mínimo) / 100 Gbps (máximo)
+- Instância Memória: 256 GB (mínimo) / 768 GB (máximo)
+- GPU: 4 (mínimo) / 8 (máximo) [Para workloads analíticas]
+- GPU Memória: 32 GB (mínimo) / 64 GB (máximo)
+
+TIER 1 - ALTA CRITICIDADE
+-----------------------------------------------------------------
+Características: Sistemas críticos de negócio com alta demanda
+AWS: Amazon RDS com Multi-AZ
+Azure: Azure Database for PostgreSQL - Flexible Server
+OCI: Oracle Database Cloud Service - Enterprise Edition
+
+Especificações:
+- vCPU: 16 cores (mínimo) / 64 cores (máximo)
+- Performance baseline por vCPU: 90%
+- Escalabilidade: Automática vertical
+- Largura de banda: 20 Gbps (mínimo) / 50 Gbps (máximo)
+- Instância Memória: 128 GB (mínimo) / 512 GB (máximo)
+- GPU: 2 (mínimo) / 4 (máximo)
+- GPU Memória: 16 GB (mínimo) / 32 GB (máximo)
+
+TIER 2 - MÉDIA-ALTA CRITICIDADE
+-----------------------------------------------------------------
+Características: Sistemas de negócio com demanda moderada-alta
+AWS: Amazon RDS
+Azure: Azure Database for PostgreSQL - Flexible Server
+OCI: Oracle Database Cloud Service - Standard Edition
+
+Especificações:
+- vCPU: 8 cores (mínimo) / 32 cores (máximo)
+- Performance baseline por vCPU: 75%
+- Escalabilidade: Manual vertical
+- Largura de banda: 10 Gbps (mínimo) / 25 Gbps (máximo)
+- Instância Memória: 64 GB (mínimo) / 256 GB (máximo)
+- GPU: 1 (mínimo) / 2 (máximo)
+- GPU Memória: 8 GB (mínimo) / 16 GB (máximo)
+
+TIER 3 - MÉDIA CRITICIDADE
+-----------------------------------------------------------------
+Características: Sistemas departamentais com demanda moderada
+AWS: Amazon RDS
+Azure: Azure Database for PostgreSQL - Flexible Server
+OCI: Oracle Database Cloud Service - Standard Edition
+
+Especificações:
+- vCPU: 4 cores (mínimo) / 16 cores (máximo)
+- Performance baseline por vCPU: 60%
+- Escalabilidade: Manual vertical
+- Largura de banda: 5 Gbps (mínimo) / 10 Gbps (máximo)
+- Instância Memória: 32 GB (mínimo) / 128 GB (máximo)
+- GPU: Opcional
+- GPU Memória: N/A
+
+TIER 4 - BAIXA CRITICIDADE
+-----------------------------------------------------------------
+Características: Sistemas não críticos com baixa demanda
+AWS: Amazon RDS
+Azure: Azure Database for PostgreSQL - Single Server
+OCI: Oracle Database Cloud Service - Standard Edition
+
+Especificações:
+- vCPU: 2 cores (mínimo) / 8 cores (máximo)
+- Performance baseline por vCPU: 50%
+- Escalabilidade: Manual vertical
+- Largura de banda: 2 Gbps (mínimo) / 5 Gbps (máximo)
+- Instância Memória: 16 GB (mínimo) / 64 GB (máximo)
+- GPU: N/A
+- GPU Memória: N/A
+
+TIER 5 - DESENVOLVIMENTO/TESTE
+-----------------------------------------------------------------
+Características: Ambientes não produtivos
+AWS: Amazon RDS
+Azure: Azure Database for PostgreSQL - Single Server
+OCI: Oracle Database Cloud Service - Standard Edition
+
+Especificações:
+- vCPU: 1 core (mínimo) / 4 cores (máximo)
+- Performance baseline por vCPU: 30%
+- Escalabilidade: Manual vertical
+- Largura de banda: 1 Gbps (mínimo) / 2 Gbps (máximo)
+- Instância Memória: 8 GB (mínimo) / 32 GB (máximo)
+- GPU: N/A
+- GPU Memória: N/A
+
+CONSIDERAÇÕES ADICIONAIS
+-----------------------------------------------------------------
+1. Backup e Recuperação:
+   - Tier 0-1: Backup contínuo + replicação síncrona
+   - Tier 2-3: Backup diário + replicação assíncrona
+   - Tier 4-5: Backup diário
+
+2. Disponibilidade:
+   - Tier 0: 99.999% (5 noves)
+   - Tier 1: 99.99% (4 noves)
+   - Tier 2: 99.95%
+   - Tier 3: 99.9%
+   - Tier 4: 99.5%
+   - Tier 5: 99%
+
+3. RTO (Recovery Time Objective):
+   - Tier 0: < 1 minuto
+   - Tier 1: < 15 minutos
+   - Tier 2: < 1 hora
+   - Tier 3: < 2 horas
+   - Tier 4: < 4 horas
+   - Tier 5: < 8 horas
+
+4. RPO (Recovery Point Objective):
+   - Tier 0: 0 (zero data loss)
+   - Tier 1: < 1 minuto
+   - Tier 2: < 15 minutos
+   - Tier 3: < 1 hora
+   - Tier 4: < 4 horas
+   - Tier 5: < 24 horas
