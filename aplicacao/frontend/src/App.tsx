@@ -18,6 +18,14 @@ import {
 } from '@mui/material';
 import axios from 'axios';
 
+interface AnalysisResult {
+  resource_name: string;
+  guardrails: string;
+  eligibility_status: string;
+  reasoning: string;
+  recommendations: string[];
+}
+
 interface Resource {
   resource_name: string;
   analysis: any;
@@ -72,7 +80,102 @@ function App() {
   };
   const extractAnalysisContent = (analysisData: any) => {
     try {
-      // Extrair o conteúdo da análise
+      let analysisResult: AnalysisResult | null = null;
+
+      // Tentar extrair dados da nova estrutura do backend
+      if (analysisData?.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments) {
+        try {
+          const argumentsStr = analysisData.choices[0].message.tool_calls[0].function.arguments;
+          analysisResult = JSON.parse(argumentsStr);
+        } catch (parseError) {
+          console.error('Error parsing tool_calls arguments:', parseError);
+        }
+      }
+
+      // Fallback para estrutura antiga ou dados diretos
+      if (!analysisResult) {
+        if (analysisData?.resource_name && analysisData?.eligibility_status) {
+          analysisResult = analysisData;
+        } else {
+          // Fallback para análise de texto antiga
+          return extractLegacyAnalysisContent(analysisData);
+        }
+      }
+
+      if (!analysisResult) {
+        throw new Error('Unable to parse analysis data');
+      }
+
+      const isEligible = analysisResult.eligibility_status?.toLowerCase() === 'eligible';
+      
+      // Organizar recomendações por categorias
+      const recommendationTopics: { [key: string]: string[] } = {
+        'Processamento': [],
+        'Memória': [],
+        'Armazenamento': [],
+        'Rede': [],
+        'Configuração Geral': []
+      };
+
+      // Categorizar recomendações
+      if (analysisResult.recommendations && Array.isArray(analysisResult.recommendations)) {
+        analysisResult.recommendations.forEach(rec => {
+          const recLower = rec.toLowerCase();
+          if (/\b(vcpu|cores?|cpu|processamento|processor|compute)\b/i.test(rec)) {
+            recommendationTopics['Processamento'].push(rec);
+          } else if (/\b(memória|memory|ram|gb.*mem|mem.*gb)\b/i.test(rec)) {
+            recommendationTopics['Memória'].push(rec);
+          } else if (/\b(armazenamento|storage|disco|disk|tb|volume)\b/i.test(rec)) {
+            recommendationTopics['Armazenamento'].push(rec);
+          } else if (/\b(rede|network|bandwidth|largura.*banda|gbps|conectividade)\b/i.test(rec)) {
+            recommendationTopics['Rede'].push(rec);
+          } else {
+            recommendationTopics['Configuração Geral'].push(rec);
+          }
+        });
+      }
+
+      // Filtrar tópicos vazios
+      const filteredTopics: { [key: string]: string[] } = {};
+      Object.entries(recommendationTopics).forEach(([topic, items]) => {
+        if (items.length > 0) {
+          filteredTopics[topic] = items.slice(0, 3); // Mostrar até 3 itens por categoria
+        }
+      });
+
+      // Processar razões de inelegibilidade
+      const ineligibilityReasons: string[] = [];
+      if (!isEligible && analysisResult.reasoning) {
+        // Dividir o reasoning em frases mais legíveis
+        const sentences = analysisResult.reasoning.split(/[.!?]+/).filter(s => s.trim().length > 20);
+        ineligibilityReasons.push(...sentences.slice(0, 3).map(s => s.trim()));
+      }
+
+      return {
+        isEligible,
+        recommendationTopics: filteredTopics,
+        ineligibilityReasons,
+        summary: analysisResult.reasoning || 'Análise concluída.',
+        guardrails: analysisResult.guardrails || '',
+        resourceName: analysisResult.resource_name || ''
+      };
+
+    } catch (error) {
+      console.error('Error extracting analysis content:', error);
+      return {
+        isEligible: false,
+        recommendationTopics: {},
+        ineligibilityReasons: ['Erro ao processar análise: ' + error.message],
+        summary: 'Erro ao processar análise',
+        guardrails: '',
+        resourceName: ''
+      };
+    }
+  };
+  // Função auxiliar para compatibilidade com formato antigo
+  const extractLegacyAnalysisContent = (analysisData: any) => {
+    try {
+      // Extrair o conteúdo da análise (formato antigo)
       let content = '';
       if (analysisData.choices && analysisData.choices[0] && analysisData.choices[0].message) {
         content = analysisData.choices[0].message.content;
@@ -183,15 +286,19 @@ function App() {
         ineligibilityReasons: ineligibilityReasons.slice(0, 4).map(reason => 
           reason.length > 120 ? reason.substring(0, 120) + '...' : reason
         ),
-        summary: summary.substring(0, 350) + (summary.length > 350 ? '...' : '')
+        summary: summary.substring(0, 350) + (summary.length > 350 ? '...' : ''),
+        guardrails: '',
+        resourceName: ''
       };
     } catch (error) {
-      console.error('Error extracting analysis content:', error);
+      console.error('Error extracting legacy analysis content:', error);
       return {
         isEligible: false,
         recommendationTopics: {},
         ineligibilityReasons: ['Erro ao processar análise'],
-        summary: 'Erro ao processar análise'
+        summary: 'Erro ao processar análise',
+        guardrails: '',
+        resourceName: ''
       };
     }
   };
@@ -216,7 +323,7 @@ function App() {
       <AppBar position="static" sx={{ background: 'linear-gradient(45deg, #1976d2 30%, #42a5f5 90%)' }}>
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            🤖 AI Resource Analyzer Dashboard
+            🤖 HelpAI Dashboard
           </Typography>
           <Chip label="Hackathon Demo" color="secondary" />
         </Toolbar>
@@ -225,23 +332,24 @@ function App() {
         <Box py={4}>
           <Box mb={4}>
             <Typography variant="h4" gutterBottom align="center" color="primary">
-              Cloud Resource Optimization Analysis
-            </Typography>            <Typography variant="body1" align="center" color="textSecondary" paragraph>
-              Select a resource to analyze its optimization potential using AI-powered insights from Datadog metrics, FinOps data, and infrastructure guardrails.
+              Análise de otimização de recursos de nuvem com IA
+            </Typography>
+            <Typography variant="body1" align="center" color="textSecondary" paragraph>
+              Selecione um recurso para analisar seu potencial de otimização usando insights baseados em IA a partir de métricas do Datadog, dados FinOps e guardrails de infraestrutura.
             </Typography>
           </Box>
 
           <Grid container spacing={3}>
             <Grid item xs={12} md={6}>
               <Paper elevation={3} sx={{ p: 3 }}>                <Typography variant="h6" gutterBottom>
-                  Select Resource
+                  Selecione o Recurso
                 </Typography>
                 <FormControl fullWidth margin="normal">
-                  <InputLabel>Choose a resource to analyze</InputLabel>
+                  <InputLabel>Escolha um recurso para ser analisado</InputLabel>
                   <Select
                     value={selectedResource}
                     onChange={(e) => handleResourceChange(e.target.value)}
-                    label="Choose a resource to analyze"
+                    label="Escolha um recurso para ser analisado"
                   >                    {resources.slice(0, 50).map((resource) => (
                       <MenuItem key={resource} value={resource}>
                         {resource}
@@ -256,11 +364,11 @@ function App() {
                   onClick={() => analyzeResource(selectedResource)}
                   disabled={!selectedResource || analyzing}
                 >
-                  {analyzing ? 'Analyzing...' : 'Analyze Resource'}
+                  {analyzing ? 'Analisando...' : 'Analisar'}
                 </Button>
                 {resources.length > 50 && (
                   <Typography variant="caption" display="block" sx={{ mt: 1 }}>
-                    Showing first 50 of {resources.length} resources
+                    Mostrando 50 de {resources.length} recursos disponívels.
                   </Typography>
                 )}
               </Paper>
@@ -268,12 +376,12 @@ function App() {
 
             <Grid item xs={12} md={6}>
               <Paper elevation={3} sx={{ p: 3, minHeight: 300 }}>                <Typography variant="h6" gutterBottom>
-                  Analysis Results
+                  Resultados
                 </Typography>
                 {analyzing && (
                   <Box display="flex" flexDirection="column" alignItems="center" gap={2} py={4}>
                     <CircularProgress />
-                    <Typography>Analyzing resource with AI...</Typography>
+                    <Typography>Analisando...</Typography>
                   </Box>
                 )}                {analysis && !analyzing && (
                   <Box>
@@ -310,8 +418,7 @@ function App() {
                                 fontWeight: 'bold'
                               }}
                             >
-                              {analysisResult.isEligible ? '✓' : '✗'}
-                            </Box>
+                              {analysisResult.isEligible ? '✓' : '✗'}                            </Box>
                             <Typography 
                               variant="h6" 
                               sx={{ 
@@ -322,7 +429,45 @@ function App() {
                             >
                               {analysisResult.isEligible ? '🚀 ELEGÍVEL PARA OTIMIZAÇÃO' : '⚠️ NÃO ELEGÍVEL PARA OTIMIZAÇÃO'}
                             </Typography>
-                          </Box>                          {/* Recomendações por tópicos ou razões de inelegibilidade */}
+                          </Box>
+
+                          {/* Informações dos Guardrails */}
+                          {analysisResult.guardrails && (
+                            <Box 
+                              mb={2}
+                              sx={{
+                                p: 2,
+                                borderRadius: 2,
+                                backgroundColor: '#f5f5f5',
+                                border: '1px solid #e0e0e0'
+                              }}
+                            >
+                              <Typography 
+                                variant="subtitle2" 
+                                gutterBottom 
+                                sx={{ 
+                                  fontWeight: 'bold', 
+                                  color: '#1976d2',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 0.5
+                                }}
+                              >
+                                🛡️ Guardrails de Infraestrutura
+                              </Typography>
+                              <Typography 
+                                variant="body2" 
+                                sx={{ 
+                                  fontSize: '0.8rem',
+                                  lineHeight: 1.4,
+                                  color: '#424242',
+                                  whiteSpace: 'pre-line'
+                                }}
+                              >
+                                {analysisResult.guardrails}
+                              </Typography>
+                            </Box>
+                          )}{/* Recomendações por tópicos ou razões de inelegibilidade */}
                           {analysisResult.isEligible && Object.keys(analysisResult.recommendationTopics).length > 0 && (
                             <Box mb={2}>
                               <Typography variant="subtitle2" gutterBottom sx={{ fontWeight: 'bold', color: '#1976d2' }}>
@@ -458,7 +603,7 @@ function App() {
                     minHeight={200}
                     sx={{ color: 'text.secondary' }}
                   >
-                    <Typography>Select a resource and click "Analyze" to see AI-powered optimization recommendations</Typography>
+                    <Typography>Selecione um recurso e clique em "Analisar" para ver recomendações de otimização baseadas em IA</Typography>
                   </Box>
                 )}
               </Paper>
