@@ -1,1001 +1,1002 @@
-application_id,business_unit,environment,cloud_provider,instance_type,cpu_utilization,memory_utilization,storage_utilization,monthly_cost_usd,efficiency_score,date
-app-0000,corporate,dev,Azure,large,78.71,64.06,70.34,220.84,92.39,2025-06-07
-app-0001,retail,qa,AWS,medium,58.05,40.24,63.15,133.76,97.61,2025-06-07
-app-0002,investment,qa,Oracle Cloud,small,29.55,54.06,49.5,73.23,84.74,2025-06-07
-app-0003,retail,qa,Oracle Cloud,medium,60.14,70.66,59.35,218.29,99.28,2025-06-07
-app-0004,retail,qa,AWS,xlarge,34.95,66.89,50.03,481.99,94.5,2025-06-07
-app-0005,treasury,prod,AWS,xlarge,98.97,70.34,19.65,837.61,99.44,2025-06-07
-app-0006,retail,dev,Azure,medium,48.44,63.35,68.17,107.83,100.0,2025-06-07
-app-0007,insurance,qa,AWS,medium,61.32,80.02,59.36,138.85,97.02,2025-06-07
-app-0008,insurance,prod,Azure,medium,69.04,44.73,52.71,215.46,98.73,2025-06-07
-app-0009,investment,qa,Oracle Cloud,medium,33.71,59.61,77.89,200.56,99.46,2025-06-07
-app-0010,retail,qa,Oracle Cloud,medium,38.99,77.87,35.23,223.64,94.59,2025-06-07
-app-0011,corporate,dev,Oracle Cloud,large,26.23,55.68,35.03,364.15,72.39,2025-06-07
-app-0012,treasury,dev,AWS,small,36.07,67.98,37.48,70.12,89.72,2025-06-07
-app-0013,treasury,prod,Azure,large,51.31,49.35,56.18,429.23,96.28,2025-06-07
-app-0014,retail,qa,Azure,small,7.5,78.86,48.11,109.37,85.6,2025-06-07
-app-0015,retail,hom,AWS,xlarge,45.82,42.12,55.42,590.98,90.68,2025-06-07
-app-0016,treasury,dev,Oracle Cloud,medium,52.39,55.49,100.0,215.49,94.6,2025-06-07
-app-0017,corporate,prod,Oracle Cloud,xlarge,44.5,29.76,47.37,671.06,76.33,2025-06-07
-app-0018,insurance,prod,AWS,large,69.06,71.13,90.34,524.0,82.27,2025-06-07
-app-0019,retail,qa,Azure,medium,45.58,42.85,49.9,101.78,87.94,2025-06-07
-app-0020,treasury,dev,Oracle Cloud,xlarge,23.9,78.43,55.3,602.28,96.52,2025-06-07
-app-0021,insurance,dev,AWS,xlarge,26.48,47.06,51.55,568.92,79.06,2025-06-07
-app-0022,treasury,qa,AWS,large,52.12,61.93,61.67,287.99,99.87,2025-06-07
-app-0023,insurance,prod,AWS,medium,39.09,60.19,30.78,168.53,82.68,2025-06-07
-app-0024,corporate,qa,AWS,medium,61.63,73.51,41.78,143.82,99.93,2025-06-07
-app-0025,retail,prod,Oracle Cloud,xlarge,24.96,52.95,41.57,904.12,74.57,2025-06-07
-app-0026,investment,prod,Azure,small,47.96,69.29,25.75,82.68,90.49,2025-06-07
-app-0027,treasury,qa,AWS,xlarge,43.99,85.43,43.76,550.08,99.68,2025-06-07
-app-0028,insurance,prod,Azure,xlarge,38.63,44.92,81.09,1156.31,98.36,2025-06-07
-app-0029,corporate,dev,Azure,large,48.16,89.24,71.35,297.47,94.26,2025-06-07
-app-0030,investment,prod,Azure,medium,53.2,76.05,66.42,292.35,98.29,2025-06-07
-app-0031,insurance,qa,Azure,medium,50.7,64.73,52.88,143.31,99.05,2025-06-07
-app-0032,corporate,prod,Azure,medium,38.72,48.49,56.77,194.63,90.99,2025-06-07
-app-0033,insurance,prod,AWS,small,49.54,63.5,53.59,98.32,98.76,2025-06-07
-app-0034,retail,dev,Oracle Cloud,xlarge,57.24,57.35,57.91,722.8,99.61,2025-06-07
-app-0035,corporate,prod,Azure,xlarge,59.87,64.11,59.49,958.94,99.92,2025-06-07
-app-0036,insurance,hom,AWS,large,30.77,61.92,41.54,228.8,85.45,2025-06-07
-app-0037,corporate,qa,Oracle Cloud,medium,46.95,39.45,56.04,186.81,90.21,2025-06-07
-app-0038,insurance,hom,Oracle Cloud,medium,20.85,49.43,61.6,199.93,83.92,2025-06-07
-app-0039,corporate,hom,Azure,small,81.05,52.13,41.78,80.49,99.82,2025-06-07
-app-0040,retail,prod,Azure,small,71.87,42.49,51.93,126.44,98.69,2025-06-07
-app-0041,insurance,dev,Azure,small,35.35,57.51,54.7,52.83,92.69,2025-06-07
-app-0042,corporate,prod,Oracle Cloud,small,100.0,83.74,68.74,150.31,63.52,2025-06-07
-app-0043,retail,hom,Azure,small,59.0,59.83,53.11,75.63,99.55,2025-06-07
-app-0044,insurance,prod,Oracle Cloud,small,46.65,55.4,33.65,120.21,86.37,2025-06-07
-app-0045,retail,prod,Oracle Cloud,large,68.63,66.26,54.59,462.93,99.38,2025-06-07
-app-0046,corporate,prod,AWS,xlarge,38.29,54.22,52.4,738.14,91.45,2025-06-07
-app-0047,insurance,qa,Oracle Cloud,small,56.56,27.68,47.98,52.3,84.14,2025-06-07
-app-0048,investment,hom,AWS,small,58.31,36.99,53.43,35.48,93.21,2025-06-07
-app-0049,investment,dev,Azure,medium,15.53,58.39,70.47,158.43,91.2,2025-06-07
-app-0050,treasury,dev,Azure,medium,72.2,45.75,60.09,123.42,99.97,2025-06-07
-app-0051,corporate,prod,AWS,small,49.35,49.97,29.93,110.16,82.12,2025-06-07
-app-0052,retail,prod,Oracle Cloud,xlarge,68.1,55.33,60.3,853.92,99.9,2025-06-07
-app-0053,retail,hom,Azure,small,51.78,53.33,59.45,99.09,98.35,2025-06-07
-app-0054,retail,hom,Azure,large,36.9,59.03,68.15,323.66,98.24,2025-06-07
-app-0055,corporate,qa,Oracle Cloud,xlarge,57.4,73.0,40.72,740.14,99.45,2025-06-07
-app-0056,retail,dev,Azure,xlarge,57.47,66.44,65.86,647.75,99.34,2025-06-07
-app-0057,corporate,prod,Azure,medium,18.48,74.02,57.75,208.07,93.86,2025-06-07
-app-0058,insurance,prod,AWS,xlarge,51.24,59.4,33.32,737.69,90.98,2025-06-07
-app-0059,corporate,prod,Azure,xlarge,44.45,59.61,31.85,930.29,86.5,2025-06-07
-app-0060,corporate,prod,Oracle Cloud,small,53.31,65.01,46.7,145.15,98.44,2025-06-07
-app-0061,treasury,qa,AWS,large,20.11,56.78,71.03,211.87,92.85,2025-06-07
-app-0062,corporate,prod,Oracle Cloud,medium,53.63,89.88,56.87,221.13,97.12,2025-06-07
-app-0063,corporate,dev,Azure,large,46.48,53.61,57.98,389.58,96.66,2025-06-07
-app-0064,investment,prod,AWS,xlarge,51.01,54.42,27.59,751.62,84.67,2025-06-07
-app-0065,insurance,hom,Oracle Cloud,xlarge,76.89,23.55,50.52,735.39,94.15,2025-06-07
-app-0066,insurance,dev,Azure,medium,48.78,35.36,43.87,101.78,81.23,2025-06-07
-app-0067,retail,hom,Oracle Cloud,large,0.0,59.57,57.02,453.04,72.07,2025-06-07
-app-0068,investment,prod,Oracle Cloud,xlarge,36.2,53.71,59.03,908.21,93.3,2025-06-07
-app-0069,retail,prod,Oracle Cloud,xlarge,64.47,76.43,41.87,1202.13,99.95,2025-06-07
-app-0070,retail,hom,Oracle Cloud,large,74.79,54.08,51.96,367.76,100.0,2025-06-07
-app-0071,corporate,prod,Azure,medium,38.66,47.3,41.39,200.57,80.75,2025-06-07
-app-0072,retail,prod,Azure,medium,60.73,59.42,58.29,300.62,99.98,2025-06-07
-app-0073,corporate,dev,Azure,small,72.06,77.2,38.22,74.08,99.61,2025-06-07
-app-0074,retail,dev,Oracle Cloud,small,35.1,66.71,53.44,64.0,95.75,2025-06-07
-app-0075,treasury,qa,Oracle Cloud,medium,42.92,60.22,31.2,206.91,85.53,2025-06-07
-app-0076,treasury,prod,AWS,small,91.84,58.54,41.44,99.32,99.03,2025-06-07
-app-0077,retail,dev,AWS,xlarge,55.54,45.53,73.5,341.64,99.79,2025-06-07
-app-0078,insurance,prod,Oracle Cloud,medium,43.45,57.44,42.17,329.0,90.52,2025-06-07
-app-0079,corporate,qa,Azure,medium,35.24,72.01,53.16,102.11,97.34,2025-06-07
-app-0080,retail,prod,Oracle Cloud,large,47.22,50.2,55.14,351.99,94.77,2025-06-07
-app-0081,investment,prod,AWS,medium,59.56,41.07,78.85,227.59,100.0,2025-06-07
-app-0082,treasury,qa,AWS,medium,24.06,50.08,45.58,118.59,74.77,2025-06-07
-app-0083,retail,prod,Oracle Cloud,small,64.2,52.99,40.17,121.7,96.44,2025-06-07
-app-0084,retail,hom,Azure,large,62.58,54.2,67.76,381.25,99.86,2025-06-07
-app-0085,insurance,prod,AWS,medium,12.38,52.12,64.7,241.47,82.08,2025-06-07
-app-0086,investment,qa,Oracle Cloud,small,75.77,61.73,35.92,88.4,99.7,2025-06-07
-app-0087,insurance,hom,AWS,small,78.06,56.93,42.13,81.98,99.94,2025-06-07
-app-0088,retail,hom,Oracle Cloud,xlarge,34.52,38.62,60.32,773.13,84.96,2025-06-07
-app-0089,investment,hom,Azure,small,57.77,56.81,55.9,90.78,99.37,2025-06-07
-app-0090,corporate,prod,Azure,small,33.82,49.36,42.11,88.38,79.21,2025-06-07
-app-0091,retail,prod,AWS,small,39.43,64.94,25.06,75.15,82.23,2025-06-07
-app-0092,retail,dev,AWS,large,20.58,51.27,25.94,246.84,53.06,2025-06-07
-app-0093,treasury,prod,AWS,small,22.61,52.64,54.45,120.44,82.43,2025-06-07
-app-0094,retail,prod,Oracle Cloud,xlarge,49.74,63.94,43.41,707.69,96.35,2025-06-07
-app-0095,retail,dev,AWS,small,48.53,64.08,50.89,58.41,98.11,2025-06-07
-app-0096,investment,qa,Azure,medium,63.33,41.29,21.73,84.54,80.01,2025-06-07
-app-0097,retail,dev,Azure,small,50.7,64.91,60.37,53.45,99.89,2025-06-07
-app-0098,treasury,qa,AWS,large,27.65,79.6,54.32,340.75,97.64,2025-06-07
-app-0099,retail,hom,AWS,medium,24.81,51.78,72.82,154.55,93.5,2025-06-07
-app-0100,insurance,dev,Azure,large,33.19,64.71,59.05,299.97,96.31,2025-06-07
-app-0101,corporate,qa,Azure,xlarge,28.77,78.61,60.55,837.01,98.99,2025-06-07
-app-0102,retail,hom,Azure,medium,77.8,78.12,63.74,142.21,89.08,2025-06-07
-app-0103,retail,qa,Azure,large,29.72,60.13,62.91,315.19,94.85,2025-06-07
-app-0104,corporate,qa,Azure,small,70.77,37.92,54.89,43.21,98.13,2025-06-07
-app-0105,corporate,prod,AWS,xlarge,52.08,50.34,21.01,896.75,77.77,2025-06-07
-app-0106,investment,prod,AWS,xlarge,35.43,34.84,69.09,820.68,88.54,2025-06-07
-app-0107,treasury,hom,Oracle Cloud,small,86.11,49.79,55.28,138.11,99.13,2025-06-07
-app-0108,corporate,prod,AWS,small,54.58,77.88,48.76,103.26,99.99,2025-06-07
-app-0109,corporate,prod,Azure,small,36.07,75.01,61.91,146.51,99.66,2025-06-07
-app-0110,retail,prod,Azure,medium,53.6,42.1,40.36,255.3,86.59,2025-06-07
-app-0111,investment,prod,AWS,small,54.05,71.75,68.32,112.93,98.62,2025-06-07
-app-0112,treasury,dev,AWS,large,55.62,45.75,59.49,184.09,97.46,2025-06-07
-app-0113,treasury,qa,Oracle Cloud,medium,60.33,66.24,39.82,159.13,98.71,2025-06-07
-app-0114,treasury,hom,AWS,medium,43.67,22.18,52.22,98.57,73.37,2025-06-07
-app-0115,retail,dev,Oracle Cloud,xlarge,50.43,47.66,62.92,590.48,97.5,2025-06-07
-app-0116,insurance,prod,Azure,small,38.1,58.23,37.65,113.46,85.29,2025-06-07
-app-0117,investment,prod,Oracle Cloud,small,47.29,62.67,49.14,131.31,96.96,2025-06-07
-app-0118,investment,dev,AWS,small,59.42,82.33,48.75,59.15,99.23,2025-06-07
-app-0119,corporate,dev,AWS,medium,72.45,58.85,44.36,119.42,99.87,2025-06-07
-app-0120,retail,hom,AWS,medium,33.88,69.77,38.23,146.05,89.9,2025-06-07
-app-0121,retail,prod,AWS,small,10.78,71.88,80.78,79.87,98.1,2025-06-07
-app-0122,corporate,prod,AWS,large,76.59,45.18,31.77,497.58,95.14,2025-06-07
-app-0123,corporate,qa,AWS,small,48.06,49.14,53.12,57.08,93.88,2025-06-07
-app-0124,insurance,qa,Azure,xlarge,27.7,48.84,68.36,489.16,91.44,2025-06-07
-app-0125,treasury,qa,Azure,xlarge,36.32,63.46,80.81,938.6,100.0,2025-06-07
-app-0126,corporate,prod,Oracle Cloud,large,11.82,82.64,38.0,525.1,84.31,2025-06-07
-app-0127,retail,dev,AWS,xlarge,17.89,24.2,55.23,432.01,52.53,2025-06-07
-app-0128,investment,prod,Oracle Cloud,small,15.14,56.96,50.95,141.8,77.48,2025-06-07
-app-0129,corporate,hom,Oracle Cloud,medium,60.65,88.79,33.66,214.05,99.93,2025-06-07
-app-0130,corporate,qa,Azure,small,53.49,73.65,48.29,77.99,99.86,2025-06-07
-app-0131,retail,prod,Oracle Cloud,xlarge,47.74,62.03,92.17,1296.57,96.66,2025-06-07
-app-0132,retail,qa,Oracle Cloud,large,45.38,81.51,46.71,425.7,99.72,2025-06-07
-app-0133,corporate,qa,Oracle Cloud,large,44.93,44.75,66.23,284.84,95.97,2025-06-07
-app-0134,corporate,qa,AWS,medium,30.47,57.26,60.03,190.42,92.78,2025-06-07
-app-0135,retail,prod,Oracle Cloud,medium,34.14,56.73,85.28,264.36,99.9,2025-06-07
-app-0136,insurance,dev,Oracle Cloud,medium,2.94,65.59,57.57,139.87,79.82,2025-06-07
-app-0137,retail,qa,AWS,medium,39.4,42.85,31.22,97.09,69.26,2025-06-07
-app-0138,corporate,hom,AWS,large,53.61,33.06,55.45,258.23,90.03,2025-06-07
-app-0139,corporate,qa,AWS,large,56.74,68.15,76.52,311.4,96.82,2025-06-07
-app-0140,corporate,qa,AWS,small,40.56,58.34,55.67,75.18,95.51,2025-06-07
-app-0141,treasury,hom,AWS,medium,23.29,51.13,46.89,68.72,76.08,2025-06-07
-app-0142,retail,prod,AWS,small,79.72,75.45,34.38,95.47,99.37,2025-06-07
-app-0143,retail,qa,Oracle Cloud,small,52.37,92.38,47.8,90.84,98.91,2025-06-07
-app-0144,corporate,qa,AWS,xlarge,33.53,45.34,68.93,661.73,92.8,2025-06-07
-app-0145,retail,prod,Oracle Cloud,medium,31.35,51.48,27.9,275.95,66.68,2025-06-07
-app-0146,corporate,prod,AWS,large,59.36,35.15,47.38,411.44,89.91,2025-06-07
-app-0147,retail,prod,Azure,medium,39.94,88.94,71.55,207.76,97.1,2025-06-07
-app-0148,treasury,qa,AWS,small,32.09,82.42,39.78,58.17,95.41,2025-06-07
-app-0149,retail,prod,Azure,xlarge,77.59,65.57,50.62,699.71,98.68,2025-06-07
-app-0150,insurance,qa,AWS,large,87.48,38.95,63.14,235.04,99.36,2025-06-07
-app-0151,corporate,qa,Oracle Cloud,xlarge,32.06,66.21,54.32,785.09,94.78,2025-06-07
-app-0152,corporate,hom,Azure,xlarge,51.2,77.1,54.32,630.74,99.95,2025-06-07
-app-0153,insurance,dev,Oracle Cloud,small,8.21,52.76,49.2,83.49,66.14,2025-06-07
-app-0154,retail,prod,Oracle Cloud,small,48.48,63.77,59.76,124.19,99.56,2025-06-07
-app-0155,corporate,prod,Azure,small,0.0,52.9,46.71,81.25,55.12,2025-06-07
-app-0156,insurance,prod,Oracle Cloud,large,75.14,33.84,56.56,468.57,98.55,2025-06-07
-app-0157,investment,hom,Azure,medium,100.0,59.46,51.32,156.41,93.42,2025-06-07
-app-0158,corporate,prod,Azure,small,54.96,61.17,55.83,99.32,99.55,2025-06-07
-app-0159,corporate,prod,Oracle Cloud,small,89.82,70.52,76.0,162.58,77.96,2025-06-07
-app-0160,corporate,hom,Oracle Cloud,small,54.79,77.98,61.91,69.96,98.5,2025-06-07
-app-0161,corporate,qa,Oracle Cloud,small,67.45,50.66,61.2,88.94,100.0,2025-06-07
-app-0162,corporate,prod,AWS,xlarge,57.26,61.81,66.81,716.49,99.76,2025-06-07
-app-0163,corporate,hom,Azure,xlarge,31.71,76.81,21.19,661.26,82.44,2025-06-07
-app-0164,retail,hom,Oracle Cloud,small,88.17,68.61,77.8,106.98,79.31,2025-06-07
-app-0165,treasury,dev,Oracle Cloud,small,80.68,69.61,92.29,90.02,72.81,2025-06-07
-app-0166,retail,hom,Oracle Cloud,small,24.2,78.69,53.73,56.98,96.2,2025-06-07
-app-0167,insurance,hom,Azure,xlarge,41.52,70.65,54.53,623.48,98.77,2025-06-07
-app-0168,insurance,dev,Azure,small,16.68,71.02,83.23,77.87,99.43,2025-06-07
-app-0169,retail,qa,AWS,small,75.76,60.1,42.02,64.11,99.97,2025-06-07
-app-0170,retail,dev,AWS,medium,18.51,58.78,58.93,106.37,86.69,2025-06-07
-app-0171,retail,hom,Azure,xlarge,68.93,27.48,69.96,594.08,98.71,2025-06-07
-app-0172,investment,prod,AWS,medium,65.88,65.39,71.01,220.12,96.55,2025-06-07
-app-0173,investment,dev,Azure,small,47.77,61.4,66.23,90.65,99.85,2025-06-07
-app-0174,investment,prod,AWS,xlarge,53.8,53.53,61.17,828.27,99.08,2025-06-07
-app-0175,treasury,prod,Azure,small,40.16,31.37,36.83,76.17,64.36,2025-06-07
-app-0176,treasury,prod,Azure,large,61.12,51.22,58.3,501.26,99.39,2025-06-07
-app-0177,treasury,prod,Azure,large,74.11,53.75,22.0,515.15,93.69,2025-06-07
-app-0178,corporate,hom,AWS,medium,38.31,85.67,51.27,172.85,99.84,2025-06-07
-app-0179,retail,qa,AWS,medium,51.0,32.46,70.74,148.49,95.38,2025-06-07
-app-0180,retail,dev,Azure,large,57.57,85.56,59.93,356.19,96.31,2025-06-07
-app-0181,investment,hom,AWS,small,38.07,61.0,70.23,69.22,99.2,2025-06-07
-app-0182,investment,prod,AWS,xlarge,83.94,70.76,67.57,927.73,87.59,2025-06-07
-app-0183,corporate,prod,Azure,small,46.24,78.03,28.16,101.6,94.72,2025-06-07
-app-0184,retail,qa,Oracle Cloud,xlarge,42.85,42.54,38.59,677.21,78.2,2025-06-07
-app-0185,retail,qa,Oracle Cloud,small,11.28,53.55,44.59,80.51,65.4,2025-06-07
-app-0186,treasury,qa,Azure,medium,12.32,53.29,23.84,133.79,43.05,2025-06-07
-app-0187,investment,prod,Oracle Cloud,large,22.35,41.0,66.49,446.85,82.53,2025-06-07
-app-0188,investment,prod,Oracle Cloud,small,61.97,65.91,46.86,124.15,99.81,2025-06-07
-app-0189,retail,prod,Oracle Cloud,xlarge,44.0,85.22,62.1,889.25,99.11,2025-06-07
-app-0190,investment,prod,Oracle Cloud,small,66.23,66.15,54.17,79.28,99.7,2025-06-07
-app-0191,corporate,qa,AWS,small,32.65,60.66,64.21,55.13,96.49,2025-06-07
-app-0192,corporate,dev,AWS,large,41.3,51.45,92.81,263.71,99.79,2025-06-07
-app-0193,retail,prod,AWS,xlarge,53.68,29.45,44.7,1064.23,81.1,2025-06-07
-app-0194,investment,hom,Azure,small,58.16,57.61,38.96,83.37,95.57,2025-06-07
-app-0195,investment,prod,AWS,large,68.35,41.64,76.86,388.56,99.68,2025-06-07
-app-0196,investment,dev,Oracle Cloud,small,81.67,63.93,67.68,94.74,92.31,2025-06-07
-app-0197,retail,prod,AWS,small,44.14,69.5,48.27,115.7,97.72,2025-06-07
-app-0198,retail,hom,Azure,xlarge,75.74,78.52,53.78,609.49,94.54,2025-06-07
-app-0199,insurance,dev,Azure,large,50.39,53.55,51.6,246.56,95.84,2025-06-07
-app-0200,corporate,dev,AWS,small,71.21,52.65,64.4,44.84,99.53,2025-06-07
-app-0201,treasury,prod,Azure,medium,10.32,60.0,72.02,252.42,90.15,2025-06-07
-app-0202,corporate,prod,AWS,xlarge,73.33,50.07,62.72,950.57,99.74,2025-06-07
-app-0203,retail,qa,AWS,small,37.7,77.6,76.41,69.69,99.05,2025-06-07
-app-0204,investment,dev,Azure,xlarge,47.62,64.28,42.1,415.3,95.31,2025-06-07
-app-0205,retail,prod,Oracle Cloud,xlarge,64.39,63.05,54.05,1427.46,99.98,2025-06-07
-app-0206,treasury,hom,Oracle Cloud,small,74.5,85.94,57.49,120.89,90.01,2025-06-07
-app-0207,corporate,prod,Azure,large,26.29,62.51,72.04,394.77,97.45,2025-06-07
-app-0208,treasury,prod,Oracle Cloud,small,53.08,98.1,51.45,127.95,96.45,2025-06-07
-app-0209,retail,qa,AWS,xlarge,63.82,54.24,75.97,305.14,98.63,2025-06-07
-app-0210,investment,qa,Azure,xlarge,46.89,64.65,67.72,430.57,100.0,2025-06-07
-app-0211,corporate,dev,AWS,xlarge,69.27,63.24,54.31,470.62,99.68,2025-06-07
-app-0212,retail,qa,Azure,medium,57.17,58.18,58.33,155.31,99.72,2025-06-07
-app-0213,insurance,qa,Oracle Cloud,medium,71.22,75.69,43.28,244.7,99.28,2025-06-07
-app-0214,retail,prod,Azure,large,36.68,86.02,53.18,544.64,99.88,2025-06-07
-app-0215,insurance,dev,AWS,medium,49.23,44.4,52.51,111.23,92.04,2025-06-07
-app-0216,insurance,qa,Oracle Cloud,xlarge,72.09,69.5,56.62,735.11,97.7,2025-06-07
-app-0217,retail,prod,AWS,large,35.24,68.83,56.53,354.49,97.39,2025-06-07
-app-0218,treasury,dev,AWS,medium,59.94,91.72,47.51,151.59,97.45,2025-06-07
-app-0219,retail,hom,AWS,medium,47.72,61.06,53.12,121.61,97.72,2025-06-07
-app-0220,corporate,hom,Azure,medium,15.58,57.0,47.21,145.06,74.83,2025-06-07
-app-0221,corporate,hom,Oracle Cloud,large,49.12,52.8,58.32,218.48,97.29,2025-06-07
-app-0222,corporate,hom,Oracle Cloud,xlarge,50.16,61.24,73.17,772.32,99.86,2025-06-07
-app-0223,corporate,qa,AWS,large,36.76,40.51,63.07,362.06,89.07,2025-06-07
-app-0224,retail,qa,Oracle Cloud,small,37.26,42.34,51.87,102.57,83.65,2025-06-07
-app-0225,retail,prod,Oracle Cloud,large,62.53,69.81,47.52,555.18,100.0,2025-06-07
-app-0226,corporate,hom,AWS,small,69.32,90.02,73.41,83.46,80.68,2025-06-07
-app-0227,investment,prod,Azure,medium,58.95,40.87,64.42,256.15,98.28,2025-06-07
-app-0228,treasury,prod,AWS,medium,31.53,80.58,60.69,140.94,99.64,2025-06-07
-app-0229,investment,dev,AWS,xlarge,54.13,70.42,55.28,487.78,100.0,2025-06-07
-app-0230,retail,dev,Azure,large,61.04,75.82,68.12,184.05,95.67,2025-06-07
-app-0231,insurance,hom,Azure,small,47.75,54.09,53.21,88.54,95.68,2025-06-07
-app-0232,investment,dev,Oracle Cloud,small,94.24,46.5,42.92,57.75,99.91,2025-06-07
-app-0233,treasury,prod,Azure,medium,30.22,66.22,48.71,235.65,91.57,2025-06-07
-app-0234,insurance,qa,AWS,medium,43.49,37.96,54.15,171.13,86.31,2025-06-07
-app-0235,insurance,qa,Oracle Cloud,medium,10.75,60.42,58.59,183.75,82.47,2025-06-07
-app-0236,treasury,prod,AWS,large,49.31,34.3,33.54,546.12,72.57,2025-06-07
-app-0237,retail,qa,Azure,small,54.2,55.45,47.92,63.1,96.5,2025-06-07
-app-0238,insurance,prod,AWS,xlarge,32.81,61.28,58.15,882.38,94.65,2025-06-07
-app-0239,corporate,hom,AWS,medium,28.83,43.27,52.57,140.99,78.73,2025-06-07
-app-0240,retail,qa,Azure,medium,31.99,78.68,62.77,195.52,99.7,2025-06-07
-app-0241,treasury,prod,AWS,large,79.22,60.97,60.7,320.89,96.97,2025-06-07
-app-0242,corporate,dev,AWS,large,49.42,40.49,35.36,166.44,79.2,2025-06-07
-app-0243,corporate,dev,AWS,medium,38.17,47.8,72.74,120.62,96.85,2025-06-07
-app-0244,investment,prod,AWS,small,96.94,69.04,46.11,98.76,92.85,2025-06-07
-app-0245,investment,hom,Azure,medium,48.89,78.35,67.35,269.15,98.52,2025-06-07
-app-0246,investment,prod,Azure,medium,50.57,48.18,71.63,258.45,99.36,2025-06-07
-app-0247,corporate,prod,AWS,xlarge,68.85,65.22,45.81,691.87,100.0,2025-06-07
-app-0248,retail,hom,Azure,small,13.63,73.82,96.1,83.71,99.91,2025-06-07
-app-0249,retail,dev,Oracle Cloud,medium,51.79,44.18,65.98,199.38,97.74,2025-06-07
-app-0250,investment,qa,Oracle Cloud,small,79.95,51.38,52.41,93.73,99.9,2025-06-07
-app-0251,retail,qa,Oracle Cloud,small,73.37,64.64,61.22,114.26,97.43,2025-06-07
-app-0252,corporate,prod,Azure,small,39.32,71.8,71.36,114.7,99.96,2025-06-07
-app-0253,retail,dev,AWS,small,32.4,61.49,58.05,57.22,94.53,2025-06-07
-app-0254,retail,dev,AWS,medium,64.89,37.55,44.89,111.69,92.59,2025-06-07
-app-0255,insurance,hom,AWS,small,43.87,62.9,56.55,116.1,98.07,2025-06-07
-app-0256,corporate,hom,AWS,xlarge,57.4,60.9,60.16,663.57,99.98,2025-06-07
-app-0257,investment,hom,Azure,small,43.16,59.86,78.96,87.99,99.97,2025-06-07
-app-0258,treasury,prod,Azure,small,31.61,73.82,45.11,57.41,93.97,2025-06-07
-app-0259,insurance,qa,Azure,medium,40.74,72.22,56.42,145.68,99.22,2025-06-07
-app-0260,corporate,prod,AWS,small,79.61,60.27,59.28,141.97,97.45,2025-06-07
-app-0261,insurance,prod,Azure,large,42.62,82.58,52.55,554.95,99.96,2025-06-07
-app-0262,corporate,prod,Azure,large,70.68,52.08,61.1,469.24,99.9,2025-06-07
-app-0263,investment,hom,AWS,medium,32.73,43.69,55.48,172.49,83.93,2025-06-07
-app-0264,investment,prod,Azure,large,63.33,85.21,32.15,410.41,100.0,2025-06-07
-app-0265,retail,prod,Oracle Cloud,medium,43.35,55.32,55.41,235.91,95.33,2025-06-07
-app-0266,corporate,prod,AWS,large,47.62,52.84,38.66,457.31,88.39,2025-06-07
-app-0267,corporate,prod,AWS,small,71.34,58.15,67.91,115.21,97.9,2025-06-07
-app-0268,treasury,qa,Oracle Cloud,xlarge,57.56,63.39,46.78,614.67,98.96,2025-06-07
-app-0269,corporate,dev,AWS,small,32.97,51.35,54.91,59.29,88.46,2025-06-07
-app-0270,investment,qa,Oracle Cloud,medium,48.79,62.13,70.6,234.03,99.98,2025-06-07
-app-0271,treasury,prod,Oracle Cloud,small,24.28,55.7,73.19,142.75,95.0,2025-06-07
-app-0272,investment,qa,Azure,medium,87.57,53.24,76.45,90.62,90.36,2025-06-07
-app-0273,corporate,prod,Azure,small,32.64,55.01,49.93,108.0,87.5,2025-06-07
-app-0274,corporate,qa,AWS,medium,72.19,59.04,43.17,151.31,99.78,2025-06-07
-app-0275,investment,qa,AWS,small,0.0,58.61,41.91,89.15,56.13,2025-06-07
-app-0276,insurance,dev,Azure,large,58.09,79.17,55.93,201.01,98.79,2025-06-07
-app-0277,retail,dev,Azure,medium,24.95,41.84,56.15,140.43,77.4,2025-06-07
-app-0278,investment,qa,AWS,large,64.69,60.48,62.92,233.3,99.55,2025-06-07
-app-0279,corporate,prod,AWS,small,65.75,78.26,66.69,141.03,93.45,2025-06-07
-app-0280,investment,prod,AWS,medium,53.1,100.0,52.69,205.29,95.38,2025-06-07
-app-0281,investment,dev,Oracle Cloud,medium,41.58,52.62,47.23,131.55,89.67,2025-06-07
-app-0282,investment,prod,AWS,medium,58.62,77.76,67.72,249.74,95.97,2025-06-07
-app-0283,investment,prod,AWS,medium,79.23,60.67,61.89,225.25,96.71,2025-06-07
-app-0284,corporate,prod,Azure,xlarge,36.36,66.24,42.07,1153.23,91.33,2025-06-07
-app-0285,treasury,hom,AWS,small,66.63,51.93,35.47,92.56,95.31,2025-06-07
-app-0286,treasury,prod,Oracle Cloud,xlarge,27.9,75.59,77.25,879.39,100.0,2025-06-07
-app-0287,insurance,prod,AWS,xlarge,72.37,51.04,58.42,948.1,99.98,2025-06-07
-app-0288,corporate,prod,AWS,small,33.0,51.12,44.96,99.57,81.99,2025-06-07
-app-0289,retail,qa,Azure,medium,50.37,67.54,87.95,180.48,95.36,2025-06-07
-app-0290,investment,dev,AWS,medium,70.38,58.51,47.99,151.11,99.93,2025-06-07
-app-0291,retail,prod,Azure,large,8.07,58.78,47.48,557.08,70.05,2025-06-07
-app-0292,retail,qa,Azure,small,57.85,50.32,56.51,86.68,98.37,2025-06-07
-app-0293,investment,prod,AWS,small,23.79,48.14,46.26,99.21,73.47,2025-06-07
-app-0294,treasury,hom,AWS,medium,27.21,55.39,55.65,140.71,87.89,2025-06-07
-app-0295,retail,prod,AWS,large,67.22,71.32,57.78,477.6,98.15,2025-06-07
-app-0296,retail,prod,AWS,small,4.8,70.04,55.34,53.81,82.76,2025-06-07
-app-0297,treasury,qa,Azure,small,64.56,70.79,52.85,88.85,99.53,2025-06-07
-app-0298,retail,dev,Azure,small,58.26,64.24,53.15,59.28,99.87,2025-06-07
-app-0299,treasury,dev,Azure,xlarge,42.19,67.01,65.07,597.68,99.77,2025-06-07
-app-0300,treasury,prod,Azure,xlarge,47.4,45.22,43.52,1093.96,86.64,2025-06-07
-app-0301,retail,prod,AWS,large,46.05,96.87,66.29,563.77,94.08,2025-06-07
-app-0302,treasury,prod,AWS,xlarge,84.76,64.87,37.18,907.07,99.68,2025-06-07
-app-0303,corporate,hom,Azure,xlarge,42.24,59.91,49.46,688.31,94.4,2025-06-07
-app-0304,investment,hom,Azure,medium,52.38,57.7,63.3,188.59,99.7,2025-06-07
-app-0305,corporate,qa,Oracle Cloud,large,34.02,41.35,46.79,424.62,76.77,2025-06-07
-app-0306,treasury,prod,AWS,xlarge,38.0,40.67,41.79,780.43,75.38,2025-06-07
-app-0307,treasury,dev,AWS,small,16.64,75.98,24.85,43.03,72.85,2025-06-07
-app-0308,treasury,dev,Oracle Cloud,large,66.98,66.11,74.0,326.46,94.91,2025-06-07
-app-0309,investment,qa,AWS,small,78.73,67.58,73.28,70.94,89.12,2025-06-07
-app-0310,corporate,prod,Azure,small,61.93,63.64,43.15,113.2,99.12,2025-06-07
-app-0311,investment,hom,AWS,small,45.66,51.87,27.28,91.56,78.84,2025-06-07
-app-0312,investment,qa,Oracle Cloud,large,57.49,66.37,34.77,268.98,96.83,2025-06-07
-app-0313,investment,qa,AWS,xlarge,37.98,53.26,54.29,333.62,91.75,2025-06-07
-app-0314,insurance,dev,AWS,xlarge,74.23,65.41,54.51,438.32,98.61,2025-06-07
-app-0315,corporate,prod,AWS,large,68.04,57.02,73.95,542.52,97.49,2025-06-07
-app-0316,insurance,hom,AWS,medium,13.84,76.91,36.33,127.95,80.55,2025-06-07
-app-0317,investment,prod,AWS,medium,45.69,71.0,58.47,203.88,99.84,2025-06-07
-app-0318,investment,dev,Azure,medium,41.97,47.61,28.6,91.12,73.46,2025-06-07
-app-0319,corporate,hom,AWS,small,68.52,46.03,64.31,94.05,99.99,2025-06-07
-app-0320,treasury,prod,AWS,medium,62.97,51.41,30.94,177.13,91.65,2025-06-07
-app-0321,insurance,hom,AWS,medium,65.54,72.57,50.29,144.18,99.51,2025-06-07
-app-0322,retail,dev,Oracle Cloud,medium,44.77,45.49,54.64,159.27,91.44,2025-06-07
-app-0323,corporate,dev,AWS,small,67.12,58.38,54.6,54.53,100.0,2025-06-07
-app-0324,investment,prod,AWS,small,45.55,35.38,84.42,88.59,98.51,2025-06-07
-app-0325,investment,dev,Azure,medium,43.25,74.28,60.01,138.4,99.96,2025-06-07
-app-0326,treasury,hom,Azure,xlarge,24.05,79.65,49.13,563.23,94.87,2025-06-07
-app-0327,retail,prod,Oracle Cloud,small,22.72,70.03,64.86,124.34,96.52,2025-06-07
-app-0328,retail,prod,Oracle Cloud,small,58.11,74.44,66.31,98.12,97.53,2025-06-07
-app-0329,investment,prod,Oracle Cloud,large,14.1,47.18,40.13,640.99,57.1,2025-06-07
-app-0330,corporate,hom,Azure,small,54.75,64.58,55.41,58.79,99.81,2025-06-07
-app-0331,corporate,qa,Azure,large,69.04,71.22,42.95,329.79,99.93,2025-06-07
-app-0332,investment,dev,Oracle Cloud,xlarge,23.03,80.25,56.87,617.79,97.26,2025-06-07
-app-0333,retail,hom,AWS,medium,62.11,70.31,80.79,150.34,92.34,2025-06-07
-app-0334,retail,prod,Oracle Cloud,large,66.65,54.63,74.69,550.64,98.23,2025-06-07
-app-0335,retail,prod,Azure,xlarge,68.06,48.55,68.83,668.85,99.79,2025-06-07
-app-0336,corporate,prod,Azure,small,79.76,34.96,49.39,135.37,98.25,2025-06-07
-app-0337,retail,prod,AWS,xlarge,54.24,41.54,57.3,680.49,94.97,2025-06-07
-app-0338,treasury,prod,Azure,large,49.0,49.97,46.58,382.3,91.76,2025-06-07
-app-0339,insurance,hom,Azure,large,76.82,65.09,82.09,325.24,86.55,2025-06-07
-app-0340,investment,qa,Azure,large,90.79,65.88,56.06,322.52,92.56,2025-06-07
-app-0341,investment,dev,AWS,small,33.54,56.3,57.33,41.19,92.52,2025-06-07
-app-0342,insurance,prod,AWS,xlarge,44.88,60.56,53.04,940.0,96.78,2025-06-07
-app-0343,corporate,hom,Azure,small,48.52,81.18,78.66,116.88,94.41,2025-06-07
-app-0344,insurance,hom,AWS,medium,79.58,50.77,56.03,217.35,99.72,2025-06-07
-app-0345,corporate,prod,AWS,small,24.62,72.68,68.15,114.92,98.53,2025-06-07
-app-0346,retail,prod,Azure,xlarge,60.42,63.71,55.2,1172.01,100.0,2025-06-07
-app-0347,treasury,prod,Azure,medium,41.4,58.68,50.22,225.68,93.88,2025-06-07
-app-0348,insurance,prod,AWS,large,59.45,43.07,49.81,441.42,94.69,2025-06-07
-app-0349,retail,hom,Oracle Cloud,xlarge,39.45,51.89,69.09,835.24,97.34,2025-06-07
-app-0350,retail,prod,AWS,medium,57.48,52.8,47.56,260.42,96.59,2025-06-07
-app-0351,insurance,dev,Oracle Cloud,large,40.75,76.04,52.12,249.95,99.15,2025-06-07
-app-0352,corporate,hom,Azure,xlarge,24.28,38.47,52.95,704.65,71.29,2025-06-07
-app-0353,corporate,hom,Azure,small,6.65,33.47,65.73,87.52,61.82,2025-06-07
-app-0354,investment,prod,Oracle Cloud,small,17.04,72.19,65.32,151.08,95.5,2025-06-07
-app-0355,retail,qa,AWS,medium,84.54,64.27,66.45,175.81,91.37,2025-06-07
-app-0356,insurance,hom,AWS,xlarge,50.83,61.87,34.5,617.01,92.53,2025-06-07
-app-0357,retail,prod,Azure,small,6.85,87.05,52.03,117.53,91.93,2025-06-07
-app-0358,investment,prod,Azure,large,32.48,57.6,70.7,443.71,97.44,2025-06-07
-app-0359,retail,hom,Oracle Cloud,medium,42.57,68.78,66.76,199.22,99.98,2025-06-07
-app-0360,retail,prod,Azure,xlarge,46.75,73.44,60.97,659.68,99.99,2025-06-07
-app-0361,treasury,prod,AWS,medium,49.31,51.55,57.06,183.79,96.61,2025-06-07
-app-0362,retail,dev,Oracle Cloud,small,46.55,69.64,44.6,60.61,97.43,2025-06-07
-app-0363,insurance,hom,AWS,small,92.18,79.82,70.94,84.42,72.48,2025-06-07
-app-0364,retail,qa,Azure,medium,26.59,66.7,63.35,163.01,96.21,2025-06-07
-app-0365,corporate,hom,Azure,medium,49.45,39.48,41.97,168.31,83.27,2025-06-07
-app-0366,corporate,qa,Oracle Cloud,xlarge,49.46,59.6,82.62,663.0,99.05,2025-06-07
-app-0367,investment,hom,AWS,xlarge,24.5,71.41,57.34,510.29,95.03,2025-06-07
-app-0368,treasury,hom,AWS,medium,52.78,87.47,48.88,182.35,99.42,2025-06-07
-app-0369,treasury,hom,Azure,small,53.04,43.6,37.22,68.81,85.21,2025-06-07
-app-0370,corporate,dev,Oracle Cloud,xlarge,86.65,62.62,35.32,792.63,99.85,2025-06-07
-app-0371,treasury,prod,Azure,medium,73.81,37.21,50.14,215.18,97.53,2025-06-07
-app-0372,investment,prod,AWS,small,46.91,71.63,45.39,116.33,98.21,2025-06-07
-app-0373,corporate,prod,Azure,large,84.12,59.02,49.23,478.97,98.94,2025-06-07
-app-0374,corporate,hom,Azure,small,20.99,39.73,68.18,86.08,81.86,2025-06-07
-app-0375,corporate,hom,AWS,medium,51.73,48.81,36.71,164.83,87.31,2025-06-07
-app-0376,corporate,hom,AWS,medium,47.16,52.41,49.67,159.5,93.43,2025-06-07
-app-0377,insurance,prod,Oracle Cloud,small,59.39,62.38,69.56,108.54,99.11,2025-06-07
-app-0378,retail,hom,Oracle Cloud,medium,63.25,70.05,70.33,161.13,96.12,2025-06-07
-app-0379,investment,hom,Oracle Cloud,large,75.35,82.09,64.38,374.64,87.86,2025-06-07
-app-0380,retail,dev,Oracle Cloud,medium,54.55,72.74,6.89,190.75,85.42,2025-06-07
-app-0381,corporate,qa,AWS,large,84.22,33.03,26.99,328.99,91.12,2025-06-07
-app-0382,retail,dev,Azure,small,92.01,40.02,73.76,52.39,95.38,2025-06-07
-app-0383,retail,hom,Oracle Cloud,small,66.14,37.0,56.48,84.81,97.12,2025-06-07
-app-0384,investment,prod,Azure,small,60.05,45.24,68.78,112.28,99.76,2025-06-07
-app-0385,investment,prod,Azure,medium,39.42,94.57,18.78,212.42,94.85,2025-06-07
-app-0386,insurance,hom,AWS,small,74.19,83.34,60.76,78.95,89.82,2025-06-07
-app-0387,investment,dev,Azure,medium,45.18,42.44,47.46,122.68,85.99,2025-06-07
-app-0388,treasury,qa,Oracle Cloud,large,59.48,80.32,87.14,586.56,84.69,2025-06-07
-app-0389,treasury,prod,Oracle Cloud,small,41.87,50.0,67.45,120.48,97.03,2025-06-07
-app-0390,insurance,qa,Oracle Cloud,large,61.56,56.22,67.5,197.52,99.81,2025-06-07
-app-0391,retail,qa,Azure,small,46.0,61.31,66.05,65.45,99.69,2025-06-07
-app-0392,corporate,dev,Oracle Cloud,medium,22.99,78.76,70.47,243.69,99.58,2025-06-07
-app-0393,retail,qa,Oracle Cloud,small,74.88,59.81,70.43,97.49,95.62,2025-06-07
-app-0394,insurance,dev,AWS,medium,60.29,32.76,70.31,156.0,98.07,2025-06-07
-app-0395,retail,qa,Azure,medium,34.79,41.76,74.59,114.63,94.22,2025-06-07
-app-0396,investment,prod,AWS,small,31.75,51.95,41.15,118.14,78.88,2025-06-07
-app-0397,retail,dev,Azure,xlarge,33.61,72.82,86.26,622.75,98.88,2025-06-07
-app-0398,retail,qa,Azure,xlarge,38.9,53.87,87.77,504.81,100.0,2025-06-07
-app-0399,treasury,prod,AWS,xlarge,57.01,84.74,33.73,628.08,99.86,2025-06-07
-app-0400,investment,qa,Azure,small,34.44,58.24,43.67,69.96,86.77,2025-06-07
-app-0401,investment,prod,Oracle Cloud,medium,58.76,56.42,40.12,356.56,95.76,2025-06-07
-app-0402,retail,dev,Azure,small,39.41,62.51,44.6,94.26,92.22,2025-06-07
-app-0403,corporate,prod,AWS,small,26.34,60.59,64.17,125.55,94.2,2025-06-07
-app-0404,corporate,prod,Azure,large,62.26,61.88,51.24,516.1,99.85,2025-06-07
-app-0405,treasury,qa,AWS,small,79.72,95.56,55.92,55.93,81.8,2025-06-07
-app-0406,corporate,dev,AWS,large,54.86,59.41,42.22,261.61,96.16,2025-06-07
-app-0407,retail,qa,AWS,large,70.35,48.74,53.06,275.85,99.57,2025-06-07
-app-0408,treasury,qa,AWS,small,11.22,44.55,76.71,41.84,84.31,2025-06-07
-app-0409,investment,prod,Azure,xlarge,37.87,63.06,48.26,734.61,93.41,2025-06-07
-app-0410,corporate,prod,Oracle Cloud,large,53.53,63.68,82.37,423.34,97.34,2025-06-07
-app-0411,treasury,hom,Oracle Cloud,small,29.56,46.15,48.08,108.49,78.06,2025-06-07
-app-0412,corporate,prod,AWS,small,35.26,86.27,72.28,107.73,98.68,2025-06-07
-app-0413,investment,prod,Azure,medium,94.55,56.19,68.51,238.52,89.3,2025-06-07
-app-0414,retail,hom,Oracle Cloud,small,19.77,97.33,47.59,77.6,98.37,2025-06-07
-app-0415,retail,dev,AWS,small,55.75,66.02,45.18,34.87,98.82,2025-06-07
-app-0416,treasury,prod,Oracle Cloud,medium,42.13,55.03,55.58,211.3,94.84,2025-06-07
-app-0417,insurance,dev,Azure,large,72.68,70.31,50.39,279.92,98.75,2025-06-07
-app-0418,retail,hom,Oracle Cloud,xlarge,55.59,57.48,67.65,930.46,100.0,2025-06-07
-app-0419,retail,prod,Azure,large,49.37,32.51,59.78,381.77,89.79,2025-06-07
-app-0420,treasury,qa,AWS,large,63.84,94.85,42.97,289.33,96.74,2025-06-07
-app-0421,treasury,qa,AWS,xlarge,90.02,65.9,62.14,797.02,89.94,2025-06-07
-app-0422,retail,dev,Oracle Cloud,large,49.12,34.32,57.27,311.4,89.28,2025-06-07
-app-0423,insurance,hom,Oracle Cloud,small,36.88,71.51,37.23,142.99,91.79,2025-06-07
-app-0424,retail,dev,Oracle Cloud,medium,39.64,68.24,53.24,228.69,97.52,2025-06-07
-app-0425,treasury,prod,AWS,small,72.0,87.83,79.56,116.94,75.51,2025-06-07
-app-0426,corporate,prod,Azure,large,52.86,83.26,44.83,475.74,99.99,2025-06-07
-app-0427,retail,hom,AWS,medium,27.92,62.01,59.82,108.18,93.64,2025-06-07
-app-0428,insurance,prod,Azure,small,56.09,63.56,54.49,131.47,99.76,2025-06-07
-app-0429,investment,qa,Oracle Cloud,small,87.08,88.15,54.58,112.22,82.77,2025-06-07
-app-0430,corporate,prod,Oracle Cloud,small,40.05,59.22,47.37,123.91,92.27,2025-06-07
-app-0431,insurance,qa,Oracle Cloud,small,16.32,67.9,27.71,104.22,67.82,2025-06-07
-app-0432,corporate,dev,Oracle Cloud,medium,60.88,79.87,56.94,133.71,97.83,2025-06-07
-app-0433,insurance,prod,Azure,medium,11.87,64.15,67.66,278.1,90.84,2025-06-07
-app-0434,treasury,hom,AWS,small,78.66,57.98,69.11,91.9,95.39,2025-06-07
-app-0435,corporate,hom,Azure,small,54.05,60.45,46.86,94.2,97.59,2025-06-07
-app-0436,treasury,prod,Oracle Cloud,small,47.47,90.82,81.87,137.81,88.8,2025-06-07
-app-0437,retail,prod,Oracle Cloud,medium,42.98,73.06,57.13,228.08,99.68,2025-06-07
-app-0438,treasury,qa,Azure,xlarge,100.0,83.84,48.06,619.07,81.29,2025-06-07
-app-0439,retail,prod,Oracle Cloud,medium,17.52,47.4,51.51,176.81,71.94,2025-06-07
-app-0440,corporate,dev,Oracle Cloud,medium,71.03,40.86,15.63,143.8,80.88,2025-06-07
-app-0441,insurance,dev,AWS,small,18.95,62.85,56.54,31.05,87.95,2025-06-07
-app-0442,corporate,hom,AWS,medium,54.64,57.94,68.68,194.2,99.99,2025-06-07
-app-0443,investment,dev,Azure,large,88.99,32.27,57.53,378.94,99.99,2025-06-07
-app-0444,insurance,qa,Azure,large,59.11,56.1,63.7,242.13,99.99,2025-06-07
-app-0445,corporate,dev,Azure,large,48.36,53.2,36.28,264.53,87.66,2025-06-07
-app-0446,investment,prod,Oracle Cloud,xlarge,52.35,43.45,52.68,1126.26,93.1,2025-06-07
-app-0447,corporate,qa,Azure,xlarge,29.35,97.16,61.62,819.65,99.54,2025-06-07
-app-0448,investment,dev,Azure,xlarge,30.63,56.77,44.03,593.61,83.62,2025-06-07
-app-0449,corporate,prod,Azure,xlarge,78.37,78.35,65.94,860.16,87.36,2025-06-07
-app-0450,corporate,dev,Oracle Cloud,small,26.19,56.25,49.32,65.91,83.83,2025-06-07
-app-0451,retail,hom,Azure,small,33.69,48.56,67.25,78.04,93.54,2025-06-07
-app-0452,investment,qa,Oracle Cloud,xlarge,47.18,48.58,37.96,652.57,85.13,2025-06-07
-app-0453,treasury,qa,Oracle Cloud,xlarge,68.3,65.3,32.07,689.04,98.57,2025-06-07
-app-0454,treasury,hom,AWS,small,27.61,33.93,34.45,93.38,50.99,2025-06-07
-app-0455,insurance,prod,Azure,medium,45.93,37.45,50.0,204.98,84.9,2025-06-07
-app-0456,corporate,prod,Oracle Cloud,medium,54.44,48.46,60.89,257.44,98.18,2025-06-07
-app-0457,corporate,dev,AWS,xlarge,42.68,44.47,28.45,333.0,71.2,2025-06-07
-app-0458,corporate,hom,Oracle Cloud,medium,55.3,62.08,16.05,230.27,84.94,2025-06-07
-app-0459,insurance,prod,AWS,small,21.8,36.35,25.73,88.74,35.84,2025-06-07
-app-0460,insurance,prod,Oracle Cloud,xlarge,48.44,66.82,44.42,1060.52,97.13,2025-06-07
-app-0461,corporate,qa,AWS,xlarge,78.53,82.03,68.92,599.54,83.0,2025-06-07
-app-0462,investment,prod,Azure,large,43.28,22.06,45.49,527.77,66.78,2025-06-07
-app-0463,retail,hom,Oracle Cloud,small,50.77,54.81,43.3,124.65,93.27,2025-06-07
-app-0464,insurance,prod,AWS,small,89.73,33.05,50.4,99.86,99.68,2025-06-07
-app-0465,insurance,qa,Oracle Cloud,large,65.09,52.38,58.13,280.61,99.87,2025-06-07
-app-0466,insurance,prod,AWS,small,37.05,37.9,39.93,77.12,70.55,2025-06-07
-app-0467,insurance,prod,AWS,small,23.9,57.95,36.75,113.44,73.82,2025-06-07
-app-0468,corporate,hom,Azure,small,69.87,75.56,16.04,83.74,97.61,2025-06-07
-app-0469,corporate,dev,Azure,small,46.87,54.23,43.96,70.91,91.52,2025-06-07
-app-0470,retail,dev,AWS,xlarge,70.96,82.2,71.89,643.16,85.91,2025-06-07
-app-0471,retail,qa,Azure,xlarge,55.13,53.44,95.74,590.63,95.89,2025-06-07
-app-0472,insurance,hom,Oracle Cloud,xlarge,73.74,88.56,55.45,925.68,90.11,2025-06-07
-app-0473,treasury,hom,Azure,small,36.53,62.76,64.09,87.79,98.08,2025-06-07
-app-0474,treasury,dev,Azure,large,37.79,77.14,23.77,168.93,88.16,2025-06-07
-app-0475,retail,qa,AWS,medium,52.36,87.16,30.24,116.7,99.27,2025-06-07
-app-0476,insurance,prod,Azure,medium,68.66,44.32,45.64,229.9,96.83,2025-06-07
-app-0477,retail,prod,Oracle Cloud,small,34.51,52.6,45.23,147.1,84.23,2025-06-07
-app-0478,insurance,prod,Azure,xlarge,32.91,46.54,50.19,916.16,82.39,2025-06-07
-app-0479,investment,dev,AWS,small,11.12,71.05,63.95,65.93,92.03,2025-06-07
-app-0480,investment,prod,Oracle Cloud,small,72.97,25.27,34.41,121.79,84.43,2025-06-07
-app-0481,insurance,qa,Azure,medium,32.0,71.51,76.04,167.28,100.0,2025-06-07
-app-0482,insurance,prod,Oracle Cloud,small,61.35,70.66,68.84,178.96,96.98,2025-06-07
-app-0483,investment,qa,Azure,medium,76.84,79.32,47.4,156.49,96.15,2025-06-07
-app-0484,retail,hom,Azure,xlarge,46.94,77.56,67.72,651.87,98.96,2025-06-07
-app-0485,insurance,hom,Azure,small,10.77,44.62,67.35,52.96,77.23,2025-06-07
-app-0486,retail,hom,Azure,medium,62.95,73.65,37.48,131.58,99.76,2025-06-07
-app-0487,retail,dev,Oracle Cloud,medium,58.84,18.62,49.33,197.04,80.34,2025-06-07
-app-0488,investment,hom,AWS,small,65.07,56.25,43.23,61.19,98.34,2025-06-07
-app-0489,investment,prod,Azure,large,28.57,57.48,52.24,349.39,87.92,2025-06-07
-app-0490,insurance,dev,Oracle Cloud,small,25.18,45.07,73.07,74.59,90.66,2025-06-07
-app-0491,treasury,prod,Azure,medium,65.96,78.81,54.94,189.48,97.3,2025-06-07
-app-0492,corporate,hom,Oracle Cloud,medium,50.42,40.26,43.65,193.53,85.52,2025-06-07
-app-0493,corporate,prod,AWS,large,48.6,29.98,80.38,454.68,96.93,2025-06-07
-app-0494,retail,dev,Azure,large,52.67,85.17,39.35,372.92,99.94,2025-06-07
-app-0495,corporate,prod,Azure,medium,77.04,57.76,74.53,227.2,94.02,2025-06-07
-app-0496,corporate,prod,Azure,large,27.85,42.02,64.96,552.35,85.83,2025-06-07
-app-0497,corporate,qa,AWS,large,41.37,90.11,55.17,267.5,99.69,2025-06-07
-app-0498,retail,prod,AWS,medium,42.41,55.38,45.4,174.5,90.59,2025-06-07
-app-0499,retail,hom,Oracle Cloud,medium,68.19,45.45,63.98,212.42,99.96,2025-06-07
-app-0500,treasury,prod,Azure,xlarge,46.92,54.73,69.87,1101.03,99.5,2025-06-07
-app-0501,retail,hom,Oracle Cloud,medium,33.29,40.12,49.99,204.98,77.74,2025-06-07
-app-0502,insurance,hom,Oracle Cloud,medium,72.12,88.82,53.7,176.4,91.67,2025-06-07
-app-0503,retail,dev,AWS,small,55.31,76.9,76.91,47.39,94.11,2025-06-07
-app-0504,corporate,dev,AWS,medium,96.93,56.35,48.53,167.31,96.7,2025-06-07
-app-0505,retail,prod,AWS,xlarge,66.2,34.54,57.83,1141.14,96.81,2025-06-07
-app-0506,retail,dev,Azure,large,55.11,50.92,59.31,262.5,98.51,2025-06-07
-app-0507,investment,hom,Azure,xlarge,44.6,58.14,53.51,577.88,96.08,2025-06-07
-app-0508,corporate,prod,Azure,medium,32.57,76.11,53.95,206.58,97.91,2025-06-07
-app-0509,corporate,prod,Oracle Cloud,small,68.34,41.88,65.27,130.85,99.86,2025-06-07
-app-0510,investment,dev,Azure,medium,38.08,62.19,53.96,175.02,95.39,2025-06-07
-app-0511,investment,dev,AWS,medium,55.33,66.64,67.41,110.86,99.39,2025-06-07
-app-0512,investment,hom,AWS,small,71.77,73.82,63.68,54.76,94.05,2025-06-07
-app-0513,insurance,prod,Azure,small,73.76,58.11,60.71,89.59,98.9,2025-06-07
-app-0514,retail,dev,Azure,xlarge,87.97,79.43,53.78,602.33,88.22,2025-06-07
-app-0515,treasury,hom,Azure,medium,42.32,66.04,57.07,202.9,98.53,2025-06-07
-app-0516,retail,dev,Oracle Cloud,medium,72.18,44.09,47.17,191.71,98.1,2025-06-07
-app-0517,corporate,qa,Oracle Cloud,small,52.59,64.02,54.49,112.53,99.45,2025-06-07
-app-0518,treasury,prod,Azure,xlarge,73.94,68.16,73.81,1156.95,91.05,2025-06-07
-app-0519,treasury,dev,Azure,medium,43.87,74.85,48.32,145.5,98.83,2025-06-07
-app-0520,corporate,hom,AWS,small,50.9,36.54,100.0,58.52,99.62,2025-06-07
-app-0521,corporate,prod,Azure,medium,43.13,55.92,53.75,118.47,94.86,2025-06-07
-app-0522,investment,prod,AWS,xlarge,31.98,54.28,40.38,604.43,80.23,2025-06-07
-app-0523,treasury,hom,AWS,medium,36.72,63.2,37.09,166.58,87.16,2025-06-07
-app-0524,investment,prod,Oracle Cloud,medium,76.32,37.58,36.32,234.59,93.84,2025-06-07
-app-0525,corporate,dev,AWS,medium,68.01,46.56,79.8,123.44,98.57,2025-06-07
-app-0526,insurance,hom,AWS,medium,25.49,37.34,65.4,181.58,81.38,2025-06-07
-app-0527,retail,prod,AWS,medium,5.56,46.0,61.14,205.55,68.55,2025-06-07
-app-0528,corporate,prod,Oracle Cloud,medium,51.96,56.53,34.97,193.92,90.73,2025-06-07
-app-0529,insurance,dev,Azure,medium,49.21,52.93,48.26,81.88,93.92,2025-06-07
-app-0530,retail,qa,Azure,small,45.11,41.74,68.57,67.52,95.8,2025-06-07
-app-0531,corporate,prod,Azure,small,40.48,67.48,22.74,74.96,83.12,2025-06-07
-app-0532,insurance,dev,Azure,medium,62.25,52.27,4.94,131.58,74.54,2025-06-07
-app-0533,retail,prod,Azure,medium,58.42,70.73,63.85,265.25,98.83,2025-06-07
-app-0534,investment,qa,Oracle Cloud,xlarge,69.74,94.55,53.59,969.68,90.03,2025-06-07
-app-0535,corporate,hom,Oracle Cloud,medium,64.03,48.71,72.0,217.1,99.84,2025-06-07
-app-0536,retail,hom,Azure,xlarge,35.25,73.86,82.92,488.08,99.0,2025-06-07
-app-0537,retail,prod,AWS,xlarge,53.91,49.14,65.47,813.3,99.09,2025-06-07
-app-0538,retail,hom,AWS,large,14.06,60.24,49.97,276.87,78.43,2025-06-07
-app-0539,retail,hom,Azure,medium,46.35,78.78,79.47,168.87,95.8,2025-06-07
-app-0540,retail,prod,Oracle Cloud,large,59.19,76.0,88.96,392.22,86.47,2025-06-07
-app-0541,treasury,hom,Azure,medium,46.08,30.89,51.35,138.96,81.44,2025-06-07
-app-0542,treasury,dev,Azure,xlarge,65.88,52.21,43.25,430.52,97.58,2025-06-07
-app-0543,retail,prod,Azure,small,76.77,78.1,60.9,120.36,91.11,2025-06-07
-app-0544,insurance,qa,Azure,small,37.22,57.77,71.73,84.15,98.78,2025-06-07
-app-0545,insurance,qa,Azure,medium,62.07,62.85,75.65,179.44,97.06,2025-06-07
-app-0546,corporate,prod,Azure,medium,94.6,68.93,51.75,210.0,91.36,2025-06-07
-app-0547,insurance,dev,Azure,medium,25.87,70.78,47.45,144.02,91.05,2025-06-07
-app-0548,corporate,dev,AWS,small,38.29,39.64,58.82,56.5,87.01,2025-06-07
-app-0549,investment,prod,Oracle Cloud,large,54.68,48.22,62.57,463.16,98.54,2025-06-07
-app-0550,treasury,prod,Azure,small,76.93,69.05,64.45,103.92,93.57,2025-06-07
-app-0551,corporate,hom,Azure,large,40.37,55.37,47.47,232.48,90.6,2025-06-07
-app-0552,treasury,dev,AWS,small,84.31,43.79,41.69,77.03,99.28,2025-06-07
-app-0553,corporate,hom,Azure,large,31.11,85.2,75.27,398.71,99.07,2025-06-07
-app-0554,investment,prod,AWS,large,27.95,68.09,34.01,447.08,82.67,2025-06-07
-app-0555,treasury,hom,AWS,small,51.69,81.96,41.32,72.38,99.82,2025-06-07
-app-0556,corporate,prod,Oracle Cloud,xlarge,40.55,76.23,52.41,809.56,99.19,2025-06-07
-app-0557,corporate,qa,Azure,medium,30.63,81.75,57.09,157.18,99.23,2025-06-07
-app-0558,retail,prod,Azure,large,3.86,73.78,37.52,453.6,70.8,2025-06-07
-app-0559,corporate,prod,Azure,xlarge,48.5,34.79,37.02,1172.97,75.25,2025-06-07
-app-0560,insurance,qa,Azure,xlarge,28.93,80.71,58.19,517.32,98.97,2025-06-07
-app-0561,insurance,hom,Azure,medium,23.17,61.49,43.95,140.45,81.66,2025-06-07
-app-0562,treasury,prod,Azure,small,11.04,58.69,42.95,84.03,68.53,2025-06-07
-app-0563,retail,prod,Oracle Cloud,large,48.26,47.19,86.14,575.69,99.98,2025-06-07
-app-0564,treasury,prod,Oracle Cloud,xlarge,84.91,53.35,48.18,1370.75,99.71,2025-06-07
-app-0565,treasury,prod,AWS,small,51.04,48.17,51.13,114.13,93.89,2025-06-07
-app-0566,retail,hom,AWS,small,40.5,46.37,39.82,63.96,80.26,2025-06-07
-app-0567,retail,hom,Azure,xlarge,83.62,82.71,64.27,790.1,82.22,2025-06-07
-app-0568,retail,hom,AWS,medium,66.38,59.42,38.11,143.45,98.2,2025-06-07
-app-0569,corporate,prod,AWS,small,7.86,40.79,50.12,81.65,54.18,2025-06-07
-app-0570,corporate,prod,AWS,large,26.8,53.25,49.56,386.63,82.37,2025-06-07
-app-0571,insurance,hom,Azure,xlarge,67.87,74.44,29.19,746.42,99.5,2025-06-07
-app-0572,treasury,dev,Oracle Cloud,small,44.72,77.13,56.67,96.28,99.98,2025-06-07
-app-0573,investment,hom,AWS,small,63.65,39.46,67.94,95.88,99.44,2025-06-07
-app-0574,treasury,prod,AWS,large,72.82,79.5,49.17,593.51,96.79,2025-06-07
-app-0575,retail,prod,Azure,small,50.15,59.22,84.3,155.73,98.7,2025-06-07
-app-0576,retail,hom,Azure,small,70.54,58.29,37.72,71.15,98.74,2025-06-07
-app-0577,corporate,prod,Azure,small,44.58,59.28,65.92,104.75,99.27,2025-06-07
-app-0578,retail,qa,Azure,medium,61.93,29.88,25.29,171.68,72.52,2025-06-07
-app-0579,investment,qa,Oracle Cloud,small,50.38,100.0,51.62,70.94,96.64,2025-06-07
-app-0580,investment,prod,AWS,medium,51.29,66.85,51.12,170.6,99.2,2025-06-07
-app-0581,insurance,qa,Azure,small,58.23,38.04,47.93,89.51,91.1,2025-06-07
-app-0582,investment,prod,AWS,small,35.6,71.67,75.33,77.41,99.95,2025-06-07
-app-0583,retail,dev,AWS,small,84.13,52.67,52.47,38.39,99.4,2025-06-07
-app-0584,corporate,dev,Oracle Cloud,medium,68.1,60.58,71.23,196.66,97.25,2025-06-07
-app-0585,corporate,prod,Oracle Cloud,small,18.77,74.79,43.95,147.12,87.47,2025-06-07
-app-0586,corporate,hom,AWS,large,33.91,79.2,53.77,262.23,98.81,2025-06-07
-app-0587,retail,prod,AWS,large,66.84,38.79,40.24,441.36,91.92,2025-06-07
-app-0588,investment,qa,AWS,small,41.09,62.98,41.19,66.11,91.62,2025-06-07
-app-0589,retail,qa,Oracle Cloud,medium,46.85,52.31,69.5,197.41,99.11,2025-06-07
-app-0590,insurance,prod,Oracle Cloud,medium,44.09,65.98,58.17,243.65,99.04,2025-06-07
-app-0591,corporate,hom,AWS,small,39.69,88.43,61.18,73.71,99.4,2025-06-07
-app-0592,retail,dev,Oracle Cloud,small,66.04,69.98,50.09,98.54,99.74,2025-06-07
-app-0593,investment,prod,Azure,small,72.8,57.67,75.54,114.55,95.3,2025-06-07
-app-0594,retail,qa,Azure,small,23.38,56.12,65.21,98.08,91.35,2025-06-07
-app-0595,treasury,prod,AWS,large,61.16,67.3,63.15,396.35,99.06,2025-06-07
-app-0596,retail,prod,AWS,small,56.1,69.05,41.79,92.69,98.82,2025-06-07
-app-0597,retail,prod,AWS,medium,64.51,64.29,53.63,245.29,99.96,2025-06-07
-app-0598,retail,prod,AWS,xlarge,65.69,50.42,45.82,1081.24,97.73,2025-06-07
-app-0599,treasury,prod,Azure,xlarge,52.01,53.32,41.92,793.01,92.55,2025-06-07
-app-0600,corporate,dev,AWS,large,60.78,65.65,66.75,263.58,98.79,2025-06-07
-app-0601,retail,prod,AWS,medium,59.46,77.49,58.42,211.52,98.36,2025-06-07
-app-0602,corporate,prod,Azure,medium,17.69,64.22,48.56,148.39,82.96,2025-06-07
-app-0603,retail,prod,AWS,xlarge,67.39,56.14,63.9,743.58,99.62,2025-06-07
-app-0604,retail,dev,Azure,xlarge,51.53,50.58,56.69,592.78,96.88,2025-06-07
-app-0605,investment,hom,AWS,medium,53.67,67.79,67.66,129.82,99.42,2025-06-07
-app-0606,treasury,qa,Oracle Cloud,small,29.08,84.68,57.78,72.78,99.5,2025-06-07
-app-0607,corporate,qa,AWS,xlarge,51.35,54.99,65.18,663.59,99.5,2025-06-07
-app-0608,corporate,prod,AWS,medium,66.36,45.04,34.98,228.48,92.15,2025-06-07
-app-0609,investment,prod,AWS,xlarge,95.81,90.28,27.88,919.05,91.98,2025-06-07
-app-0610,investment,qa,AWS,large,51.51,76.58,70.05,327.67,97.71,2025-06-07
-app-0611,corporate,hom,Azure,xlarge,46.38,39.91,40.33,694.64,80.21,2025-06-07
-app-0612,retail,hom,Azure,medium,30.83,50.62,100.0,170.54,99.99,2025-06-07
-app-0613,retail,prod,Oracle Cloud,xlarge,37.51,57.39,64.0,952.67,96.91,2025-06-07
-app-0614,retail,qa,Oracle Cloud,xlarge,64.72,82.37,73.69,753.3,88.45,2025-06-07
-app-0615,corporate,qa,Oracle Cloud,xlarge,50.19,67.98,59.44,638.43,99.96,2025-06-07
-app-0616,corporate,qa,AWS,small,79.33,64.85,90.49,71.72,79.24,2025-06-07
-app-0617,corporate,prod,Oracle Cloud,medium,69.8,48.13,75.31,347.13,98.78,2025-06-07
-app-0618,treasury,prod,AWS,medium,11.44,72.45,51.29,266.1,86.05,2025-06-07
-app-0619,corporate,prod,Oracle Cloud,large,35.62,61.62,28.66,450.62,79.67,2025-06-07
-app-0620,treasury,hom,AWS,xlarge,25.55,71.04,25.01,634.34,76.31,2025-06-07
-app-0621,treasury,prod,AWS,small,53.32,51.35,67.02,135.46,99.52,2025-06-07
-app-0622,corporate,prod,AWS,xlarge,62.29,50.44,46.78,857.09,97.08,2025-06-07
-app-0623,retail,hom,Oracle Cloud,large,39.2,33.99,52.87,479.46,79.79,2025-06-07
-app-0624,corporate,qa,Azure,medium,100.0,60.54,61.82,128.04,87.54,2025-06-07
-app-0625,insurance,prod,Oracle Cloud,medium,56.44,49.16,37.16,188.36,90.37,2025-06-07
-app-0626,retail,prod,AWS,small,79.15,80.9,34.86,86.28,98.46,2025-06-07
-app-0627,insurance,prod,AWS,small,51.04,58.76,35.07,107.57,91.43,2025-06-07
-app-0628,retail,prod,AWS,small,47.17,64.48,64.92,147.0,99.92,2025-06-07
-app-0629,corporate,dev,AWS,xlarge,38.96,94.75,49.71,409.03,99.92,2025-06-07
-app-0630,corporate,prod,Oracle Cloud,medium,72.39,53.2,54.16,255.47,100.0,2025-06-07
-app-0631,insurance,prod,Oracle Cloud,large,72.02,72.86,61.43,503.34,95.19,2025-06-07
-app-0632,retail,qa,AWS,medium,0.0,82.39,44.07,172.05,80.1,2025-06-07
-app-0633,corporate,hom,AWS,small,38.02,79.52,55.96,102.97,99.71,2025-06-07
-app-0634,insurance,prod,Azure,xlarge,17.78,63.28,64.46,938.92,91.74,2025-06-07
-app-0635,investment,prod,AWS,small,53.61,62.83,47.95,102.3,98.31,2025-06-07
-app-0636,retail,prod,Oracle Cloud,small,58.86,68.31,69.96,207.32,97.96,2025-06-07
-app-0637,corporate,dev,AWS,large,12.22,80.41,51.25,313.73,90.94,2025-06-07
-app-0638,corporate,prod,AWS,medium,17.85,65.06,67.1,209.12,93.76,2025-06-07
-app-0639,retail,prod,Oracle Cloud,medium,61.01,44.11,67.14,254.65,99.58,2025-06-07
-app-0640,insurance,prod,Azure,medium,39.47,77.6,53.96,244.0,99.44,2025-06-07
-app-0641,corporate,hom,Oracle Cloud,small,59.41,69.44,66.54,111.4,98.35,2025-06-07
-app-0642,retail,hom,Oracle Cloud,large,48.03,82.04,76.69,435.52,95.03,2025-06-07
-app-0643,insurance,hom,AWS,xlarge,38.56,77.74,62.39,683.72,99.99,2025-06-07
-app-0644,treasury,hom,Azure,xlarge,82.0,100.0,82.92,998.47,49.92,2025-06-07
-app-0645,retail,dev,AWS,large,80.7,49.27,57.71,234.81,99.59,2025-06-07
-app-0646,corporate,dev,Azure,xlarge,70.29,88.42,53.12,408.88,92.97,2025-06-07
-app-0647,insurance,hom,AWS,small,47.07,50.02,75.69,69.31,99.64,2025-06-07
-app-0648,treasury,prod,Oracle Cloud,medium,48.93,46.67,55.08,239.32,94.03,2025-06-07
-app-0649,treasury,hom,AWS,small,17.4,66.85,54.51,104.98,88.19,2025-06-07
-app-0650,insurance,prod,AWS,small,24.85,47.08,18.58,61.42,44.39,2025-06-07
-app-0651,treasury,hom,AWS,medium,24.71,55.87,41.01,88.23,76.31,2025-06-07
-app-0652,insurance,hom,AWS,xlarge,39.23,67.95,81.34,760.26,99.5,2025-06-07
-app-0653,insurance,hom,Oracle Cloud,small,49.34,72.86,54.25,111.11,99.91,2025-06-07
-app-0654,retail,prod,AWS,medium,53.51,53.96,39.14,122.77,92.26,2025-06-07
-app-0655,corporate,qa,AWS,small,58.68,63.66,57.38,83.17,100.0,2025-06-07
-app-0656,treasury,dev,Oracle Cloud,medium,38.75,47.73,45.51,139.44,84.0,2025-06-07
-app-0657,treasury,hom,Azure,small,39.52,75.56,57.73,73.67,99.64,2025-06-07
-app-0658,treasury,hom,AWS,medium,58.72,61.59,73.23,167.63,98.73,2025-06-07
-app-0659,retail,dev,Oracle Cloud,medium,65.1,63.4,40.93,142.55,99.22,2025-06-07
-app-0660,insurance,prod,Oracle Cloud,xlarge,60.98,28.5,63.61,965.51,94.97,2025-06-07
-app-0661,insurance,qa,AWS,small,76.21,68.01,40.97,84.14,99.81,2025-06-07
-app-0662,corporate,qa,AWS,medium,35.92,57.84,49.67,115.21,90.72,2025-06-07
-app-0663,retail,hom,AWS,xlarge,37.54,73.42,50.73,689.7,97.67,2025-06-07
-app-0664,corporate,dev,Oracle Cloud,medium,15.4,52.44,34.42,145.48,58.03,2025-06-07
-app-0665,investment,prod,AWS,xlarge,23.23,82.46,46.46,803.99,94.61,2025-06-07
-app-0666,retail,dev,AWS,large,63.52,75.05,67.63,312.14,95.23,2025-06-07
-app-0667,treasury,prod,Azure,xlarge,51.82,70.04,78.01,948.55,97.26,2025-06-07
-app-0668,insurance,hom,Azure,small,63.11,46.24,56.31,56.71,98.57,2025-06-07
-app-0669,insurance,qa,Azure,xlarge,79.41,68.84,64.82,483.07,92.41,2025-06-07
-app-0670,investment,dev,AWS,medium,38.67,51.47,53.42,111.52,90.78,2025-06-07
-app-0671,treasury,prod,Azure,medium,34.79,97.79,55.03,158.06,99.6,2025-06-07
-app-0672,corporate,qa,Azure,medium,94.52,59.74,65.64,108.23,88.94,2025-06-07
-app-0673,insurance,dev,AWS,small,20.85,45.81,62.75,51.25,82.22,2025-06-07
-app-0674,retail,qa,Azure,small,31.37,82.31,65.57,82.8,100.0,2025-06-07
-app-0675,insurance,prod,AWS,large,37.73,88.19,58.05,503.33,99.89,2025-06-07
-app-0676,insurance,dev,AWS,small,16.54,47.89,43.68,43.3,64.11,2025-06-07
-app-0677,corporate,dev,Oracle Cloud,large,56.48,65.03,63.46,268.43,99.83,2025-06-07
-app-0678,corporate,dev,AWS,xlarge,32.0,82.89,45.73,442.27,97.39,2025-06-07
-app-0679,insurance,prod,Oracle Cloud,small,64.45,69.71,50.9,162.4,99.82,2025-06-07
-app-0680,corporate,qa,AWS,medium,62.11,52.15,61.97,70.29,99.9,2025-06-07
-app-0681,corporate,prod,AWS,xlarge,48.05,53.39,52.26,685.39,95.2,2025-06-07
-app-0682,retail,prod,AWS,medium,24.77,56.2,25.53,228.19,62.48,2025-06-07
-app-0683,retail,qa,Azure,xlarge,61.85,49.62,75.23,638.06,99.69,2025-06-07
-app-0684,investment,prod,AWS,small,42.71,37.12,47.18,95.2,80.5,2025-06-07
-app-0685,retail,prod,Oracle Cloud,large,64.12,83.08,63.52,363.98,93.44,2025-06-07
-app-0686,corporate,prod,AWS,medium,48.46,65.74,80.89,121.95,98.42,2025-06-07
-app-0687,corporate,dev,AWS,xlarge,56.23,72.87,57.59,706.05,99.69,2025-06-07
-app-0688,investment,prod,Azure,large,90.75,56.06,70.22,578.04,90.48,2025-06-07
-app-0689,retail,prod,Oracle Cloud,medium,57.51,26.1,63.72,221.5,92.59,2025-06-07
-app-0690,investment,dev,Oracle Cloud,medium,46.77,52.69,61.5,157.53,97.48,2025-06-07
-app-0691,retail,qa,AWS,small,64.33,54.45,47.22,79.79,98.64,2025-06-07
-app-0692,treasury,hom,Oracle Cloud,large,28.09,42.44,73.18,225.16,90.85,2025-06-07
-app-0693,insurance,prod,AWS,large,66.6,51.24,71.19,469.12,99.43,2025-06-07
-app-0694,corporate,qa,AWS,small,60.41,73.81,74.45,86.69,94.29,2025-06-07
-app-0695,treasury,hom,Azure,large,32.89,51.36,50.79,306.86,85.96,2025-06-07
-app-0696,retail,hom,AWS,xlarge,38.62,52.26,73.29,661.25,98.26,2025-06-07
-app-0697,corporate,dev,AWS,medium,47.12,25.87,37.81,135.38,66.74,2025-06-07
-app-0698,investment,prod,Oracle Cloud,medium,46.33,94.24,57.41,264.19,97.76,2025-06-07
-app-0699,insurance,qa,Azure,xlarge,23.64,60.03,32.38,626.72,71.6,2025-06-07
-app-0700,corporate,prod,Azure,medium,51.91,44.14,65.27,241.17,97.58,2025-06-07
-app-0701,retail,prod,Oracle Cloud,large,53.3,43.99,59.93,315.14,96.4,2025-06-07
-app-0702,retail,dev,AWS,xlarge,37.74,69.74,45.66,457.62,94.99,2025-06-07
-app-0703,retail,prod,Azure,xlarge,27.7,73.1,48.08,993.19,93.27,2025-06-07
-app-0704,retail,prod,Azure,small,34.57,70.25,57.05,65.67,97.72,2025-06-07
-app-0705,corporate,hom,Azure,xlarge,56.57,34.15,52.14,726.54,90.42,2025-06-07
-app-0706,retail,hom,Oracle Cloud,medium,29.29,20.86,59.87,220.54,65.98,2025-06-07
-app-0707,retail,qa,AWS,large,46.66,76.34,60.63,364.64,99.91,2025-06-07
-app-0708,retail,prod,AWS,large,45.12,52.34,66.97,478.91,98.32,2025-06-07
-app-0709,retail,hom,AWS,large,84.34,65.08,68.62,246.37,89.96,2025-06-07
-app-0710,corporate,prod,AWS,small,69.89,62.52,73.99,125.63,95.16,2025-06-07
-app-0711,retail,dev,Oracle Cloud,medium,48.22,61.38,48.82,193.34,96.76,2025-06-07
-app-0712,retail,prod,AWS,large,34.02,74.73,58.27,346.47,98.83,2025-06-07
-app-0713,investment,prod,Azure,medium,35.57,69.06,69.96,138.9,99.8,2025-06-07
-app-0714,retail,prod,Azure,small,14.96,63.12,88.41,111.33,98.73,2025-06-07
-app-0715,corporate,dev,Oracle Cloud,small,41.07,66.25,56.5,96.46,98.18,2025-06-07
-app-0716,treasury,prod,Azure,xlarge,32.62,77.01,50.84,1078.89,97.35,2025-06-07
-app-0717,treasury,prod,Azure,large,42.64,33.93,53.47,469.64,82.66,2025-06-07
-app-0718,corporate,qa,AWS,small,6.42,73.73,48.14,64.41,81.43,2025-06-07
-app-0719,retail,hom,Azure,medium,37.71,78.38,56.06,197.67,99.57,2025-06-07
-app-0720,investment,prod,AWS,xlarge,43.26,47.55,28.91,871.88,74.76,2025-06-07
-app-0721,insurance,prod,AWS,xlarge,4.84,51.09,57.24,935.24,68.98,2025-06-07
-app-0722,investment,dev,AWS,medium,43.78,68.43,47.34,106.17,97.09,2025-06-07
-app-0723,retail,prod,AWS,small,75.83,47.98,78.37,106.78,96.58,2025-06-07
-app-0724,corporate,hom,Oracle Cloud,small,79.39,56.88,76.8,120.62,92.41,2025-06-07
-app-0725,corporate,prod,Oracle Cloud,large,47.61,66.73,50.6,615.03,98.43,2025-06-07
-app-0726,treasury,hom,AWS,small,28.34,59.79,65.41,18.65,95.14,2025-06-07
-app-0727,corporate,hom,AWS,medium,43.49,38.15,64.58,169.14,92.08,2025-06-07
-app-0728,retail,dev,AWS,large,32.39,44.45,56.14,206.26,84.64,2025-06-07
-app-0729,insurance,dev,Azure,large,49.47,42.12,47.06,224.24,88.12,2025-06-07
-app-0730,retail,qa,Azure,small,44.78,78.59,46.92,37.02,99.35,2025-06-07
-app-0731,retail,prod,Azure,medium,58.86,46.59,78.05,191.59,99.91,2025-06-07
-app-0732,corporate,hom,AWS,medium,64.2,40.69,34.37,110.78,88.48,2025-06-07
-app-0733,retail,hom,Azure,small,32.06,73.09,62.13,90.21,98.88,2025-06-07
-app-0734,retail,qa,Azure,small,55.79,80.54,58.93,49.24,98.38,2025-06-07
-app-0735,retail,prod,AWS,large,85.43,71.6,65.13,624.58,87.66,2025-06-07
-app-0736,retail,hom,AWS,small,66.29,50.41,49.79,65.18,98.73,2025-06-07
-app-0737,corporate,dev,Azure,small,36.54,45.97,52.23,97.79,85.77,2025-06-07
-app-0738,retail,qa,Azure,small,89.42,76.34,40.56,125.72,95.19,2025-06-07
-app-0739,retail,hom,AWS,small,58.11,43.29,64.6,116.88,98.64,2025-06-07
-app-0740,insurance,prod,Azure,medium,78.51,47.74,57.41,283.3,99.91,2025-06-07
-app-0741,retail,dev,Oracle Cloud,large,62.17,55.84,50.81,355.09,99.13,2025-06-07
-app-0742,treasury,prod,Oracle Cloud,xlarge,74.28,65.1,69.49,1519.07,94.21,2025-06-07
-app-0743,investment,hom,Azure,small,64.21,64.66,65.09,86.71,98.65,2025-06-07
-app-0744,investment,prod,Azure,xlarge,95.17,72.53,35.93,722.41,96.12,2025-06-07
-app-0745,corporate,qa,AWS,medium,21.91,38.1,46.18,140.91,62.17,2025-06-07
-app-0746,treasury,hom,Oracle Cloud,medium,31.36,79.81,54.75,177.05,98.62,2025-06-07
-app-0747,retail,dev,AWS,large,53.6,43.17,42.61,228.6,88.54,2025-06-07
-app-0748,investment,qa,Oracle Cloud,small,67.08,73.1,50.02,103.65,99.28,2025-06-07
-app-0749,treasury,qa,Oracle Cloud,large,73.41,44.27,57.93,441.3,99.87,2025-06-07
-app-0750,investment,prod,Oracle Cloud,xlarge,33.06,77.64,60.14,1392.42,99.42,2025-06-07
-app-0751,treasury,qa,AWS,large,60.71,56.64,64.55,279.52,99.97,2025-06-07
-app-0752,corporate,prod,Oracle Cloud,small,35.41,54.24,74.52,139.1,98.26,2025-06-07
-app-0753,investment,prod,AWS,large,58.99,81.78,70.58,417.74,93.17,2025-06-07
-app-0754,investment,hom,Azure,medium,54.98,48.71,58.53,192.25,97.8,2025-06-07
-app-0755,investment,hom,Azure,medium,56.33,57.93,22.77,114.5,87.17,2025-06-07
-app-0756,insurance,hom,AWS,xlarge,40.28,45.54,51.48,505.02,87.34,2025-06-07
-app-0757,insurance,dev,Azure,xlarge,60.82,58.67,60.78,527.84,100.0,2025-06-07
-app-0758,treasury,dev,Azure,xlarge,45.13,56.13,70.69,554.77,99.55,2025-06-07
-app-0759,retail,qa,Azure,small,43.89,34.69,60.12,77.59,88.15,2025-06-07
-app-0760,corporate,prod,AWS,medium,84.76,50.27,46.97,204.11,99.97,2025-06-07
-app-0761,investment,dev,Azure,xlarge,57.04,64.46,53.04,530.2,99.79,2025-06-07
-app-0762,investment,prod,Azure,medium,55.04,68.6,52.28,196.07,99.88,2025-06-07
-app-0763,investment,prod,AWS,medium,48.14,59.55,52.45,239.01,97.26,2025-06-07
-app-0764,treasury,prod,AWS,xlarge,53.46,57.47,48.6,807.71,97.09,2025-06-07
-app-0765,retail,dev,Azure,xlarge,84.07,58.95,64.96,621.29,94.56,2025-06-07
-app-0766,insurance,dev,AWS,medium,9.42,64.8,70.27,113.29,91.24,2025-06-07
-app-0767,investment,prod,AWS,medium,70.29,55.54,77.29,213.0,96.29,2025-06-07
-app-0768,retail,dev,AWS,small,58.07,83.66,36.88,80.41,99.99,2025-06-07
-app-0769,insurance,qa,Azure,xlarge,26.88,73.85,53.92,651.62,95.54,2025-06-07
-app-0770,insurance,dev,AWS,xlarge,67.2,54.83,54.44,454.2,99.91,2025-06-07
-app-0771,corporate,prod,Azure,small,19.62,42.4,36.83,88.05,54.28,2025-06-07
-app-0772,corporate,dev,Oracle Cloud,xlarge,72.71,61.94,48.78,691.9,99.92,2025-06-07
-app-0773,corporate,prod,Oracle Cloud,medium,43.68,52.78,51.79,228.27,93.0,2025-06-07
-app-0774,corporate,dev,Azure,medium,70.67,50.71,44.15,109.18,98.55,2025-06-07
-app-0775,retail,dev,Azure,medium,51.7,60.15,40.3,166.65,94.61,2025-06-07
-app-0776,investment,prod,Azure,large,35.91,88.29,60.33,486.05,99.86,2025-06-07
-app-0777,investment,dev,AWS,large,39.58,35.64,60.6,194.91,86.44,2025-06-07
-app-0778,corporate,hom,Oracle Cloud,xlarge,27.58,72.98,44.91,746.96,91.72,2025-06-07
-app-0779,treasury,dev,AWS,small,45.62,83.67,85.2,60.24,91.74,2025-06-07
-app-0780,corporate,dev,Azure,medium,100.0,51.29,45.62,114.92,98.01,2025-06-07
-app-0781,retail,prod,AWS,medium,54.03,51.67,38.25,190.72,90.97,2025-06-07
-app-0782,investment,qa,AWS,xlarge,55.85,42.8,12.44,423.68,67.03,2025-06-07
-app-0783,retail,prod,AWS,medium,64.27,54.6,64.48,273.51,99.92,2025-06-07
-app-0784,corporate,prod,Oracle Cloud,small,69.3,77.36,76.06,147.98,87.33,2025-06-07
-app-0785,retail,prod,AWS,large,48.18,73.9,61.15,336.91,99.93,2025-06-07
-app-0786,investment,prod,AWS,small,54.3,76.44,40.74,89.01,99.5,2025-06-07
-app-0787,insurance,qa,AWS,medium,6.67,66.92,61.37,155.44,85.91,2025-06-07
-app-0788,corporate,prod,AWS,large,52.42,59.47,46.35,302.86,96.71,2025-06-07
-app-0789,corporate,prod,Azure,xlarge,36.96,65.94,70.68,1093.31,99.71,2025-06-07
-app-0790,treasury,prod,AWS,xlarge,31.27,38.02,48.09,817.22,72.77,2025-06-07
-app-0791,retail,dev,Azure,medium,90.53,54.36,47.72,61.57,98.9,2025-06-07
-app-0792,treasury,dev,AWS,medium,24.2,63.81,53.26,62.17,89.58,2025-06-07
-app-0793,retail,dev,AWS,small,42.94,71.53,36.52,87.73,94.16,2025-06-07
-app-0794,insurance,hom,Oracle Cloud,xlarge,52.97,48.53,42.07,755.09,90.78,2025-06-07
-app-0795,treasury,hom,AWS,large,56.92,52.86,71.47,389.2,99.99,2025-06-07
-app-0796,retail,prod,Azure,medium,42.98,51.85,47.93,292.85,90.37,2025-06-07
-app-0797,treasury,qa,Azure,large,69.93,36.28,34.71,209.37,89.39,2025-06-07
-app-0798,investment,hom,Azure,large,45.54,45.83,46.16,338.85,87.47,2025-06-07
-app-0799,insurance,hom,Oracle Cloud,medium,66.72,41.84,76.84,175.11,99.8,2025-06-07
-app-0800,insurance,hom,AWS,large,65.46,51.13,40.55,247.18,96.37,2025-06-07
-app-0801,investment,prod,Azure,large,34.09,71.54,22.96,555.35,81.64,2025-06-07
-app-0802,investment,dev,Azure,xlarge,0.0,44.95,62.53,465.42,63.48,2025-06-07
-app-0803,corporate,qa,Oracle Cloud,small,39.46,49.92,67.97,63.34,96.44,2025-06-07
-app-0804,retail,qa,AWS,small,51.18,59.37,44.14,68.66,95.55,2025-06-07
-app-0805,treasury,qa,AWS,large,65.74,61.85,59.21,368.9,99.68,2025-06-07
-app-0806,retail,qa,Oracle Cloud,large,92.03,70.6,61.97,282.26,86.19,2025-06-07
-app-0807,investment,prod,AWS,xlarge,18.22,58.41,40.49,888.13,72.55,2025-06-07
-app-0808,retail,prod,AWS,small,32.07,63.71,47.34,89.89,90.55,2025-06-07
-app-0809,retail,prod,AWS,xlarge,81.97,73.13,58.04,861.15,92.37,2025-06-07
-app-0810,insurance,dev,Azure,medium,15.68,78.44,77.82,136.78,99.55,2025-06-07
-app-0811,investment,dev,Oracle Cloud,small,82.63,61.83,82.09,81.44,84.95,2025-06-07
-app-0812,corporate,prod,Azure,medium,29.69,58.45,45.23,273.55,84.9,2025-06-07
-app-0813,corporate,prod,Azure,medium,30.32,66.17,52.1,207.35,93.15,2025-06-07
-app-0814,retail,hom,AWS,xlarge,48.09,50.08,40.92,472.97,88.38,2025-06-07
-app-0815,insurance,qa,AWS,medium,63.46,66.74,70.32,145.69,97.08,2025-06-07
-app-0816,corporate,qa,Azure,small,67.65,71.21,38.57,89.51,99.95,2025-06-07
-app-0817,corporate,prod,Oracle Cloud,large,28.33,50.81,55.79,418.49,85.89,2025-06-07
-app-0818,insurance,qa,Azure,large,40.57,55.87,66.84,267.26,98.06,2025-06-07
-app-0819,treasury,hom,AWS,small,63.3,46.34,65.33,88.83,99.82,2025-06-07
-app-0820,retail,qa,Oracle Cloud,small,91.55,69.87,67.0,85.32,83.72,2025-06-07
-app-0821,corporate,qa,Oracle Cloud,medium,38.11,54.29,45.93,208.1,87.94,2025-06-07
-app-0822,corporate,qa,Azure,small,70.46,78.58,53.44,68.94,96.49,2025-06-07
-app-0823,insurance,hom,AWS,small,30.2,56.78,64.59,71.69,94.39,2025-06-07
-app-0824,insurance,prod,AWS,xlarge,69.27,55.33,49.81,917.09,99.78,2025-06-07
-app-0825,insurance,prod,AWS,xlarge,72.39,76.15,52.39,802.51,96.96,2025-06-07
-app-0826,insurance,dev,Oracle Cloud,medium,41.19,52.65,53.94,155.41,92.79,2025-06-07
-app-0827,corporate,dev,AWS,xlarge,54.43,63.19,41.98,571.32,97.11,2025-06-07
-app-0828,treasury,prod,Oracle Cloud,small,72.68,37.21,67.06,168.12,99.94,2025-06-07
-app-0829,corporate,prod,Azure,small,40.94,58.68,44.32,96.06,90.96,2025-06-07
-app-0830,corporate,prod,Azure,small,42.76,52.16,33.0,85.18,81.16,2025-06-07
-app-0831,corporate,dev,AWS,medium,21.41,42.26,59.49,148.71,77.56,2025-06-07
-app-0832,treasury,prod,Azure,xlarge,36.25,68.97,52.59,659.26,96.58,2025-06-07
-app-0833,treasury,hom,AWS,small,50.36,47.34,42.1,50.98,88.78,2025-06-07
-app-0834,retail,prod,AWS,large,52.4,57.92,62.66,387.85,99.66,2025-06-07
-app-0835,treasury,prod,Oracle Cloud,small,14.96,54.03,56.13,173.32,79.08,2025-06-07
-app-0836,retail,hom,Azure,small,53.27,64.33,68.52,84.27,99.74,2025-06-07
-app-0837,treasury,dev,Oracle Cloud,small,29.62,50.9,49.7,85.22,82.79,2025-06-07
-app-0838,insurance,prod,AWS,medium,54.15,77.71,66.0,216.93,97.78,2025-06-07
-app-0839,retail,qa,Azure,medium,27.45,86.86,59.12,140.92,99.7,2025-06-07
-app-0840,retail,dev,AWS,large,39.81,40.06,62.86,292.17,90.35,2025-06-07
-app-0841,retail,prod,Azure,medium,76.45,51.51,55.74,266.96,99.9,2025-06-07
-app-0842,retail,dev,Azure,medium,65.1,48.04,50.1,142.62,98.05,2025-06-07
-app-0843,retail,dev,Azure,medium,82.54,54.86,51.3,154.0,99.48,2025-06-07
-app-0844,corporate,hom,Azure,medium,53.97,65.18,74.11,171.14,98.78,2025-06-07
-app-0845,treasury,prod,Oracle Cloud,small,33.59,55.3,58.98,142.3,92.83,2025-06-07
-app-0846,treasury,hom,Azure,large,68.71,77.01,46.3,423.05,99.0,2025-06-07
-app-0847,retail,qa,AWS,xlarge,80.83,59.42,65.48,577.55,95.4,2025-06-07
-app-0848,corporate,hom,AWS,small,46.7,66.31,61.02,65.26,99.75,2025-06-07
-app-0849,retail,qa,AWS,medium,75.34,38.98,42.64,149.71,96.31,2025-06-07
-app-0850,corporate,qa,Azure,small,42.8,69.37,61.73,58.76,99.74,2025-06-07
-app-0851,corporate,dev,Oracle Cloud,large,60.13,80.94,20.94,240.91,97.75,2025-06-07
-app-0852,investment,dev,AWS,large,46.02,49.94,62.35,252.98,96.73,2025-06-07
-app-0853,insurance,hom,Azure,small,71.26,69.89,58.71,102.48,97.26,2025-06-07
-app-0854,corporate,prod,AWS,medium,52.39,90.03,42.73,230.94,99.82,2025-06-07
-app-0855,treasury,hom,Oracle Cloud,medium,43.09,35.21,55.51,230.79,85.18,2025-06-07
-app-0856,retail,dev,Azure,xlarge,26.64,51.14,53.85,759.18,83.76,2025-06-07
-app-0857,retail,dev,AWS,medium,47.68,58.14,62.46,101.86,99.05,2025-06-07
-app-0858,retail,hom,AWS,small,58.31,37.88,44.62,85.3,89.34,2025-06-07
-app-0859,treasury,prod,AWS,medium,70.0,88.0,50.99,170.28,94.16,2025-06-07
-app-0860,retail,prod,AWS,medium,88.87,42.27,64.86,218.64,98.22,2025-06-07
-app-0861,corporate,qa,AWS,medium,57.18,100.0,64.02,154.07,88.21,2025-06-07
-app-0862,retail,hom,AWS,medium,47.21,48.59,70.02,131.42,98.6,2025-06-07
-app-0863,treasury,dev,Azure,medium,54.38,45.59,20.52,140.96,75.41,2025-06-07
-app-0864,investment,prod,Azure,medium,17.53,44.44,65.92,134.47,81.14,2025-06-07
-app-0865,retail,dev,AWS,xlarge,79.28,46.49,67.3,447.47,98.81,2025-06-07
-app-0866,corporate,dev,AWS,small,13.13,64.85,41.95,54.04,74.94,2025-06-07
-app-0867,retail,prod,Azure,small,100.0,6.95,41.1,141.0,92.91,2025-06-07
-app-0868,treasury,qa,Oracle Cloud,large,27.29,48.24,43.06,359.26,73.81,2025-06-07
-app-0869,corporate,prod,AWS,medium,52.86,73.92,70.02,185.32,98.04,2025-06-07
-app-0870,investment,qa,Oracle Cloud,xlarge,66.88,69.59,59.27,789.82,98.28,2025-06-07
-app-0871,retail,prod,Azure,small,64.26,75.84,55.51,73.9,98.31,2025-06-07
-app-0872,retail,prod,AWS,xlarge,22.47,60.92,69.45,828.36,94.88,2025-06-07
-app-0873,corporate,dev,Azure,small,48.47,64.73,45.93,100.95,96.97,2025-06-07
-app-0874,insurance,dev,AWS,xlarge,37.0,58.16,71.77,492.34,98.82,2025-06-07
-app-0875,retail,qa,AWS,medium,31.54,86.04,41.61,131.33,97.0,2025-06-07
-app-0876,investment,dev,AWS,large,75.06,81.0,58.95,218.43,91.49,2025-06-07
-app-0877,investment,prod,AWS,small,51.45,59.64,54.44,95.14,98.55,2025-06-07
-app-0878,treasury,dev,AWS,large,51.43,92.49,58.63,264.16,96.47,2025-06-07
-app-0879,investment,prod,Oracle Cloud,medium,28.93,31.22,59.66,272.3,74.85,2025-06-07
-app-0880,treasury,hom,Oracle Cloud,xlarge,99.52,89.2,50.48,782.55,75.67,2025-06-07
-app-0881,retail,prod,Oracle Cloud,large,33.7,30.26,44.19,511.72,64.14,2025-06-07
-app-0882,retail,prod,Azure,large,55.07,56.58,58.13,329.88,99.27,2025-06-07
-app-0883,corporate,qa,Oracle Cloud,medium,60.82,62.53,21.88,150.89,91.61,2025-06-07
-app-0884,investment,prod,Azure,medium,73.68,58.24,59.11,229.45,99.15,2025-06-07
-app-0885,investment,hom,Azure,xlarge,50.83,73.56,68.23,691.51,98.89,2025-06-07
-app-0886,corporate,dev,Azure,large,58.54,57.24,31.45,214.05,92.54,2025-06-07
-app-0887,investment,dev,AWS,xlarge,47.49,73.84,61.24,563.79,99.95,2025-06-07
-app-0888,corporate,hom,Azure,large,38.25,52.46,59.38,247.39,93.79,2025-06-07
-app-0889,insurance,dev,Azure,small,14.72,70.23,44.68,46.21,82.38,2025-06-07
-app-0890,retail,prod,AWS,medium,64.6,60.8,60.58,225.75,99.75,2025-06-07
-app-0891,retail,qa,Azure,medium,34.84,70.79,59.36,212.73,98.44,2025-06-07
-app-0892,investment,prod,Azure,small,34.71,44.39,57.41,131.27,86.87,2025-06-07
-app-0893,treasury,hom,Azure,medium,18.42,44.56,46.22,181.95,65.18,2025-06-07
-app-0894,insurance,prod,AWS,medium,33.73,55.46,51.69,219.39,89.37,2025-06-07
-app-0895,investment,prod,Oracle Cloud,medium,34.66,56.47,70.41,342.73,97.63,2025-06-07
-app-0896,corporate,dev,AWS,medium,41.49,70.98,61.04,152.19,99.71,2025-06-07
-app-0897,investment,hom,Azure,small,47.93,63.04,54.65,94.01,98.56,2025-06-07
-app-0898,insurance,qa,Oracle Cloud,xlarge,34.78,60.12,39.52,707.4,85.57,2025-06-07
-app-0899,retail,prod,AWS,small,58.77,96.16,38.92,77.38,98.67,2025-06-07
-app-0900,corporate,hom,AWS,small,22.19,47.78,55.77,80.7,79.56,2025-06-07
-app-0901,insurance,prod,Oracle Cloud,xlarge,66.5,58.53,28.48,1195.77,95.13,2025-06-07
-app-0902,retail,qa,AWS,medium,53.01,64.48,79.03,183.9,98.11,2025-06-07
-app-0903,investment,prod,Azure,large,67.6,86.44,59.52,486.92,92.18,2025-06-07
-app-0904,investment,hom,Oracle Cloud,small,29.77,90.87,63.24,77.55,99.9,2025-06-07
-app-0905,investment,dev,AWS,medium,62.45,46.94,71.77,145.87,99.99,2025-06-07
-app-0906,insurance,dev,Oracle Cloud,medium,45.76,56.45,56.11,181.15,96.74,2025-06-07
-app-0907,insurance,prod,Azure,xlarge,40.95,44.89,65.11,980.99,94.14,2025-06-07
-app-0908,treasury,prod,Oracle Cloud,small,30.33,64.93,63.36,136.06,96.83,2025-06-07
-app-0909,insurance,qa,Oracle Cloud,xlarge,73.54,76.89,36.9,896.43,99.63,2025-06-07
-app-0910,retail,dev,Oracle Cloud,small,60.32,71.77,59.04,76.81,99.14,2025-06-07
-app-0911,treasury,qa,Azure,xlarge,79.75,65.24,66.1,760.77,93.29,2025-06-07
-app-0912,insurance,hom,Oracle Cloud,xlarge,63.25,56.29,65.45,949.38,99.83,2025-06-07
-app-0913,retail,qa,Oracle Cloud,large,46.47,63.3,38.3,272.07,92.92,2025-06-07
-app-0914,corporate,prod,Oracle Cloud,medium,36.14,67.47,30.08,299.61,85.11,2025-06-07
-app-0915,treasury,prod,AWS,small,35.99,58.56,68.16,71.95,97.92,2025-06-07
-app-0916,treasury,prod,Azure,medium,55.09,58.07,69.88,213.7,99.94,2025-06-07
-app-0917,retail,prod,AWS,large,63.75,44.99,63.84,502.83,99.62,2025-06-07
-app-0918,corporate,qa,AWS,small,18.76,60.46,52.44,42.58,83.78,2025-06-07
-app-0919,treasury,qa,AWS,large,50.12,39.71,48.87,302.64,88.16,2025-06-07
-app-0920,corporate,hom,Azure,small,23.09,67.61,51.85,80.5,90.26,2025-06-07
-app-0921,insurance,hom,AWS,small,61.79,58.94,57.14,90.67,99.97,2025-06-07
-app-0922,retail,prod,Azure,medium,24.54,61.9,85.65,231.71,99.57,2025-06-07
-app-0923,investment,dev,AWS,large,37.4,82.84,47.46,223.82,98.95,2025-06-07
-app-0924,investment,prod,Oracle Cloud,small,2.73,78.87,50.08,122.79,83.79,2025-06-07
-app-0925,corporate,dev,AWS,small,65.69,35.02,53.62,65.58,95.42,2025-06-07
-app-0926,corporate,prod,AWS,large,54.21,84.37,39.85,400.31,99.98,2025-06-07
-app-0927,corporate,prod,Azure,small,43.81,61.91,67.58,86.19,99.69,2025-06-07
-app-0928,treasury,qa,Azure,medium,31.13,70.97,61.6,172.09,98.16,2025-06-07
-app-0929,retail,dev,AWS,small,91.66,47.67,50.09,58.56,99.38,2025-06-07
-app-0930,treasury,prod,Oracle Cloud,small,7.24,61.56,74.01,192.82,90.4,2025-06-07
-app-0931,investment,qa,Azure,xlarge,48.29,47.48,64.36,637.38,97.26,2025-06-07
-app-0932,treasury,qa,AWS,medium,25.01,68.28,29.72,124.02,77.45,2025-06-07
-app-0933,retail,prod,Azure,medium,18.51,66.01,65.84,156.15,93.9,2025-06-07
-app-0934,corporate,prod,Oracle Cloud,small,51.48,61.36,29.66,128.69,90.24,2025-06-07
-app-0935,insurance,qa,AWS,large,40.96,45.06,66.94,265.09,94.92,2025-06-07
-app-0936,investment,prod,Azure,xlarge,32.07,29.53,43.78,729.68,61.33,2025-06-07
-app-0937,insurance,dev,Azure,small,66.83,48.99,38.91,77.44,95.57,2025-06-07
-app-0938,retail,qa,Azure,large,28.65,87.04,36.22,341.29,94.52,2025-06-07
-app-0939,corporate,prod,AWS,small,67.45,48.34,59.37,131.14,99.84,2025-06-07
-app-0940,insurance,prod,Azure,large,79.04,48.4,61.86,348.99,99.4,2025-06-07
-app-0941,investment,qa,AWS,large,9.37,55.18,59.12,304.87,77.96,2025-06-07
-app-0942,insurance,qa,AWS,medium,65.9,70.84,59.01,125.68,98.28,2025-06-07
-app-0943,retail,dev,Azure,small,43.99,50.51,56.63,73.87,94.21,2025-06-07
-app-0944,corporate,prod,Azure,medium,43.26,52.4,46.42,162.99,90.02,2025-06-07
-app-0945,corporate,hom,Oracle Cloud,large,46.1,41.55,49.23,410.31,87.09,2025-06-07
-app-0946,retail,qa,AWS,large,70.49,63.95,54.59,258.71,99.43,2025-06-07
-app-0947,treasury,qa,AWS,medium,55.25,36.79,37.86,121.78,82.57,2025-06-07
-app-0948,retail,prod,Azure,xlarge,40.19,49.51,46.05,897.11,86.4,2025-06-07
-app-0949,treasury,dev,AWS,medium,45.16,97.32,64.03,51.98,95.12,2025-06-07
-app-0950,treasury,dev,AWS,xlarge,19.88,78.34,61.71,514.04,97.2,2025-06-07
-app-0951,retail,prod,Azure,medium,58.59,50.5,61.43,288.37,99.38,2025-06-07
-app-0952,treasury,hom,Azure,medium,5.19,79.11,72.53,199.32,96.27,2025-06-07
-app-0953,retail,prod,Azure,medium,40.92,49.86,52.28,215.28,90.53,2025-06-07
-app-0954,retail,hom,Azure,small,48.76,48.53,49.66,99.61,92.41,2025-06-07
-app-0955,investment,hom,Oracle Cloud,large,48.65,50.92,59.4,298.14,96.93,2025-06-07
-app-0956,retail,prod,Azure,medium,58.94,72.81,51.72,230.21,99.92,2025-06-07
-app-0957,retail,dev,AWS,small,99.12,38.57,76.81,54.64,91.74,2025-06-07
-app-0958,retail,hom,AWS,large,46.34,53.92,54.87,358.21,95.7,2025-06-07
-app-0959,retail,qa,AWS,large,67.12,50.15,81.46,192.03,97.57,2025-06-07
-app-0960,treasury,qa,Oracle Cloud,small,70.37,43.77,55.63,102.74,99.27,2025-06-07
-app-0961,corporate,hom,AWS,large,32.81,49.74,36.66,248.54,74.34,2025-06-07
-app-0962,corporate,prod,Azure,small,31.76,55.96,56.6,121.96,91.16,2025-06-07
-app-0963,treasury,qa,Azure,medium,18.44,37.74,27.48,103.71,35.54,2025-06-07
-app-0964,corporate,hom,AWS,medium,29.17,70.21,57.21,149.96,96.2,2025-06-07
-app-0965,retail,hom,Azure,xlarge,26.52,47.54,35.42,799.75,65.47,2025-06-07
-app-0966,insurance,dev,Oracle Cloud,xlarge,37.83,52.05,70.29,486.55,97.27,2025-06-07
-app-0967,retail,prod,AWS,small,71.53,69.75,53.46,90.25,98.49,2025-06-07
-app-0968,retail,prod,Azure,xlarge,10.37,58.95,56.26,1151.67,79.43,2025-06-07
-app-0969,corporate,hom,Azure,xlarge,49.45,64.58,54.3,811.57,99.05,2025-06-07
-app-0970,treasury,hom,Azure,xlarge,60.36,77.62,47.17,838.82,99.82,2025-06-07
-app-0971,retail,prod,Azure,small,42.32,73.1,32.17,111.58,92.7,2025-06-07
-app-0972,insurance,prod,Azure,small,85.06,38.44,71.69,123.0,98.4,2025-06-07
-app-0973,investment,prod,Azure,small,39.32,52.89,35.65,111.65,81.12,2025-06-07
-app-0974,retail,prod,Azure,medium,75.28,53.36,52.54,184.79,99.99,2025-06-07
-app-0975,investment,hom,AWS,medium,44.14,77.41,54.87,203.62,99.91,2025-06-07
-app-0976,corporate,dev,Oracle Cloud,xlarge,38.9,46.43,67.1,614.24,94.72,2025-06-07
-app-0977,retail,prod,AWS,large,46.04,65.85,45.23,459.03,96.36,2025-06-07
-app-0978,corporate,dev,Azure,small,54.32,61.0,61.88,61.86,99.95,2025-06-07
-app-0979,corporate,hom,Oracle Cloud,xlarge,42.2,65.08,39.36,664.04,92.27,2025-06-07
-app-0980,corporate,prod,AWS,large,50.83,46.43,57.36,435.63,95.53,2025-06-07
-app-0981,insurance,prod,Azure,medium,67.03,39.41,62.96,245.27,99.22,2025-06-07
-app-0982,retail,dev,AWS,large,19.21,99.31,71.29,228.15,99.33,2025-06-07
-app-0983,treasury,dev,AWS,small,62.59,67.6,69.9,52.72,97.2,2025-06-07
-app-0984,corporate,prod,Azure,xlarge,72.11,50.12,55.36,748.22,99.96,2025-06-07
-app-0985,treasury,dev,AWS,xlarge,49.39,43.15,42.35,373.61,85.87,2025-06-07
-app-0986,corporate,qa,Azure,medium,32.17,61.48,55.69,177.9,93.47,2025-06-07
-app-0987,treasury,dev,AWS,large,53.22,49.68,68.23,314.44,99.45,2025-06-07
-app-0988,retail,qa,Azure,small,59.02,60.25,72.17,86.11,99.09,2025-06-07
-app-0989,retail,qa,Azure,large,99.02,67.82,55.69,387.27,87.44,2025-06-07
-app-0990,investment,qa,AWS,xlarge,29.54,63.03,82.23,625.22,99.81,2025-06-07
-app-0991,insurance,hom,Oracle Cloud,xlarge,55.61,71.87,28.49,961.52,95.99,2025-06-07
-app-0992,insurance,dev,Azure,small,31.27,64.07,73.18,62.57,99.08,2025-06-07
-app-0993,corporate,prod,Azure,large,20.97,52.03,47.81,342.69,75.68,2025-06-07
-app-0994,corporate,hom,Azure,small,59.77,66.04,61.65,84.7,99.61,2025-06-07
-app-0995,retail,prod,AWS,xlarge,41.1,79.75,70.21,749.63,99.15,2025-06-07
-app-0996,retail,dev,Oracle Cloud,large,72.47,40.43,67.32,236.56,100.0,2025-06-07
-app-0997,retail,prod,AWS,small,71.26,66.77,58.16,95.96,98.18,2025-06-07
-app-0998,insurance,hom,Oracle Cloud,small,98.05,54.67,74.77,94.47,84.34,2025-06-07
-app-0999,insurance,dev,AWS,medium,12.75,70.11,56.61,105.89,88.6,2025-06-07
+application_id,resource_name,business_unit,environment,cloud_provider,instance_type,cpu_utilization,memory_utilization,storage_utilization,monthly_cost_usd,efficiency_score,date
+app-0006,azure-retail-db-56afe748-prod,retail,prod,Azure,medium,48.44,63.35,68.17,107.83,100.0,2025-06-07
+app-0186,azure-treasury-db-fb85e26f-prod,treasury,prod,Azure,medium,12.32,53.29,23.84,133.79,43.05,2025-06-07
+app-0000,azure-corporate-db-7726be57-prod,corporate,prod,Azure,large,78.71,64.06,70.34,220.84,92.39,2025-06-07
+app-0001,aws-retail-db-4049f9d0-prod,retail,prod,AWS,medium,58.05,40.24,63.15,133.76,97.61,2025-06-07
+app-0002,oracle-cloud-investment-db-13cc2a89-prod,investment,prod,Oracle Cloud,small,29.55,54.06,49.5,73.23,84.74,2025-06-07
+app-0003,oracle-cloud-retail-db-dc92d1dc-prod,retail,prod,Oracle Cloud,medium,60.14,70.66,59.35,218.29,99.28,2025-06-07
+app-0004,aws-retail-db-c4236b4c-prod,retail,prod,AWS,xlarge,34.95,66.89,50.03,481.99,94.5,2025-06-07
+app-0005,aws-treasury-db-dec96941-prod,treasury,prod,AWS,xlarge,98.97,70.34,19.65,837.61,99.44,2025-06-07
+app-0007,aws-insurance-db-cd12f4c3-prod,insurance,prod,AWS,medium,61.32,80.02,59.36,138.85,97.02,2025-06-07
+app-0008,azure-insurance-db-f087de84-prod,insurance,prod,Azure,medium,69.04,44.73,52.71,215.46,98.73,2025-06-07
+app-0009,oracle-cloud-investment-db-93ca8b26-prod,investment,prod,Oracle Cloud,medium,33.71,59.61,77.89,200.56,99.46,2025-06-07
+app-0010,oracle-cloud-retail-db-9d776681-prod,retail,prod,Oracle Cloud,medium,38.99,77.87,35.23,223.64,94.59,2025-06-07
+app-0011,oracle-cloud-corporate-db-d054c002-prod,corporate,prod,Oracle Cloud,large,26.23,55.68,35.03,364.15,72.39,2025-06-07
+app-0012,aws-treasury-db-59f65e14-prod,treasury,prod,AWS,small,36.07,67.98,37.48,70.12,89.72,2025-06-07
+app-0013,azure-treasury-db-3c6dd22a-prod,treasury,prod,Azure,large,51.31,49.35,56.18,429.23,96.28,2025-06-07
+app-0014,azure-retail-db-33a94d67-prod,retail,prod,Azure,small,7.5,78.86,48.11,109.37,85.6,2025-06-07
+app-0015,aws-retail-db-654ae921-prod,retail,prod,AWS,xlarge,45.82,42.12,55.42,590.98,90.68,2025-06-07
+app-0016,oracle-cloud-treasury-db-aaba35e8-prod,treasury,prod,Oracle Cloud,medium,52.39,55.49,100.0,215.49,94.6,2025-06-07
+app-0017,oracle-cloud-corporate-db-d345150f-prod,corporate,prod,Oracle Cloud,xlarge,44.5,29.76,47.37,671.06,76.33,2025-06-07
+app-0018,aws-insurance-db-8ef7a487-prod,insurance,prod,AWS,large,69.06,71.13,90.34,524.0,82.27,2025-06-07
+app-0019,azure-retail-db-36555c0b-prod,retail,prod,Azure,medium,45.58,42.85,49.9,101.78,87.94,2025-06-07
+app-0020,oracle-cloud-treasury-db-efe8d96e-prod,treasury,prod,Oracle Cloud,xlarge,23.9,78.43,55.3,602.28,96.52,2025-06-07
+app-0021,aws-insurance-db-058a8a30-prod,insurance,prod,AWS,xlarge,26.48,47.06,51.55,568.92,79.06,2025-06-07
+app-0022,aws-treasury-db-eadb60c8-prod,treasury,prod,AWS,large,52.12,61.93,61.67,287.99,99.87,2025-06-07
+app-0023,aws-insurance-db-4ef2b49d-prod,insurance,prod,AWS,medium,39.09,60.19,30.78,168.53,82.68,2025-06-07
+app-0024,aws-corporate-db-28898ffe-prod,corporate,prod,AWS,medium,61.63,73.51,41.78,143.82,99.93,2025-06-07
+app-0025,oracle-cloud-retail-db-a7f71538-prod,retail,prod,Oracle Cloud,xlarge,24.96,52.95,41.57,904.12,74.57,2025-06-07
+app-0026,azure-investment-db-2178996d-prod,investment,prod,Azure,small,47.96,69.29,25.75,82.68,90.49,2025-06-07
+app-0027,aws-treasury-db-4b5ac8e9-prod,treasury,prod,AWS,xlarge,43.99,85.43,43.76,550.08,99.68,2025-06-07
+app-0028,azure-insurance-db-07b736ef-prod,insurance,prod,Azure,xlarge,38.63,44.92,81.09,1156.31,98.36,2025-06-07
+app-0029,azure-corporate-db-cdea9f93-prod,corporate,prod,Azure,large,48.16,89.24,71.35,297.47,94.26,2025-06-07
+app-0030,azure-investment-db-3ec5d338-prod,investment,prod,Azure,medium,53.2,76.05,66.42,292.35,98.29,2025-06-07
+app-0031,azure-insurance-db-e98ceb1f-prod,insurance,prod,Azure,medium,50.7,64.73,52.88,143.31,99.05,2025-06-07
+app-0032,azure-corporate-db-d5648a2e-prod,corporate,prod,Azure,medium,38.72,48.49,56.77,194.63,90.99,2025-06-07
+app-0033,aws-insurance-db-80234830-prod,insurance,prod,AWS,small,49.54,63.5,53.59,98.32,98.76,2025-06-07
+app-0034,oracle-cloud-retail-db-91e40721-prod,retail,prod,Oracle Cloud,xlarge,57.24,57.35,57.91,722.8,99.61,2025-06-07
+app-0035,azure-corporate-db-92fbf37d-prod,corporate,prod,Azure,xlarge,59.87,64.11,59.49,958.94,99.92,2025-06-07
+app-0036,aws-insurance-db-8b97ba5c-prod,insurance,prod,AWS,large,30.77,61.92,41.54,228.8,85.45,2025-06-07
+app-0037,oracle-cloud-corporate-db-9c9b698b-prod,corporate,prod,Oracle Cloud,medium,46.95,39.45,56.04,186.81,90.21,2025-06-07
+app-0038,oracle-cloud-insurance-db-706ceb89-prod,insurance,prod,Oracle Cloud,medium,20.85,49.43,61.6,199.93,83.92,2025-06-07
+app-0039,azure-corporate-db-78c9db84-prod,corporate,prod,Azure,small,81.05,52.13,41.78,80.49,99.82,2025-06-07
+app-0040,azure-retail-db-00f04abb-prod,retail,prod,Azure,small,71.87,42.49,51.93,126.44,98.69,2025-06-07
+app-0041,azure-insurance-db-dfb02ff0-prod,insurance,prod,Azure,small,35.35,57.51,54.7,52.83,92.69,2025-06-07
+app-0042,oracle-cloud-corporate-db-6d064b6f-prod,corporate,prod,Oracle Cloud,small,100.0,83.74,68.74,150.31,63.52,2025-06-07
+app-0043,azure-retail-db-69ca6250-prod,retail,prod,Azure,small,59.0,59.83,53.11,75.63,99.55,2025-06-07
+app-0044,oracle-cloud-insurance-db-3fb2ed4d-prod,insurance,prod,Oracle Cloud,small,46.65,55.4,33.65,120.21,86.37,2025-06-07
+app-0045,oracle-cloud-retail-db-e34c5eae-prod,retail,prod,Oracle Cloud,large,68.63,66.26,54.59,462.93,99.38,2025-06-07
+app-0046,aws-corporate-db-1d6cafa7-prod,corporate,prod,AWS,xlarge,38.29,54.22,52.4,738.14,91.45,2025-06-07
+app-0047,oracle-cloud-insurance-db-e7ee14b8-prod,insurance,prod,Oracle Cloud,small,56.56,27.68,47.98,52.3,84.14,2025-06-07
+app-0048,aws-investment-db-071134fc-prod,investment,prod,AWS,small,58.31,36.99,53.43,35.48,93.21,2025-06-07
+app-0049,azure-investment-db-0dbcab65-prod,investment,prod,Azure,medium,15.53,58.39,70.47,158.43,91.2,2025-06-07
+app-0050,azure-treasury-db-1f5c7d98-prod,treasury,prod,Azure,medium,72.2,45.75,60.09,123.42,99.97,2025-06-07
+app-0051,aws-corporate-db-08475599-prod,corporate,prod,AWS,small,49.35,49.97,29.93,110.16,82.12,2025-06-07
+app-0052,oracle-cloud-retail-db-133e4e64-prod,retail,prod,Oracle Cloud,xlarge,68.1,55.33,60.3,853.92,99.9,2025-06-07
+app-0053,azure-retail-db-9c9f8192-prod,retail,prod,Azure,small,51.78,53.33,59.45,99.09,98.35,2025-06-07
+app-0054,azure-retail-db-7ce5bdd3-prod,retail,prod,Azure,large,36.9,59.03,68.15,323.66,98.24,2025-06-07
+app-0055,oracle-cloud-corporate-db-c5287fc5-prod,corporate,prod,Oracle Cloud,xlarge,57.4,73.0,40.72,740.14,99.45,2025-06-07
+app-0056,azure-retail-db-8c05be27-prod,retail,prod,Azure,xlarge,57.47,66.44,65.86,647.75,99.34,2025-06-07
+app-0057,azure-corporate-db-17e2cd0d-prod,corporate,prod,Azure,medium,18.48,74.02,57.75,208.07,93.86,2025-06-07
+app-0058,aws-insurance-db-dbf93f83-prod,insurance,prod,AWS,xlarge,51.24,59.4,33.32,737.69,90.98,2025-06-07
+app-0059,azure-corporate-db-b027c087-prod,corporate,prod,Azure,xlarge,44.45,59.61,31.85,930.29,86.5,2025-06-07
+app-0060,oracle-cloud-corporate-db-04b971ac-prod,corporate,prod,Oracle Cloud,small,53.31,65.01,46.7,145.15,98.44,2025-06-07
+app-0061,aws-treasury-db-a7d62572-prod,treasury,prod,AWS,large,20.11,56.78,71.03,211.87,92.85,2025-06-07
+app-0062,oracle-cloud-corporate-db-fa9b9a6f-prod,corporate,prod,Oracle Cloud,medium,53.63,89.88,56.87,221.13,97.12,2025-06-07
+app-0063,azure-corporate-db-239f2ede-prod,corporate,prod,Azure,large,46.48,53.61,57.98,389.58,96.66,2025-06-07
+app-0064,aws-investment-db-ed2e4224-prod,investment,prod,AWS,xlarge,51.01,54.42,27.59,751.62,84.67,2025-06-07
+app-0065,oracle-cloud-insurance-db-8a75d66c-prod,insurance,prod,Oracle Cloud,xlarge,76.89,23.55,50.52,735.39,94.15,2025-06-07
+app-0066,azure-insurance-db-fa8a07a5-prod,insurance,prod,Azure,medium,48.78,35.36,43.87,101.78,81.23,2025-06-07
+app-0067,oracle-cloud-retail-db-84b5286f-prod,retail,prod,Oracle Cloud,large,0.0,59.57,57.02,453.04,72.07,2025-06-07
+app-0068,oracle-cloud-investment-db-ad2c77f0-prod,investment,prod,Oracle Cloud,xlarge,36.2,53.71,59.03,908.21,93.3,2025-06-07
+app-0069,oracle-cloud-retail-db-ed034ee9-prod,retail,prod,Oracle Cloud,xlarge,64.47,76.43,41.87,1202.13,99.95,2025-06-07
+app-0070,oracle-cloud-retail-db-791aca68-prod,retail,prod,Oracle Cloud,large,74.79,54.08,51.96,367.76,100.0,2025-06-07
+app-0071,azure-corporate-db-afc0081f-prod,corporate,prod,Azure,medium,38.66,47.3,41.39,200.57,80.75,2025-06-07
+app-0072,azure-retail-db-54e8ef1c-prod,retail,prod,Azure,medium,60.73,59.42,58.29,300.62,99.98,2025-06-07
+app-0073,azure-corporate-db-922e52d8-prod,corporate,prod,Azure,small,72.06,77.2,38.22,74.08,99.61,2025-06-07
+app-0074,oracle-cloud-retail-db-afdad730-prod,retail,prod,Oracle Cloud,small,35.1,66.71,53.44,64.0,95.75,2025-06-07
+app-0075,oracle-cloud-treasury-db-23239495-prod,treasury,prod,Oracle Cloud,medium,42.92,60.22,31.2,206.91,85.53,2025-06-07
+app-0076,aws-treasury-db-ef26eb20-prod,treasury,prod,AWS,small,91.84,58.54,41.44,99.32,99.03,2025-06-07
+app-0077,aws-retail-db-1fb23dbc-prod,retail,prod,AWS,xlarge,55.54,45.53,73.5,341.64,99.79,2025-06-07
+app-0078,oracle-cloud-insurance-db-b3c86f3e-prod,insurance,prod,Oracle Cloud,medium,43.45,57.44,42.17,329.0,90.52,2025-06-07
+app-0079,azure-corporate-db-14f5870a-prod,corporate,prod,Azure,medium,35.24,72.01,53.16,102.11,97.34,2025-06-07
+app-0080,oracle-cloud-retail-db-4f24004e-prod,retail,prod,Oracle Cloud,large,47.22,50.2,55.14,351.99,94.77,2025-06-07
+app-0081,aws-investment-db-bd1beeab-prod,investment,prod,AWS,medium,59.56,41.07,78.85,227.59,100.0,2025-06-07
+app-0082,aws-treasury-db-b9f4d9dc-prod,treasury,prod,AWS,medium,24.06,50.08,45.58,118.59,74.77,2025-06-07
+app-0083,oracle-cloud-retail-db-48ec61f3-prod,retail,prod,Oracle Cloud,small,64.2,52.99,40.17,121.7,96.44,2025-06-07
+app-0084,azure-retail-db-148e1601-prod,retail,prod,Azure,large,62.58,54.2,67.76,381.25,99.86,2025-06-07
+app-0085,aws-insurance-db-560b05de-prod,insurance,prod,AWS,medium,12.38,52.12,64.7,241.47,82.08,2025-06-07
+app-0086,oracle-cloud-investment-db-7ca39b5c-prod,investment,prod,Oracle Cloud,small,75.77,61.73,35.92,88.4,99.7,2025-06-07
+app-0087,aws-insurance-db-81aad99b-prod,insurance,prod,AWS,small,78.06,56.93,42.13,81.98,99.94,2025-06-07
+app-0088,oracle-cloud-retail-db-e7cbb15b-prod,retail,prod,Oracle Cloud,xlarge,34.52,38.62,60.32,773.13,84.96,2025-06-07
+app-0089,azure-investment-db-24361b5e-prod,investment,prod,Azure,small,57.77,56.81,55.9,90.78,99.37,2025-06-07
+app-0090,azure-corporate-db-a19b55a5-prod,corporate,prod,Azure,small,33.82,49.36,42.11,88.38,79.21,2025-06-07
+app-0091,aws-retail-db-4aedcf37-prod,retail,prod,AWS,small,39.43,64.94,25.06,75.15,82.23,2025-06-07
+app-0092,aws-retail-db-8ebfc01c-prod,retail,prod,AWS,large,20.58,51.27,25.94,246.84,53.06,2025-06-07
+app-0093,aws-treasury-db-b31d4530-prod,treasury,prod,AWS,small,22.61,52.64,54.45,120.44,82.43,2025-06-07
+app-0094,oracle-cloud-retail-db-ee92b140-prod,retail,prod,Oracle Cloud,xlarge,49.74,63.94,43.41,707.69,96.35,2025-06-07
+app-0095,aws-retail-db-b85b2cd8-prod,retail,prod,AWS,small,48.53,64.08,50.89,58.41,98.11,2025-06-07
+app-0096,azure-investment-db-2cdc7a7f-prod,investment,prod,Azure,medium,63.33,41.29,21.73,84.54,80.01,2025-06-07
+app-0097,azure-retail-db-b194dda8-prod,retail,prod,Azure,small,50.7,64.91,60.37,53.45,99.89,2025-06-07
+app-0098,aws-treasury-db-3514e4cf-prod,treasury,prod,AWS,large,27.65,79.6,54.32,340.75,97.64,2025-06-07
+app-0099,aws-retail-db-24afbc00-prod,retail,prod,AWS,medium,24.81,51.78,72.82,154.55,93.5,2025-06-07
+app-0100,azure-insurance-db-15419a9c-prod,insurance,prod,Azure,large,33.19,64.71,59.05,299.97,96.31,2025-06-07
+app-0101,azure-corporate-db-c26a3daa-prod,corporate,prod,Azure,xlarge,28.77,78.61,60.55,837.01,98.99,2025-06-07
+app-0102,azure-retail-db-66e0ee7d-prod,retail,prod,Azure,medium,77.8,78.12,63.74,142.21,89.08,2025-06-07
+app-0103,azure-retail-db-5058ce73-prod,retail,prod,Azure,large,29.72,60.13,62.91,315.19,94.85,2025-06-07
+app-0104,azure-corporate-db-b6114c27-prod,corporate,prod,Azure,small,70.77,37.92,54.89,43.21,98.13,2025-06-07
+app-0105,aws-corporate-db-86f9e09a-prod,corporate,prod,AWS,xlarge,52.08,50.34,21.01,896.75,77.77,2025-06-07
+app-0106,aws-investment-db-a289dfed-prod,investment,prod,AWS,xlarge,35.43,34.84,69.09,820.68,88.54,2025-06-07
+app-0107,oracle-cloud-treasury-db-8f678a98-prod,treasury,prod,Oracle Cloud,small,86.11,49.79,55.28,138.11,99.13,2025-06-07
+app-0108,aws-corporate-db-e9982b75-prod,corporate,prod,AWS,small,54.58,77.88,48.76,103.26,99.99,2025-06-07
+app-0109,azure-corporate-db-b6a8fbd2-prod,corporate,prod,Azure,small,36.07,75.01,61.91,146.51,99.66,2025-06-07
+app-0110,azure-retail-db-3739ec9e-prod,retail,prod,Azure,medium,53.6,42.1,40.36,255.3,86.59,2025-06-07
+app-0111,aws-investment-db-2fbc0d8f-prod,investment,prod,AWS,small,54.05,71.75,68.32,112.93,98.62,2025-06-07
+app-0112,aws-treasury-db-640163e7-prod,treasury,prod,AWS,large,55.62,45.75,59.49,184.09,97.46,2025-06-07
+app-0113,oracle-cloud-treasury-db-66b29071-prod,treasury,prod,Oracle Cloud,medium,60.33,66.24,39.82,159.13,98.71,2025-06-07
+app-0114,aws-treasury-db-6a37625d-prod,treasury,prod,AWS,medium,43.67,22.18,52.22,98.57,73.37,2025-06-07
+app-0115,oracle-cloud-retail-db-a4510fc6-prod,retail,prod,Oracle Cloud,xlarge,50.43,47.66,62.92,590.48,97.5,2025-06-07
+app-0116,azure-insurance-db-c495ff89-prod,insurance,prod,Azure,small,38.1,58.23,37.65,113.46,85.29,2025-06-07
+app-0117,oracle-cloud-investment-db-f1eca293-prod,investment,prod,Oracle Cloud,small,47.29,62.67,49.14,131.31,96.96,2025-06-07
+app-0118,aws-investment-db-bb7a8bae-prod,investment,prod,AWS,small,59.42,82.33,48.75,59.15,99.23,2025-06-07
+app-0119,aws-corporate-db-4ec7eeea-prod,corporate,prod,AWS,medium,72.45,58.85,44.36,119.42,99.87,2025-06-07
+app-0120,aws-retail-db-7998cda2-prod,retail,prod,AWS,medium,33.88,69.77,38.23,146.05,89.9,2025-06-07
+app-0121,aws-retail-db-8d5e1dee-prod,retail,prod,AWS,small,10.78,71.88,80.78,79.87,98.1,2025-06-07
+app-0122,aws-corporate-db-7308d485-prod,corporate,prod,AWS,large,76.59,45.18,31.77,497.58,95.14,2025-06-07
+app-0123,aws-corporate-db-614ec7fa-prod,corporate,prod,AWS,small,48.06,49.14,53.12,57.08,93.88,2025-06-07
+app-0124,azure-insurance-db-6f5a3f07-prod,insurance,prod,Azure,xlarge,27.7,48.84,68.36,489.16,91.44,2025-06-07
+app-0125,azure-treasury-db-71b4c0f7-prod,treasury,prod,Azure,xlarge,36.32,63.46,80.81,938.6,100.0,2025-06-07
+app-0126,oracle-cloud-corporate-db-5a1a42ac-prod,corporate,prod,Oracle Cloud,large,11.82,82.64,38.0,525.1,84.31,2025-06-07
+app-0127,aws-retail-db-88b42982-prod,retail,prod,AWS,xlarge,17.89,24.2,55.23,432.01,52.53,2025-06-07
+app-0128,oracle-cloud-investment-db-8fb9c73e-prod,investment,prod,Oracle Cloud,small,15.14,56.96,50.95,141.8,77.48,2025-06-07
+app-0129,oracle-cloud-corporate-db-42eb7ad2-prod,corporate,prod,Oracle Cloud,medium,60.65,88.79,33.66,214.05,99.93,2025-06-07
+app-0130,azure-corporate-db-42473546-prod,corporate,prod,Azure,small,53.49,73.65,48.29,77.99,99.86,2025-06-07
+app-0131,oracle-cloud-retail-db-d3263fcf-prod,retail,prod,Oracle Cloud,xlarge,47.74,62.03,92.17,1296.57,96.66,2025-06-07
+app-0132,oracle-cloud-retail-db-2cfda378-prod,retail,prod,Oracle Cloud,large,45.38,81.51,46.71,425.7,99.72,2025-06-07
+app-0133,oracle-cloud-corporate-db-16bbcf72-prod,corporate,prod,Oracle Cloud,large,44.93,44.75,66.23,284.84,95.97,2025-06-07
+app-0134,aws-corporate-db-f0d472ec-prod,corporate,prod,AWS,medium,30.47,57.26,60.03,190.42,92.78,2025-06-07
+app-0135,oracle-cloud-retail-db-e6127b4f-prod,retail,prod,Oracle Cloud,medium,34.14,56.73,85.28,264.36,99.9,2025-06-07
+app-0136,oracle-cloud-insurance-db-5410f8a4-prod,insurance,prod,Oracle Cloud,medium,2.94,65.59,57.57,139.87,79.82,2025-06-07
+app-0137,aws-retail-db-d503ac12-prod,retail,prod,AWS,medium,39.4,42.85,31.22,97.09,69.26,2025-06-07
+app-0138,aws-corporate-db-5aa8ed23-prod,corporate,prod,AWS,large,53.61,33.06,55.45,258.23,90.03,2025-06-07
+app-0139,aws-corporate-db-2f07a3ea-prod,corporate,prod,AWS,large,56.74,68.15,76.52,311.4,96.82,2025-06-07
+app-0140,aws-corporate-db-34781157-prod,corporate,prod,AWS,small,40.56,58.34,55.67,75.18,95.51,2025-06-07
+app-0141,aws-treasury-db-ae932861-prod,treasury,prod,AWS,medium,23.29,51.13,46.89,68.72,76.08,2025-06-07
+app-0142,aws-retail-db-b1973418-prod,retail,prod,AWS,small,79.72,75.45,34.38,95.47,99.37,2025-06-07
+app-0143,oracle-cloud-retail-db-41299212-prod,retail,prod,Oracle Cloud,small,52.37,92.38,47.8,90.84,98.91,2025-06-07
+app-0144,aws-corporate-db-d091eb77-prod,corporate,prod,AWS,xlarge,33.53,45.34,68.93,661.73,92.8,2025-06-07
+app-0145,oracle-cloud-retail-db-70c0150e-prod,retail,prod,Oracle Cloud,medium,31.35,51.48,27.9,275.95,66.68,2025-06-07
+app-0146,aws-corporate-db-2ee9abc1-prod,corporate,prod,AWS,large,59.36,35.15,47.38,411.44,89.91,2025-06-07
+app-0147,azure-retail-db-a6737d8f-prod,retail,prod,Azure,medium,39.94,88.94,71.55,207.76,97.1,2025-06-07
+app-0148,aws-treasury-db-274850b5-prod,treasury,prod,AWS,small,32.09,82.42,39.78,58.17,95.41,2025-06-07
+app-0149,azure-retail-db-d44ea28d-prod,retail,prod,Azure,xlarge,77.59,65.57,50.62,699.71,98.68,2025-06-07
+app-0150,aws-insurance-db-1960d8dc-prod,insurance,prod,AWS,large,87.48,38.95,63.14,235.04,99.36,2025-06-07
+app-0151,oracle-cloud-corporate-db-31675577-prod,corporate,prod,Oracle Cloud,xlarge,32.06,66.21,54.32,785.09,94.78,2025-06-07
+app-0152,azure-corporate-db-67d5c1b1-prod,corporate,prod,Azure,xlarge,51.2,77.1,54.32,630.74,99.95,2025-06-07
+app-0153,oracle-cloud-insurance-db-7bcae577-prod,insurance,prod,Oracle Cloud,small,8.21,52.76,49.2,83.49,66.14,2025-06-07
+app-0154,oracle-cloud-retail-db-bf0a0570-prod,retail,prod,Oracle Cloud,small,48.48,63.77,59.76,124.19,99.56,2025-06-07
+app-0155,azure-corporate-db-00b46b71-prod,corporate,prod,Azure,small,0.0,52.9,46.71,81.25,55.12,2025-06-07
+app-0156,oracle-cloud-insurance-db-47b74aba-prod,insurance,prod,Oracle Cloud,large,75.14,33.84,56.56,468.57,98.55,2025-06-07
+app-0157,azure-investment-db-7f82bc38-prod,investment,prod,Azure,medium,100.0,59.46,51.32,156.41,93.42,2025-06-07
+app-0158,azure-corporate-db-9c4efe45-prod,corporate,prod,Azure,small,54.96,61.17,55.83,99.32,99.55,2025-06-07
+app-0159,oracle-cloud-corporate-db-e2f6becb-prod,corporate,prod,Oracle Cloud,small,89.82,70.52,76.0,162.58,77.96,2025-06-07
+app-0160,oracle-cloud-corporate-db-e772f6b0-prod,corporate,prod,Oracle Cloud,small,54.79,77.98,61.91,69.96,98.5,2025-06-07
+app-0161,oracle-cloud-corporate-db-9eebfaf2-prod,corporate,prod,Oracle Cloud,small,67.45,50.66,61.2,88.94,100.0,2025-06-07
+app-0162,aws-corporate-db-7bb4b90a-prod,corporate,prod,AWS,xlarge,57.26,61.81,66.81,716.49,99.76,2025-06-07
+app-0163,azure-corporate-db-59e4ae2f-prod,corporate,prod,Azure,xlarge,31.71,76.81,21.19,661.26,82.44,2025-06-07
+app-0164,oracle-cloud-retail-db-5b6e9129-prod,retail,prod,Oracle Cloud,small,88.17,68.61,77.8,106.98,79.31,2025-06-07
+app-0165,oracle-cloud-treasury-db-7b8f9bbb-prod,treasury,prod,Oracle Cloud,small,80.68,69.61,92.29,90.02,72.81,2025-06-07
+app-0166,oracle-cloud-retail-db-f86bd327-prod,retail,prod,Oracle Cloud,small,24.2,78.69,53.73,56.98,96.2,2025-06-07
+app-0167,azure-insurance-db-4a38519e-prod,insurance,prod,Azure,xlarge,41.52,70.65,54.53,623.48,98.77,2025-06-07
+app-0168,azure-insurance-db-d82e27eb-prod,insurance,prod,Azure,small,16.68,71.02,83.23,77.87,99.43,2025-06-07
+app-0169,aws-retail-db-d73dc01d-prod,retail,prod,AWS,small,75.76,60.1,42.02,64.11,99.97,2025-06-07
+app-0170,aws-retail-db-20a4c6cc-prod,retail,prod,AWS,medium,18.51,58.78,58.93,106.37,86.69,2025-06-07
+app-0171,azure-retail-db-30d54e39-prod,retail,prod,Azure,xlarge,68.93,27.48,69.96,594.08,98.71,2025-06-07
+app-0172,aws-investment-db-9215ffa4-prod,investment,prod,AWS,medium,65.88,65.39,71.01,220.12,96.55,2025-06-07
+app-0173,azure-investment-db-6cb48dac-prod,investment,prod,Azure,small,47.77,61.4,66.23,90.65,99.85,2025-06-07
+app-0174,aws-investment-db-7fc1ec76-prod,investment,prod,AWS,xlarge,53.8,53.53,61.17,828.27,99.08,2025-06-07
+app-0175,azure-treasury-db-8d6c6dc8-prod,treasury,prod,Azure,small,40.16,31.37,36.83,76.17,64.36,2025-06-07
+app-0176,azure-treasury-db-421eaa21-prod,treasury,prod,Azure,large,61.12,51.22,58.3,501.26,99.39,2025-06-07
+app-0177,azure-treasury-db-11ef77fc-prod,treasury,prod,Azure,large,74.11,53.75,22.0,515.15,93.69,2025-06-07
+app-0178,aws-corporate-db-5e6eeb5e-prod,corporate,prod,AWS,medium,38.31,85.67,51.27,172.85,99.84,2025-06-07
+app-0179,aws-retail-db-8078493f-prod,retail,prod,AWS,medium,51.0,32.46,70.74,148.49,95.38,2025-06-07
+app-0180,azure-retail-db-12c5aae3-prod,retail,prod,Azure,large,57.57,85.56,59.93,356.19,96.31,2025-06-07
+app-0181,aws-investment-db-90b25e6d-prod,investment,prod,AWS,small,38.07,61.0,70.23,69.22,99.2,2025-06-07
+app-0182,aws-investment-db-ae452f00-prod,investment,prod,AWS,xlarge,83.94,70.76,67.57,927.73,87.59,2025-06-07
+app-0183,azure-corporate-db-242e6a60-prod,corporate,prod,Azure,small,46.24,78.03,28.16,101.6,94.72,2025-06-07
+app-0184,oracle-cloud-retail-db-b03ee78a-prod,retail,prod,Oracle Cloud,xlarge,42.85,42.54,38.59,677.21,78.2,2025-06-07
+app-0185,oracle-cloud-retail-db-5e32768c-prod,retail,prod,Oracle Cloud,small,11.28,53.55,44.59,80.51,65.4,2025-06-07
+app-0186,azure-treasury-db-fb85e26f-prod,treasury,prod,Azure,medium,12.32,53.29,23.84,133.79,43.05,2025-06-07
+app-0187,oracle-cloud-investment-db-722f9484-prod,investment,prod,Oracle Cloud,large,22.35,41.0,66.49,446.85,82.53,2025-06-07
+app-0188,oracle-cloud-investment-db-4074289e-prod,investment,prod,Oracle Cloud,small,61.97,65.91,46.86,124.15,99.81,2025-06-07
+app-0189,oracle-cloud-retail-db-7ebf3241-prod,retail,prod,Oracle Cloud,xlarge,44.0,85.22,62.1,889.25,99.11,2025-06-07
+app-0190,oracle-cloud-investment-db-87ea6ae5-prod,investment,prod,Oracle Cloud,small,66.23,66.15,54.17,79.28,99.7,2025-06-07
+app-0191,aws-corporate-db-c5ac7405-prod,corporate,prod,AWS,small,32.65,60.66,64.21,55.13,96.49,2025-06-07
+app-0192,aws-corporate-db-23d91bea-prod,corporate,prod,AWS,large,41.3,51.45,92.81,263.71,99.79,2025-06-07
+app-0193,aws-retail-db-a4cd143b-prod,retail,prod,AWS,xlarge,53.68,29.45,44.7,1064.23,81.1,2025-06-07
+app-0194,azure-investment-db-19c8dd88-prod,investment,prod,Azure,small,58.16,57.61,38.96,83.37,95.57,2025-06-07
+app-0195,aws-investment-db-142bc35a-prod,investment,prod,AWS,large,68.35,41.64,76.86,388.56,99.68,2025-06-07
+app-0196,oracle-cloud-investment-db-96460cac-prod,investment,prod,Oracle Cloud,small,81.67,63.93,67.68,94.74,92.31,2025-06-07
+app-0197,aws-retail-db-b8b2c05e-prod,retail,prod,AWS,small,44.14,69.5,48.27,115.7,97.72,2025-06-07
+app-0198,azure-retail-db-a8a0f699-prod,retail,prod,Azure,xlarge,75.74,78.52,53.78,609.49,94.54,2025-06-07
+app-0199,azure-insurance-db-df081c41-prod,insurance,prod,Azure,large,50.39,53.55,51.6,246.56,95.84,2025-06-07
+app-0200,aws-corporate-db-4ec18647-prod,corporate,prod,AWS,small,71.21,52.65,64.4,44.84,99.53,2025-06-07
+app-0201,azure-treasury-db-49c17d40-prod,treasury,prod,Azure,medium,10.32,60.0,72.02,252.42,90.15,2025-06-07
+app-0202,aws-corporate-db-eb636e51-prod,corporate,prod,AWS,xlarge,73.33,50.07,62.72,950.57,99.74,2025-06-07
+app-0203,aws-retail-db-0822a8d1-prod,retail,prod,AWS,small,37.7,77.6,76.41,69.69,99.05,2025-06-07
+app-0204,azure-investment-db-adf816cb-prod,investment,prod,Azure,xlarge,47.62,64.28,42.1,415.3,95.31,2025-06-07
+app-0205,oracle-cloud-retail-db-9e7f386b-prod,retail,prod,Oracle Cloud,xlarge,64.39,63.05,54.05,1427.46,99.98,2025-06-07
+app-0206,oracle-cloud-treasury-db-284fc71a-prod,treasury,prod,Oracle Cloud,small,74.5,85.94,57.49,120.89,90.01,2025-06-07
+app-0207,azure-corporate-db-216490d0-prod,corporate,prod,Azure,large,26.29,62.51,72.04,394.77,97.45,2025-06-07
+app-0208,oracle-cloud-treasury-db-c8113cba-prod,treasury,prod,Oracle Cloud,small,53.08,98.1,51.45,127.95,96.45,2025-06-07
+app-0209,aws-retail-db-b81b5bef-prod,retail,prod,AWS,xlarge,63.82,54.24,75.97,305.14,98.63,2025-06-07
+app-0210,azure-investment-db-2fb1a9e2-prod,investment,prod,Azure,xlarge,46.89,64.65,67.72,430.57,100.0,2025-06-07
+app-0211,aws-corporate-db-1b8b042d-prod,corporate,prod,AWS,xlarge,69.27,63.24,54.31,470.62,99.68,2025-06-07
+app-0212,azure-retail-db-76045c48-prod,retail,prod,Azure,medium,57.17,58.18,58.33,155.31,99.72,2025-06-07
+app-0213,oracle-cloud-insurance-db-4eff9e06-prod,insurance,prod,Oracle Cloud,medium,71.22,75.69,43.28,244.7,99.28,2025-06-07
+app-0214,azure-retail-db-7672bcdc-prod,retail,prod,Azure,large,36.68,86.02,53.18,544.64,99.88,2025-06-07
+app-0215,aws-insurance-db-3c5149db-prod,insurance,prod,AWS,medium,49.23,44.4,52.51,111.23,92.04,2025-06-07
+app-0216,oracle-cloud-insurance-db-fc68b384-prod,insurance,prod,Oracle Cloud,xlarge,72.09,69.5,56.62,735.11,97.7,2025-06-07
+app-0217,aws-retail-db-7694b455-prod,retail,prod,AWS,large,35.24,68.83,56.53,354.49,97.39,2025-06-07
+app-0218,aws-treasury-db-042ac1e5-prod,treasury,prod,AWS,medium,59.94,91.72,47.51,151.59,97.45,2025-06-07
+app-0219,aws-retail-db-a499c410-prod,retail,prod,AWS,medium,47.72,61.06,53.12,121.61,97.72,2025-06-07
+app-0220,azure-corporate-db-9ffa9415-prod,corporate,prod,Azure,medium,15.58,57.0,47.21,145.06,74.83,2025-06-07
+app-0221,oracle-cloud-corporate-db-21400b38-prod,corporate,prod,Oracle Cloud,large,49.12,52.8,58.32,218.48,97.29,2025-06-07
+app-0222,oracle-cloud-corporate-db-919388f2-prod,corporate,prod,Oracle Cloud,xlarge,50.16,61.24,73.17,772.32,99.86,2025-06-07
+app-0223,aws-corporate-db-4923cc1f-prod,corporate,prod,AWS,large,36.76,40.51,63.07,362.06,89.07,2025-06-07
+app-0224,oracle-cloud-retail-db-4c9cd16a-prod,retail,prod,Oracle Cloud,small,37.26,42.34,51.87,102.57,83.65,2025-06-07
+app-0225,oracle-cloud-retail-db-569d9c47-prod,retail,prod,Oracle Cloud,large,62.53,69.81,47.52,555.18,100.0,2025-06-07
+app-0226,aws-corporate-db-64095aa6-prod,corporate,prod,AWS,small,69.32,90.02,73.41,83.46,80.68,2025-06-07
+app-0227,azure-investment-db-6c538ecf-prod,investment,prod,Azure,medium,58.95,40.87,64.42,256.15,98.28,2025-06-07
+app-0228,aws-treasury-db-4fb003c0-prod,treasury,prod,AWS,medium,31.53,80.58,60.69,140.94,99.64,2025-06-07
+app-0229,aws-investment-db-440baf74-prod,investment,prod,AWS,xlarge,54.13,70.42,55.28,487.78,100.0,2025-06-07
+app-0230,azure-retail-db-dc04ae46-prod,retail,prod,Azure,large,61.04,75.82,68.12,184.05,95.67,2025-06-07
+app-0231,azure-insurance-db-913ab172-prod,insurance,prod,Azure,small,47.75,54.09,53.21,88.54,95.68,2025-06-07
+app-0232,oracle-cloud-investment-db-2664be99-prod,investment,prod,Oracle Cloud,small,94.24,46.5,42.92,57.75,99.91,2025-06-07
+app-0233,azure-treasury-db-879ac30c-prod,treasury,prod,Azure,medium,30.22,66.22,48.71,235.65,91.57,2025-06-07
+app-0234,aws-insurance-db-4887bf9b-prod,insurance,prod,AWS,medium,43.49,37.96,54.15,171.13,86.31,2025-06-07
+app-0235,oracle-cloud-insurance-db-e11b7039-prod,insurance,prod,Oracle Cloud,medium,10.75,60.42,58.59,183.75,82.47,2025-06-07
+app-0236,aws-treasury-db-85b02ba2-prod,treasury,prod,AWS,large,49.31,34.3,33.54,546.12,72.57,2025-06-07
+app-0237,azure-retail-db-b2649354-prod,retail,prod,Azure,small,54.2,55.45,47.92,63.1,96.5,2025-06-07
+app-0238,aws-insurance-db-4bb635f0-prod,insurance,prod,AWS,xlarge,32.81,61.28,58.15,882.38,94.65,2025-06-07
+app-0239,aws-corporate-db-39ab7368-prod,corporate,prod,AWS,medium,28.83,43.27,52.57,140.99,78.73,2025-06-07
+app-0240,azure-retail-db-399989b7-prod,retail,prod,Azure,medium,31.99,78.68,62.77,195.52,99.7,2025-06-07
+app-0241,aws-treasury-db-40b8e94a-prod,treasury,prod,AWS,large,79.22,60.97,60.7,320.89,96.97,2025-06-07
+app-0242,aws-corporate-db-9c23633d-prod,corporate,prod,AWS,large,49.42,40.49,35.36,166.44,79.2,2025-06-07
+app-0243,aws-corporate-db-b31bf22d-prod,corporate,prod,AWS,medium,38.17,47.8,72.74,120.62,96.85,2025-06-07
+app-0244,aws-investment-db-94e02f84-prod,investment,prod,AWS,small,96.94,69.04,46.11,98.76,92.85,2025-06-07
+app-0245,azure-investment-db-05fe2c05-prod,investment,prod,Azure,medium,48.89,78.35,67.35,269.15,98.52,2025-06-07
+app-0246,azure-investment-db-0822bb9d-prod,investment,prod,Azure,medium,50.57,48.18,71.63,258.45,99.36,2025-06-07
+app-0247,aws-corporate-db-785355e7-prod,corporate,prod,AWS,xlarge,68.85,65.22,45.81,691.87,100.0,2025-06-07
+app-0248,azure-retail-db-2ac2039d-prod,retail,prod,Azure,small,13.63,73.82,96.1,83.71,99.91,2025-06-07
+app-0249,oracle-cloud-retail-db-c351dae3-prod,retail,prod,Oracle Cloud,medium,51.79,44.18,65.98,199.38,97.74,2025-06-07
+app-0250,oracle-cloud-investment-db-98f76771-prod,investment,prod,Oracle Cloud,small,79.95,51.38,52.41,93.73,99.9,2025-06-07
+app-0251,oracle-cloud-retail-db-997cb5c3-prod,retail,prod,Oracle Cloud,small,73.37,64.64,61.22,114.26,97.43,2025-06-07
+app-0252,azure-corporate-db-bee660a4-prod,corporate,prod,Azure,small,39.32,71.8,71.36,114.7,99.96,2025-06-07
+app-0253,aws-retail-db-93e63e9f-prod,retail,prod,AWS,small,32.4,61.49,58.05,57.22,94.53,2025-06-07
+app-0254,aws-retail-db-7a9f3a0f-prod,retail,prod,AWS,medium,64.89,37.55,44.89,111.69,92.59,2025-06-07
+app-0255,aws-insurance-db-d87a79a6-prod,insurance,prod,AWS,small,43.87,62.9,56.55,116.1,98.07,2025-06-07
+app-0256,aws-corporate-db-863f5401-prod,corporate,prod,AWS,xlarge,57.4,60.9,60.16,663.57,99.98,2025-06-07
+app-0257,azure-investment-db-4886810c-prod,investment,prod,Azure,small,43.16,59.86,78.96,87.99,99.97,2025-06-07
+app-0258,azure-treasury-db-0807bc44-prod,treasury,prod,Azure,small,31.61,73.82,45.11,57.41,93.97,2025-06-07
+app-0259,azure-insurance-db-5a16bcf6-prod,insurance,prod,Azure,medium,40.74,72.22,56.42,145.68,99.22,2025-06-07
+app-0260,aws-corporate-db-5bc88c97-prod,corporate,prod,AWS,small,79.61,60.27,59.28,141.97,97.45,2025-06-07
+app-0261,azure-insurance-db-97909b8b-prod,insurance,prod,Azure,large,42.62,82.58,52.55,554.95,99.96,2025-06-07
+app-0262,azure-corporate-db-c9e5422a-prod,corporate,prod,Azure,large,70.68,52.08,61.1,469.24,99.9,2025-06-07
+app-0263,aws-investment-db-d782e7ab-prod,investment,prod,AWS,medium,32.73,43.69,55.48,172.49,83.93,2025-06-07
+app-0264,azure-investment-db-d0661fde-prod,investment,prod,Azure,large,63.33,85.21,32.15,410.41,100.0,2025-06-07
+app-0265,oracle-cloud-retail-db-353683f5-prod,retail,prod,Oracle Cloud,medium,43.35,55.32,55.41,235.91,95.33,2025-06-07
+app-0266,aws-corporate-db-4df52b0a-prod,corporate,prod,AWS,large,47.62,52.84,38.66,457.31,88.39,2025-06-07
+app-0267,aws-corporate-db-b32b6104-prod,corporate,prod,AWS,small,71.34,58.15,67.91,115.21,97.9,2025-06-07
+app-0268,oracle-cloud-treasury-db-133edc1d-prod,treasury,prod,Oracle Cloud,xlarge,57.56,63.39,46.78,614.67,98.96,2025-06-07
+app-0269,aws-corporate-db-9baf96c6-prod,corporate,prod,AWS,small,32.97,51.35,54.91,59.29,88.46,2025-06-07
+app-0270,oracle-cloud-investment-db-b1f6f54c-prod,investment,prod,Oracle Cloud,medium,48.79,62.13,70.6,234.03,99.98,2025-06-07
+app-0271,oracle-cloud-treasury-db-c48a05f3-prod,treasury,prod,Oracle Cloud,small,24.28,55.7,73.19,142.75,95.0,2025-06-07
+app-0272,azure-investment-db-6c3baa27-prod,investment,prod,Azure,medium,87.57,53.24,76.45,90.62,90.36,2025-06-07
+app-0273,azure-corporate-db-b4a9c722-prod,corporate,prod,Azure,small,32.64,55.01,49.93,108.0,87.5,2025-06-07
+app-0274,aws-corporate-db-76023fd9-prod,corporate,prod,AWS,medium,72.19,59.04,43.17,151.31,99.78,2025-06-07
+app-0275,aws-investment-db-bcb51b84-prod,investment,prod,AWS,small,0.0,58.61,41.91,89.15,56.13,2025-06-07
+app-0276,azure-insurance-db-262134e4-prod,insurance,prod,Azure,large,58.09,79.17,55.93,201.01,98.79,2025-06-07
+app-0277,azure-retail-db-cbfe7861-prod,retail,prod,Azure,medium,24.95,41.84,56.15,140.43,77.4,2025-06-07
+app-0278,aws-investment-db-3ab04bd4-prod,investment,prod,AWS,large,64.69,60.48,62.92,233.3,99.55,2025-06-07
+app-0279,aws-corporate-db-6414d9ed-prod,corporate,prod,AWS,small,65.75,78.26,66.69,141.03,93.45,2025-06-07
+app-0280,aws-investment-db-9ab71da3-prod,investment,prod,AWS,medium,53.1,100.0,52.69,205.29,95.38,2025-06-07
+app-0281,oracle-cloud-investment-db-ef8edb69-prod,investment,prod,Oracle Cloud,medium,41.58,52.62,47.23,131.55,89.67,2025-06-07
+app-0282,aws-investment-db-c952a81d-prod,investment,prod,AWS,medium,58.62,77.76,67.72,249.74,95.97,2025-06-07
+app-0283,aws-investment-db-fc96a6a0-prod,investment,prod,AWS,medium,79.23,60.67,61.89,225.25,96.71,2025-06-07
+app-0284,azure-corporate-db-eb496226-prod,corporate,prod,Azure,xlarge,36.36,66.24,42.07,1153.23,91.33,2025-06-07
+app-0285,aws-treasury-db-24213b8e-prod,treasury,prod,AWS,small,66.63,51.93,35.47,92.56,95.31,2025-06-07
+app-0286,oracle-cloud-treasury-db-afa412ff-prod,treasury,prod,Oracle Cloud,xlarge,27.9,75.59,77.25,879.39,100.0,2025-06-07
+app-0287,aws-insurance-db-b2557f6b-prod,insurance,prod,AWS,xlarge,72.37,51.04,58.42,948.1,99.98,2025-06-07
+app-0288,aws-corporate-db-bb75ab0d-prod,corporate,prod,AWS,small,33.0,51.12,44.96,99.57,81.99,2025-06-07
+app-0289,azure-retail-db-2fd36271-prod,retail,prod,Azure,medium,50.37,67.54,87.95,180.48,95.36,2025-06-07
+app-0290,aws-investment-db-ad8e09a4-prod,investment,prod,AWS,medium,70.38,58.51,47.99,151.11,99.93,2025-06-07
+app-0291,azure-retail-db-5b74253f-prod,retail,prod,Azure,large,8.07,58.78,47.48,557.08,70.05,2025-06-07
+app-0292,azure-retail-db-406d0227-prod,retail,prod,Azure,small,57.85,50.32,56.51,86.68,98.37,2025-06-07
+app-0293,aws-investment-db-041d36ad-prod,investment,prod,AWS,small,23.79,48.14,46.26,99.21,73.47,2025-06-07
+app-0294,aws-treasury-db-6001bb80-prod,treasury,prod,AWS,medium,27.21,55.39,55.65,140.71,87.89,2025-06-07
+app-0295,aws-retail-db-137aee40-prod,retail,prod,AWS,large,67.22,71.32,57.78,477.6,98.15,2025-06-07
+app-0296,aws-retail-db-11f8814c-prod,retail,prod,AWS,small,4.8,70.04,55.34,53.81,82.76,2025-06-07
+app-0297,azure-treasury-db-2d225b1c-prod,treasury,prod,Azure,small,64.56,70.79,52.85,88.85,99.53,2025-06-07
+app-0298,azure-retail-db-5c9210d4-prod,retail,prod,Azure,small,58.26,64.24,53.15,59.28,99.87,2025-06-07
+app-0299,azure-treasury-db-c5d11e04-prod,treasury,prod,Azure,xlarge,42.19,67.01,65.07,597.68,99.77,2025-06-07
+app-0300,azure-treasury-db-facf5311-prod,treasury,prod,Azure,xlarge,47.4,45.22,43.52,1093.96,86.64,2025-06-07
+app-0301,aws-retail-db-9370e539-prod,retail,prod,AWS,large,46.05,96.87,66.29,563.77,94.08,2025-06-07
+app-0302,aws-treasury-db-939c3c0e-prod,treasury,prod,AWS,xlarge,84.76,64.87,37.18,907.07,99.68,2025-06-07
+app-0303,azure-corporate-db-6667e146-prod,corporate,prod,Azure,xlarge,42.24,59.91,49.46,688.31,94.4,2025-06-07
+app-0304,azure-investment-db-3ae0ce95-prod,investment,prod,Azure,medium,52.38,57.7,63.3,188.59,99.7,2025-06-07
+app-0305,oracle-cloud-corporate-db-b5f51aec-prod,corporate,prod,Oracle Cloud,large,34.02,41.35,46.79,424.62,76.77,2025-06-07
+app-0306,aws-treasury-db-fc44a8f3-prod,treasury,prod,AWS,xlarge,38.0,40.67,41.79,780.43,75.38,2025-06-07
+app-0307,aws-treasury-db-4a5e9895-prod,treasury,prod,AWS,small,16.64,75.98,24.85,43.03,72.85,2025-06-07
+app-0308,oracle-cloud-treasury-db-8e491853-prod,treasury,prod,Oracle Cloud,large,66.98,66.11,74.0,326.46,94.91,2025-06-07
+app-0309,aws-investment-db-1329366e-prod,investment,prod,AWS,small,78.73,67.58,73.28,70.94,89.12,2025-06-07
+app-0310,azure-corporate-db-04ef043d-prod,corporate,prod,Azure,small,61.93,63.64,43.15,113.2,99.12,2025-06-07
+app-0311,aws-investment-db-fceed1df-prod,investment,prod,AWS,small,45.66,51.87,27.28,91.56,78.84,2025-06-07
+app-0312,oracle-cloud-investment-db-441096f7-prod,investment,prod,Oracle Cloud,large,57.49,66.37,34.77,268.98,96.83,2025-06-07
+app-0313,aws-investment-db-5f387cd8-prod,investment,prod,AWS,xlarge,37.98,53.26,54.29,333.62,91.75,2025-06-07
+app-0314,aws-insurance-db-879799ce-prod,insurance,prod,AWS,xlarge,74.23,65.41,54.51,438.32,98.61,2025-06-07
+app-0315,aws-corporate-db-29e61ffe-prod,corporate,prod,AWS,large,68.04,57.02,73.95,542.52,97.49,2025-06-07
+app-0316,aws-insurance-db-f8d5e1b9-prod,insurance,prod,AWS,medium,13.84,76.91,36.33,127.95,80.55,2025-06-07
+app-0317,aws-investment-db-bd922ca9-prod,investment,prod,AWS,medium,45.69,71.0,58.47,203.88,99.84,2025-06-07
+app-0318,azure-investment-db-7387312e-prod,investment,prod,Azure,medium,41.97,47.61,28.6,91.12,73.46,2025-06-07
+app-0319,aws-corporate-db-1cfb06a2-prod,corporate,prod,AWS,small,68.52,46.03,64.31,94.05,99.99,2025-06-07
+app-0320,aws-treasury-db-b9568d0e-prod,treasury,prod,AWS,medium,62.97,51.41,30.94,177.13,91.65,2025-06-07
+app-0321,aws-insurance-db-581fbdd9-prod,insurance,prod,AWS,medium,65.54,72.57,50.29,144.18,99.51,2025-06-07
+app-0322,oracle-cloud-retail-db-e4a98be0-prod,retail,prod,Oracle Cloud,medium,44.77,45.49,54.64,159.27,91.44,2025-06-07
+app-0323,aws-corporate-db-8985c77c-prod,corporate,prod,AWS,small,67.12,58.38,54.6,54.53,100.0,2025-06-07
+app-0324,aws-investment-db-9f90ebc5-prod,investment,prod,AWS,small,45.55,35.38,84.42,88.59,98.51,2025-06-07
+app-0325,azure-investment-db-9fbd71d9-prod,investment,prod,Azure,medium,43.25,74.28,60.01,138.4,99.96,2025-06-07
+app-0326,azure-treasury-db-6b7410e7-prod,treasury,prod,Azure,xlarge,24.05,79.65,49.13,563.23,94.87,2025-06-07
+app-0327,oracle-cloud-retail-db-c9ab6ab2-prod,retail,prod,Oracle Cloud,small,22.72,70.03,64.86,124.34,96.52,2025-06-07
+app-0328,oracle-cloud-retail-db-85f74139-prod,retail,prod,Oracle Cloud,small,58.11,74.44,66.31,98.12,97.53,2025-06-07
+app-0329,oracle-cloud-investment-db-590f451a-prod,investment,prod,Oracle Cloud,large,14.1,47.18,40.13,640.99,57.1,2025-06-07
+app-0330,azure-corporate-db-c798874c-prod,corporate,prod,Azure,small,54.75,64.58,55.41,58.79,99.81,2025-06-07
+app-0331,azure-corporate-db-1585418a-prod,corporate,prod,Azure,large,69.04,71.22,42.95,329.79,99.93,2025-06-07
+app-0332,oracle-cloud-investment-db-9f6aee0c-prod,investment,prod,Oracle Cloud,xlarge,23.03,80.25,56.87,617.79,97.26,2025-06-07
+app-0333,aws-retail-db-4e102275-prod,retail,prod,AWS,medium,62.11,70.31,80.79,150.34,92.34,2025-06-07
+app-0334,oracle-cloud-retail-db-ee38459e-prod,retail,prod,Oracle Cloud,large,66.65,54.63,74.69,550.64,98.23,2025-06-07
+app-0335,azure-retail-db-d8dd8eab-prod,retail,prod,Azure,xlarge,68.06,48.55,68.83,668.85,99.79,2025-06-07
+app-0336,azure-corporate-db-548d53ce-prod,corporate,prod,Azure,small,79.76,34.96,49.39,135.37,98.25,2025-06-07
+app-0337,aws-retail-db-faf589d7-prod,retail,prod,AWS,xlarge,54.24,41.54,57.3,680.49,94.97,2025-06-07
+app-0338,azure-treasury-db-71bce35b-prod,treasury,prod,Azure,large,49.0,49.97,46.58,382.3,91.76,2025-06-07
+app-0339,azure-insurance-db-0010373b-prod,insurance,prod,Azure,large,76.82,65.09,82.09,325.24,86.55,2025-06-07
+app-0340,azure-investment-db-a96e0751-prod,investment,prod,Azure,large,90.79,65.88,56.06,322.52,92.56,2025-06-07
+app-0341,aws-investment-db-f00bdadc-prod,investment,prod,AWS,small,33.54,56.3,57.33,41.19,92.52,2025-06-07
+app-0342,aws-insurance-db-fe1c6bf2-prod,insurance,prod,AWS,xlarge,44.88,60.56,53.04,940.0,96.78,2025-06-07
+app-0343,azure-corporate-db-1af9b4d2-prod,corporate,prod,Azure,small,48.52,81.18,78.66,116.88,94.41,2025-06-07
+app-0344,aws-insurance-db-80a0344a-prod,insurance,prod,AWS,medium,79.58,50.77,56.03,217.35,99.72,2025-06-07
+app-0345,aws-corporate-db-cb560ae3-prod,corporate,prod,AWS,small,24.62,72.68,68.15,114.92,98.53,2025-06-07
+app-0346,azure-retail-db-94b2dee9-prod,retail,prod,Azure,xlarge,60.42,63.71,55.2,1172.01,100.0,2025-06-07
+app-0347,azure-treasury-db-6298f9a3-prod,treasury,prod,Azure,medium,41.4,58.68,50.22,225.68,93.88,2025-06-07
+app-0348,aws-insurance-db-2f821bbc-prod,insurance,prod,AWS,large,59.45,43.07,49.81,441.42,94.69,2025-06-07
+app-0349,oracle-cloud-retail-db-22ae08bd-prod,retail,prod,Oracle Cloud,xlarge,39.45,51.89,69.09,835.24,97.34,2025-06-07
+app-0350,aws-retail-db-1f5262f6-prod,retail,prod,AWS,medium,57.48,52.8,47.56,260.42,96.59,2025-06-07
+app-0351,oracle-cloud-insurance-db-992b5168-prod,insurance,prod,Oracle Cloud,large,40.75,76.04,52.12,249.95,99.15,2025-06-07
+app-0352,azure-corporate-db-caf4e628-prod,corporate,prod,Azure,xlarge,24.28,38.47,52.95,704.65,71.29,2025-06-07
+app-0353,azure-corporate-db-3a504af3-prod,corporate,prod,Azure,small,6.65,33.47,65.73,87.52,61.82,2025-06-07
+app-0354,oracle-cloud-investment-db-f3e8a04e-prod,investment,prod,Oracle Cloud,small,17.04,72.19,65.32,151.08,95.5,2025-06-07
+app-0355,aws-retail-db-d44bd6dc-prod,retail,prod,AWS,medium,84.54,64.27,66.45,175.81,91.37,2025-06-07
+app-0356,aws-insurance-db-c57c9f6d-prod,insurance,prod,AWS,xlarge,50.83,61.87,34.5,617.01,92.53,2025-06-07
+app-0357,azure-retail-db-64b75310-prod,retail,prod,Azure,small,6.85,87.05,52.03,117.53,91.93,2025-06-07
+app-0358,azure-investment-db-e13e1a5b-prod,investment,prod,Azure,large,32.48,57.6,70.7,443.71,97.44,2025-06-07
+app-0359,oracle-cloud-retail-db-05413b3f-prod,retail,prod,Oracle Cloud,medium,42.57,68.78,66.76,199.22,99.98,2025-06-07
+app-0360,azure-retail-db-e973f088-prod,retail,prod,Azure,xlarge,46.75,73.44,60.97,659.68,99.99,2025-06-07
+app-0361,aws-treasury-db-2535dd35-prod,treasury,prod,AWS,medium,49.31,51.55,57.06,183.79,96.61,2025-06-07
+app-0362,oracle-cloud-retail-db-f4fc4c7c-prod,retail,prod,Oracle Cloud,small,46.55,69.64,44.6,60.61,97.43,2025-06-07
+app-0363,aws-insurance-db-811204a8-prod,insurance,prod,AWS,small,92.18,79.82,70.94,84.42,72.48,2025-06-07
+app-0364,azure-retail-db-9a1b661e-prod,retail,prod,Azure,medium,26.59,66.7,63.35,163.01,96.21,2025-06-07
+app-0365,azure-corporate-db-ed60b1a4-prod,corporate,prod,Azure,medium,49.45,39.48,41.97,168.31,83.27,2025-06-07
+app-0366,oracle-cloud-corporate-db-2969db78-prod,corporate,prod,Oracle Cloud,xlarge,49.46,59.6,82.62,663.0,99.05,2025-06-07
+app-0367,aws-investment-db-28122996-prod,investment,prod,AWS,xlarge,24.5,71.41,57.34,510.29,95.03,2025-06-07
+app-0368,aws-treasury-db-d3ccf4f9-prod,treasury,prod,AWS,medium,52.78,87.47,48.88,182.35,99.42,2025-06-07
+app-0369,azure-treasury-db-8d4cd0f3-prod,treasury,prod,Azure,small,53.04,43.6,37.22,68.81,85.21,2025-06-07
+app-0370,oracle-cloud-corporate-db-65d6b2c8-prod,corporate,prod,Oracle Cloud,xlarge,86.65,62.62,35.32,792.63,99.85,2025-06-07
+app-0371,azure-treasury-db-4abc7388-prod,treasury,prod,Azure,medium,73.81,37.21,50.14,215.18,97.53,2025-06-07
+app-0372,aws-investment-db-698d5169-prod,investment,prod,AWS,small,46.91,71.63,45.39,116.33,98.21,2025-06-07
+app-0373,azure-corporate-db-28e5ea21-prod,corporate,prod,Azure,large,84.12,59.02,49.23,478.97,98.94,2025-06-07
+app-0374,azure-corporate-db-50314463-prod,corporate,prod,Azure,small,20.99,39.73,68.18,86.08,81.86,2025-06-07
+app-0375,aws-corporate-db-de682604-prod,corporate,prod,AWS,medium,51.73,48.81,36.71,164.83,87.31,2025-06-07
+app-0376,aws-corporate-db-19e0c2f9-prod,corporate,prod,AWS,medium,47.16,52.41,49.67,159.5,93.43,2025-06-07
+app-0377,oracle-cloud-insurance-db-24c72281-prod,insurance,prod,Oracle Cloud,small,59.39,62.38,69.56,108.54,99.11,2025-06-07
+app-0378,oracle-cloud-retail-db-87325205-prod,retail,prod,Oracle Cloud,medium,63.25,70.05,70.33,161.13,96.12,2025-06-07
+app-0379,oracle-cloud-investment-db-2c9585b2-prod,investment,prod,Oracle Cloud,large,75.35,82.09,64.38,374.64,87.86,2025-06-07
+app-0380,oracle-cloud-retail-db-bc10ee0d-prod,retail,prod,Oracle Cloud,medium,54.55,72.74,6.89,190.75,85.42,2025-06-07
+app-0381,aws-corporate-db-1ef3a686-prod,corporate,prod,AWS,large,84.22,33.03,26.99,328.99,91.12,2025-06-07
+app-0382,azure-retail-db-a73525ff-prod,retail,prod,Azure,small,92.01,40.02,73.76,52.39,95.38,2025-06-07
+app-0383,oracle-cloud-retail-db-830ce65c-prod,retail,prod,Oracle Cloud,small,66.14,37.0,56.48,84.81,97.12,2025-06-07
+app-0384,azure-investment-db-4760237c-prod,investment,prod,Azure,small,60.05,45.24,68.78,112.28,99.76,2025-06-07
+app-0385,azure-investment-db-d355dcfd-prod,investment,prod,Azure,medium,39.42,94.57,18.78,212.42,94.85,2025-06-07
+app-0386,aws-insurance-db-e6564951-prod,insurance,prod,AWS,small,74.19,83.34,60.76,78.95,89.82,2025-06-07
+app-0387,azure-investment-db-10f81e84-prod,investment,prod,Azure,medium,45.18,42.44,47.46,122.68,85.99,2025-06-07
+app-0388,oracle-cloud-treasury-db-65e3f4b5-prod,treasury,prod,Oracle Cloud,large,59.48,80.32,87.14,586.56,84.69,2025-06-07
+app-0389,oracle-cloud-treasury-db-64841c41-prod,treasury,prod,Oracle Cloud,small,41.87,50.0,67.45,120.48,97.03,2025-06-07
+app-0390,oracle-cloud-insurance-db-333c02b4-prod,insurance,prod,Oracle Cloud,large,61.56,56.22,67.5,197.52,99.81,2025-06-07
+app-0391,azure-retail-db-5db374f4-prod,retail,prod,Azure,small,46.0,61.31,66.05,65.45,99.69,2025-06-07
+app-0392,oracle-cloud-corporate-db-0044e9f2-prod,corporate,prod,Oracle Cloud,medium,22.99,78.76,70.47,243.69,99.58,2025-06-07
+app-0393,oracle-cloud-retail-db-f28d5e5b-prod,retail,prod,Oracle Cloud,small,74.88,59.81,70.43,97.49,95.62,2025-06-07
+app-0394,aws-insurance-db-c11968ff-prod,insurance,prod,AWS,medium,60.29,32.76,70.31,156.0,98.07,2025-06-07
+app-0395,azure-retail-db-3ef0bf0b-prod,retail,prod,Azure,medium,34.79,41.76,74.59,114.63,94.22,2025-06-07
+app-0396,aws-investment-db-4d4fcf2a-prod,investment,prod,AWS,small,31.75,51.95,41.15,118.14,78.88,2025-06-07
+app-0397,azure-retail-db-cb48b3a8-prod,retail,prod,Azure,xlarge,33.61,72.82,86.26,622.75,98.88,2025-06-07
+app-0398,azure-retail-db-1431167f-prod,retail,prod,Azure,xlarge,38.9,53.87,87.77,504.81,100.0,2025-06-07
+app-0399,aws-treasury-db-8220b923-prod,treasury,prod,AWS,xlarge,57.01,84.74,33.73,628.08,99.86,2025-06-07
+app-0400,azure-investment-db-4f8ad2a6-prod,investment,prod,Azure,small,34.44,58.24,43.67,69.96,86.77,2025-06-07
+app-0401,oracle-cloud-investment-db-ac1221db-prod,investment,prod,Oracle Cloud,medium,58.76,56.42,40.12,356.56,95.76,2025-06-07
+app-0402,azure-retail-db-c826c580-prod,retail,prod,Azure,small,39.41,62.51,44.6,94.26,92.22,2025-06-07
+app-0403,aws-corporate-db-0fbddec3-prod,corporate,prod,AWS,small,26.34,60.59,64.17,125.55,94.2,2025-06-07
+app-0404,azure-corporate-db-711e4609-prod,corporate,prod,Azure,large,62.26,61.88,51.24,516.1,99.85,2025-06-07
+app-0405,aws-treasury-db-a42b80d5-prod,treasury,prod,AWS,small,79.72,95.56,55.92,55.93,81.8,2025-06-07
+app-0406,aws-corporate-db-4704c67c-prod,corporate,prod,AWS,large,54.86,59.41,42.22,261.61,96.16,2025-06-07
+app-0407,aws-retail-db-9fd84cfc-prod,retail,prod,AWS,large,70.35,48.74,53.06,275.85,99.57,2025-06-07
+app-0408,aws-treasury-db-31b23bce-prod,treasury,prod,AWS,small,11.22,44.55,76.71,41.84,84.31,2025-06-07
+app-0409,azure-investment-db-4b108dbe-prod,investment,prod,Azure,xlarge,37.87,63.06,48.26,734.61,93.41,2025-06-07
+app-0410,oracle-cloud-corporate-db-8bc7ce03-prod,corporate,prod,Oracle Cloud,large,53.53,63.68,82.37,423.34,97.34,2025-06-07
+app-0411,oracle-cloud-treasury-db-3dfa068b-prod,treasury,prod,Oracle Cloud,small,29.56,46.15,48.08,108.49,78.06,2025-06-07
+app-0412,aws-corporate-db-04309739-prod,corporate,prod,AWS,small,35.26,86.27,72.28,107.73,98.68,2025-06-07
+app-0413,azure-investment-db-404fafd7-prod,investment,prod,Azure,medium,94.55,56.19,68.51,238.52,89.3,2025-06-07
+app-0414,oracle-cloud-retail-db-6ec92873-prod,retail,prod,Oracle Cloud,small,19.77,97.33,47.59,77.6,98.37,2025-06-07
+app-0415,aws-retail-db-6a87a8ac-prod,retail,prod,AWS,small,55.75,66.02,45.18,34.87,98.82,2025-06-07
+app-0416,oracle-cloud-treasury-db-ff658282-prod,treasury,prod,Oracle Cloud,medium,42.13,55.03,55.58,211.3,94.84,2025-06-07
+app-0417,azure-insurance-db-5e8d4505-prod,insurance,prod,Azure,large,72.68,70.31,50.39,279.92,98.75,2025-06-07
+app-0418,oracle-cloud-retail-db-a7a98a1c-prod,retail,prod,Oracle Cloud,xlarge,55.59,57.48,67.65,930.46,100.0,2025-06-07
+app-0419,azure-retail-db-bd81dce0-prod,retail,prod,Azure,large,49.37,32.51,59.78,381.77,89.79,2025-06-07
+app-0420,aws-treasury-db-fffac931-prod,treasury,prod,AWS,large,63.84,94.85,42.97,289.33,96.74,2025-06-07
+app-0421,aws-treasury-db-84a51ae3-prod,treasury,prod,AWS,xlarge,90.02,65.9,62.14,797.02,89.94,2025-06-07
+app-0422,oracle-cloud-retail-db-b72926c0-prod,retail,prod,Oracle Cloud,large,49.12,34.32,57.27,311.4,89.28,2025-06-07
+app-0423,oracle-cloud-insurance-db-8a8f2f45-prod,insurance,prod,Oracle Cloud,small,36.88,71.51,37.23,142.99,91.79,2025-06-07
+app-0424,oracle-cloud-retail-db-c4977382-prod,retail,prod,Oracle Cloud,medium,39.64,68.24,53.24,228.69,97.52,2025-06-07
+app-0425,aws-treasury-db-827ae360-prod,treasury,prod,AWS,small,72.0,87.83,79.56,116.94,75.51,2025-06-07
+app-0426,azure-corporate-db-2c447c9d-prod,corporate,prod,Azure,large,52.86,83.26,44.83,475.74,99.99,2025-06-07
+app-0427,aws-retail-db-8d62fbe5-prod,retail,prod,AWS,medium,27.92,62.01,59.82,108.18,93.64,2025-06-07
+app-0428,azure-insurance-db-0223cb94-prod,insurance,prod,Azure,small,56.09,63.56,54.49,131.47,99.76,2025-06-07
+app-0429,oracle-cloud-investment-db-1fe4919b-prod,investment,prod,Oracle Cloud,small,87.08,88.15,54.58,112.22,82.77,2025-06-07
+app-0430,oracle-cloud-corporate-db-79145103-prod,corporate,prod,Oracle Cloud,small,40.05,59.22,47.37,123.91,92.27,2025-06-07
+app-0431,oracle-cloud-insurance-db-255887d3-prod,insurance,prod,Oracle Cloud,small,16.32,67.9,27.71,104.22,67.82,2025-06-07
+app-0432,oracle-cloud-corporate-db-d99ad360-prod,corporate,prod,Oracle Cloud,medium,60.88,79.87,56.94,133.71,97.83,2025-06-07
+app-0433,azure-insurance-db-0ab5ac95-prod,insurance,prod,Azure,medium,11.87,64.15,67.66,278.1,90.84,2025-06-07
+app-0434,aws-treasury-db-1cdec33b-prod,treasury,prod,AWS,small,78.66,57.98,69.11,91.9,95.39,2025-06-07
+app-0435,azure-corporate-db-191ed59e-prod,corporate,prod,Azure,small,54.05,60.45,46.86,94.2,97.59,2025-06-07
+app-0436,oracle-cloud-treasury-db-38e6a8cb-prod,treasury,prod,Oracle Cloud,small,47.47,90.82,81.87,137.81,88.8,2025-06-07
+app-0437,oracle-cloud-retail-db-7acf294b-prod,retail,prod,Oracle Cloud,medium,42.98,73.06,57.13,228.08,99.68,2025-06-07
+app-0438,azure-treasury-db-66cf2d1b-prod,treasury,prod,Azure,xlarge,100.0,83.84,48.06,619.07,81.29,2025-06-07
+app-0439,oracle-cloud-retail-db-e0c26a53-prod,retail,prod,Oracle Cloud,medium,17.52,47.4,51.51,176.81,71.94,2025-06-07
+app-0440,oracle-cloud-corporate-db-a25cab10-prod,corporate,prod,Oracle Cloud,medium,71.03,40.86,15.63,143.8,80.88,2025-06-07
+app-0441,aws-insurance-db-4402ee2c-prod,insurance,prod,AWS,small,18.95,62.85,56.54,31.05,87.95,2025-06-07
+app-0442,aws-corporate-db-5315c491-prod,corporate,prod,AWS,medium,54.64,57.94,68.68,194.2,99.99,2025-06-07
+app-0443,azure-investment-db-a059fdb2-prod,investment,prod,Azure,large,88.99,32.27,57.53,378.94,99.99,2025-06-07
+app-0444,azure-insurance-db-197a8fb9-prod,insurance,prod,Azure,large,59.11,56.1,63.7,242.13,99.99,2025-06-07
+app-0445,azure-corporate-db-c3f5eee0-prod,corporate,prod,Azure,large,48.36,53.2,36.28,264.53,87.66,2025-06-07
+app-0446,oracle-cloud-investment-db-259d2784-prod,investment,prod,Oracle Cloud,xlarge,52.35,43.45,52.68,1126.26,93.1,2025-06-07
+app-0447,azure-corporate-db-094c7a84-prod,corporate,prod,Azure,xlarge,29.35,97.16,61.62,819.65,99.54,2025-06-07
+app-0448,azure-investment-db-57b8e9fb-prod,investment,prod,Azure,xlarge,30.63,56.77,44.03,593.61,83.62,2025-06-07
+app-0449,azure-corporate-db-707702f0-prod,corporate,prod,Azure,xlarge,78.37,78.35,65.94,860.16,87.36,2025-06-07
+app-0450,oracle-cloud-corporate-db-d038ef4c-prod,corporate,prod,Oracle Cloud,small,26.19,56.25,49.32,65.91,83.83,2025-06-07
+app-0451,azure-retail-db-3caeb899-prod,retail,prod,Azure,small,33.69,48.56,67.25,78.04,93.54,2025-06-07
+app-0452,oracle-cloud-investment-db-5b42595b-prod,investment,prod,Oracle Cloud,xlarge,47.18,48.58,37.96,652.57,85.13,2025-06-07
+app-0453,oracle-cloud-treasury-db-293cbb6b-prod,treasury,prod,Oracle Cloud,xlarge,68.3,65.3,32.07,689.04,98.57,2025-06-07
+app-0454,aws-treasury-db-44b29b2f-prod,treasury,prod,AWS,small,27.61,33.93,34.45,93.38,50.99,2025-06-07
+app-0455,azure-insurance-db-bf4e69dd-prod,insurance,prod,Azure,medium,45.93,37.45,50.0,204.98,84.9,2025-06-07
+app-0456,oracle-cloud-corporate-db-733cd6c0-prod,corporate,prod,Oracle Cloud,medium,54.44,48.46,60.89,257.44,98.18,2025-06-07
+app-0457,aws-corporate-db-4c27ae12-prod,corporate,prod,AWS,xlarge,42.68,44.47,28.45,333.0,71.2,2025-06-07
+app-0458,oracle-cloud-corporate-db-a7c0473a-prod,corporate,prod,Oracle Cloud,medium,55.3,62.08,16.05,230.27,84.94,2025-06-07
+app-0459,aws-insurance-db-2a501f9e-prod,insurance,prod,AWS,small,21.8,36.35,25.73,88.74,35.84,2025-06-07
+app-0460,oracle-cloud-insurance-db-e015c7d5-prod,insurance,prod,Oracle Cloud,xlarge,48.44,66.82,44.42,1060.52,97.13,2025-06-07
+app-0461,aws-corporate-db-45145918-prod,corporate,prod,AWS,xlarge,78.53,82.03,68.92,599.54,83.0,2025-06-07
+app-0462,azure-investment-db-a677579f-prod,investment,prod,Azure,large,43.28,22.06,45.49,527.77,66.78,2025-06-07
+app-0463,oracle-cloud-retail-db-952e5bcf-prod,retail,prod,Oracle Cloud,small,50.77,54.81,43.3,124.65,93.27,2025-06-07
+app-0464,aws-insurance-db-88cea964-prod,insurance,prod,AWS,small,89.73,33.05,50.4,99.86,99.68,2025-06-07
+app-0465,oracle-cloud-insurance-db-cf8345a7-prod,insurance,prod,Oracle Cloud,large,65.09,52.38,58.13,280.61,99.87,2025-06-07
+app-0466,aws-insurance-db-07f7ff65-prod,insurance,prod,AWS,small,37.05,37.9,39.93,77.12,70.55,2025-06-07
+app-0467,aws-insurance-db-9e187670-prod,insurance,prod,AWS,small,23.9,57.95,36.75,113.44,73.82,2025-06-07
+app-0468,azure-corporate-db-2a09bb46-prod,corporate,prod,Azure,small,69.87,75.56,16.04,83.74,97.61,2025-06-07
+app-0469,azure-corporate-db-18b00112-prod,corporate,prod,Azure,small,46.87,54.23,43.96,70.91,91.52,2025-06-07
+app-0470,aws-retail-db-d9666279-prod,retail,prod,AWS,xlarge,70.96,82.2,71.89,643.16,85.91,2025-06-07
+app-0471,azure-retail-db-c61dd896-prod,retail,prod,Azure,xlarge,55.13,53.44,95.74,590.63,95.89,2025-06-07
+app-0472,oracle-cloud-insurance-db-dc4fde09-prod,insurance,prod,Oracle Cloud,xlarge,73.74,88.56,55.45,925.68,90.11,2025-06-07
+app-0473,azure-treasury-db-07353ff6-prod,treasury,prod,Azure,small,36.53,62.76,64.09,87.79,98.08,2025-06-07
+app-0474,azure-treasury-db-09022f3e-prod,treasury,prod,Azure,large,37.79,77.14,23.77,168.93,88.16,2025-06-07
+app-0475,aws-retail-db-7b3f45ca-prod,retail,prod,AWS,medium,52.36,87.16,30.24,116.7,99.27,2025-06-07
+app-0476,azure-insurance-db-c4b6d07d-prod,insurance,prod,Azure,medium,68.66,44.32,45.64,229.9,96.83,2025-06-07
+app-0477,oracle-cloud-retail-db-6e61deb5-prod,retail,prod,Oracle Cloud,small,34.51,52.6,45.23,147.1,84.23,2025-06-07
+app-0478,azure-insurance-db-70a3459c-prod,insurance,prod,Azure,xlarge,32.91,46.54,50.19,916.16,82.39,2025-06-07
+app-0479,aws-investment-db-6a767ee8-prod,investment,prod,AWS,small,11.12,71.05,63.95,65.93,92.03,2025-06-07
+app-0480,oracle-cloud-investment-db-e9bf8bea-prod,investment,prod,Oracle Cloud,small,72.97,25.27,34.41,121.79,84.43,2025-06-07
+app-0481,azure-insurance-db-2307c5b9-prod,insurance,prod,Azure,medium,32.0,71.51,76.04,167.28,100.0,2025-06-07
+app-0482,oracle-cloud-insurance-db-2012d02e-prod,insurance,prod,Oracle Cloud,small,61.35,70.66,68.84,178.96,96.98,2025-06-07
+app-0483,azure-investment-db-bcb3c2af-prod,investment,prod,Azure,medium,76.84,79.32,47.4,156.49,96.15,2025-06-07
+app-0484,azure-retail-db-ac6e397f-prod,retail,prod,Azure,xlarge,46.94,77.56,67.72,651.87,98.96,2025-06-07
+app-0485,azure-insurance-db-a39684a5-prod,insurance,prod,Azure,small,10.77,44.62,67.35,52.96,77.23,2025-06-07
+app-0486,azure-retail-db-ef30d0d2-prod,retail,prod,Azure,medium,62.95,73.65,37.48,131.58,99.76,2025-06-07
+app-0487,oracle-cloud-retail-db-b9b6c07e-prod,retail,prod,Oracle Cloud,medium,58.84,18.62,49.33,197.04,80.34,2025-06-07
+app-0488,aws-investment-db-cc83d59d-prod,investment,prod,AWS,small,65.07,56.25,43.23,61.19,98.34,2025-06-07
+app-0489,azure-investment-db-c94a2482-prod,investment,prod,Azure,large,28.57,57.48,52.24,349.39,87.92,2025-06-07
+app-0490,oracle-cloud-insurance-db-f199334b-prod,insurance,prod,Oracle Cloud,small,25.18,45.07,73.07,74.59,90.66,2025-06-07
+app-0491,azure-treasury-db-72dd49a2-prod,treasury,prod,Azure,medium,65.96,78.81,54.94,189.48,97.3,2025-06-07
+app-0492,oracle-cloud-corporate-db-1a707db7-prod,corporate,prod,Oracle Cloud,medium,50.42,40.26,43.65,193.53,85.52,2025-06-07
+app-0493,aws-corporate-db-5784cb3e-prod,corporate,prod,AWS,large,48.6,29.98,80.38,454.68,96.93,2025-06-07
+app-0494,azure-retail-db-5690185c-prod,retail,prod,Azure,large,52.67,85.17,39.35,372.92,99.94,2025-06-07
+app-0495,azure-corporate-db-002663cc-prod,corporate,prod,Azure,medium,77.04,57.76,74.53,227.2,94.02,2025-06-07
+app-0496,azure-corporate-db-2fc39f56-prod,corporate,prod,Azure,large,27.85,42.02,64.96,552.35,85.83,2025-06-07
+app-0497,aws-corporate-db-2a37f392-prod,corporate,prod,AWS,large,41.37,90.11,55.17,267.5,99.69,2025-06-07
+app-0498,aws-retail-db-2fb08c8c-prod,retail,prod,AWS,medium,42.41,55.38,45.4,174.5,90.59,2025-06-07
+app-0499,oracle-cloud-retail-db-57db2c0f-prod,retail,prod,Oracle Cloud,medium,68.19,45.45,63.98,212.42,99.96,2025-06-07
+app-0500,azure-treasury-db-1c600679-prod,treasury,prod,Azure,xlarge,46.92,54.73,69.87,1101.03,99.5,2025-06-07
+app-0501,oracle-cloud-retail-db-449141fa-prod,retail,prod,Oracle Cloud,medium,33.29,40.12,49.99,204.98,77.74,2025-06-07
+app-0502,oracle-cloud-insurance-db-f971d8b0-prod,insurance,prod,Oracle Cloud,medium,72.12,88.82,53.7,176.4,91.67,2025-06-07
+app-0503,aws-retail-db-9622e3ba-prod,retail,prod,AWS,small,55.31,76.9,76.91,47.39,94.11,2025-06-07
+app-0504,aws-corporate-db-b3239bcb-prod,corporate,prod,AWS,medium,96.93,56.35,48.53,167.31,96.7,2025-06-07
+app-0505,aws-retail-db-630bc4d1-prod,retail,prod,AWS,xlarge,66.2,34.54,57.83,1141.14,96.81,2025-06-07
+app-0506,azure-retail-db-187f3c82-prod,retail,prod,Azure,large,55.11,50.92,59.31,262.5,98.51,2025-06-07
+app-0507,azure-investment-db-78fccf28-prod,investment,prod,Azure,xlarge,44.6,58.14,53.51,577.88,96.08,2025-06-07
+app-0508,azure-corporate-db-3515af73-prod,corporate,prod,Azure,medium,32.57,76.11,53.95,206.58,97.91,2025-06-07
+app-0509,oracle-cloud-corporate-db-137bfd45-prod,corporate,prod,Oracle Cloud,small,68.34,41.88,65.27,130.85,99.86,2025-06-07
+app-0510,azure-investment-db-70b34351-prod,investment,prod,Azure,medium,38.08,62.19,53.96,175.02,95.39,2025-06-07
+app-0511,aws-investment-db-01b30823-prod,investment,prod,AWS,medium,55.33,66.64,67.41,110.86,99.39,2025-06-07
+app-0512,aws-investment-db-a9254e2a-prod,investment,prod,AWS,small,71.77,73.82,63.68,54.76,94.05,2025-06-07
+app-0513,azure-insurance-db-4769cc35-prod,insurance,prod,Azure,small,73.76,58.11,60.71,89.59,98.9,2025-06-07
+app-0514,azure-retail-db-679cb878-prod,retail,prod,Azure,xlarge,87.97,79.43,53.78,602.33,88.22,2025-06-07
+app-0515,azure-treasury-db-d07fb237-prod,treasury,prod,Azure,medium,42.32,66.04,57.07,202.9,98.53,2025-06-07
+app-0516,oracle-cloud-retail-db-ebf0dd70-prod,retail,prod,Oracle Cloud,medium,72.18,44.09,47.17,191.71,98.1,2025-06-07
+app-0517,oracle-cloud-corporate-db-cd938ffa-prod,corporate,prod,Oracle Cloud,small,52.59,64.02,54.49,112.53,99.45,2025-06-07
+app-0518,azure-treasury-db-ec274126-prod,treasury,prod,Azure,xlarge,73.94,68.16,73.81,1156.95,91.05,2025-06-07
+app-0519,azure-treasury-db-de4f47d1-prod,treasury,prod,Azure,medium,43.87,74.85,48.32,145.5,98.83,2025-06-07
+app-0520,aws-corporate-db-1309877e-prod,corporate,prod,AWS,small,50.9,36.54,100.0,58.52,99.62,2025-06-07
+app-0521,azure-corporate-db-ec8509ad-prod,corporate,prod,Azure,medium,43.13,55.92,53.75,118.47,94.86,2025-06-07
+app-0522,aws-investment-db-51a25612-prod,investment,prod,AWS,xlarge,31.98,54.28,40.38,604.43,80.23,2025-06-07
+app-0523,aws-treasury-db-d6998d04-prod,treasury,prod,AWS,medium,36.72,63.2,37.09,166.58,87.16,2025-06-07
+app-0524,oracle-cloud-investment-db-45df45a0-prod,investment,prod,Oracle Cloud,medium,76.32,37.58,36.32,234.59,93.84,2025-06-07
+app-0525,aws-corporate-db-22089b29-prod,corporate,prod,AWS,medium,68.01,46.56,79.8,123.44,98.57,2025-06-07
+app-0526,aws-insurance-db-b6119718-prod,insurance,prod,AWS,medium,25.49,37.34,65.4,181.58,81.38,2025-06-07
+app-0527,aws-retail-db-2dbb20f4-prod,retail,prod,AWS,medium,5.56,46.0,61.14,205.55,68.55,2025-06-07
+app-0528,oracle-cloud-corporate-db-5cddcbad-prod,corporate,prod,Oracle Cloud,medium,51.96,56.53,34.97,193.92,90.73,2025-06-07
+app-0529,azure-insurance-db-aacd2b70-prod,insurance,prod,Azure,medium,49.21,52.93,48.26,81.88,93.92,2025-06-07
+app-0530,azure-retail-db-3ff74cc7-prod,retail,prod,Azure,small,45.11,41.74,68.57,67.52,95.8,2025-06-07
+app-0531,azure-corporate-db-616502f1-prod,corporate,prod,Azure,small,40.48,67.48,22.74,74.96,83.12,2025-06-07
+app-0532,azure-insurance-db-047118b5-prod,insurance,prod,Azure,medium,62.25,52.27,4.94,131.58,74.54,2025-06-07
+app-0533,azure-retail-db-9d2d1a65-prod,retail,prod,Azure,medium,58.42,70.73,63.85,265.25,98.83,2025-06-07
+app-0534,oracle-cloud-investment-db-97c9b8ff-prod,investment,prod,Oracle Cloud,xlarge,69.74,94.55,53.59,969.68,90.03,2025-06-07
+app-0535,oracle-cloud-corporate-db-343aae66-prod,corporate,prod,Oracle Cloud,medium,64.03,48.71,72.0,217.1,99.84,2025-06-07
+app-0536,azure-retail-db-98ec7328-prod,retail,prod,Azure,xlarge,35.25,73.86,82.92,488.08,99.0,2025-06-07
+app-0537,aws-retail-db-6d0ff222-prod,retail,prod,AWS,xlarge,53.91,49.14,65.47,813.3,99.09,2025-06-07
+app-0538,aws-retail-db-da75196c-prod,retail,prod,AWS,large,14.06,60.24,49.97,276.87,78.43,2025-06-07
+app-0539,azure-retail-db-48d480c6-prod,retail,prod,Azure,medium,46.35,78.78,79.47,168.87,95.8,2025-06-07
+app-0540,oracle-cloud-retail-db-cb15289a-prod,retail,prod,Oracle Cloud,large,59.19,76.0,88.96,392.22,86.47,2025-06-07
+app-0541,azure-treasury-db-eba6efeb-prod,treasury,prod,Azure,medium,46.08,30.89,51.35,138.96,81.44,2025-06-07
+app-0542,azure-treasury-db-650663ba-prod,treasury,prod,Azure,xlarge,65.88,52.21,43.25,430.52,97.58,2025-06-07
+app-0543,azure-retail-db-e6135844-prod,retail,prod,Azure,small,76.77,78.1,60.9,120.36,91.11,2025-06-07
+app-0544,azure-insurance-db-bc37ccab-prod,insurance,prod,Azure,small,37.22,57.77,71.73,84.15,98.78,2025-06-07
+app-0545,azure-insurance-db-2d19d346-prod,insurance,prod,Azure,medium,62.07,62.85,75.65,179.44,97.06,2025-06-07
+app-0546,azure-corporate-db-93fee8db-prod,corporate,prod,Azure,medium,94.6,68.93,51.75,210.0,91.36,2025-06-07
+app-0547,azure-insurance-db-908e4aef-prod,insurance,prod,Azure,medium,25.87,70.78,47.45,144.02,91.05,2025-06-07
+app-0548,aws-corporate-db-f1b8271a-prod,corporate,prod,AWS,small,38.29,39.64,58.82,56.5,87.01,2025-06-07
+app-0549,oracle-cloud-investment-db-5120fed0-prod,investment,prod,Oracle Cloud,large,54.68,48.22,62.57,463.16,98.54,2025-06-07
+app-0550,azure-treasury-db-2ee9e82a-prod,treasury,prod,Azure,small,76.93,69.05,64.45,103.92,93.57,2025-06-07
+app-0551,azure-corporate-db-82f89c35-prod,corporate,prod,Azure,large,40.37,55.37,47.47,232.48,90.6,2025-06-07
+app-0552,aws-treasury-db-3c6f9e9a-prod,treasury,prod,AWS,small,84.31,43.79,41.69,77.03,99.28,2025-06-07
+app-0553,azure-corporate-db-61f9daa2-prod,corporate,prod,Azure,large,31.11,85.2,75.27,398.71,99.07,2025-06-07
+app-0554,aws-investment-db-a02840b0-prod,investment,prod,AWS,large,27.95,68.09,34.01,447.08,82.67,2025-06-07
+app-0555,aws-treasury-db-31b19cb0-prod,treasury,prod,AWS,small,51.69,81.96,41.32,72.38,99.82,2025-06-07
+app-0556,oracle-cloud-corporate-db-724e69d2-prod,corporate,prod,Oracle Cloud,xlarge,40.55,76.23,52.41,809.56,99.19,2025-06-07
+app-0557,azure-corporate-db-fdcc5876-prod,corporate,prod,Azure,medium,30.63,81.75,57.09,157.18,99.23,2025-06-07
+app-0558,azure-retail-db-f0e1cd29-prod,retail,prod,Azure,large,3.86,73.78,37.52,453.6,70.8,2025-06-07
+app-0559,azure-corporate-db-c3336672-prod,corporate,prod,Azure,xlarge,48.5,34.79,37.02,1172.97,75.25,2025-06-07
+app-0560,azure-insurance-db-516e5ecf-prod,insurance,prod,Azure,xlarge,28.93,80.71,58.19,517.32,98.97,2025-06-07
+app-0561,azure-insurance-db-36cfad85-prod,insurance,prod,Azure,medium,23.17,61.49,43.95,140.45,81.66,2025-06-07
+app-0562,azure-treasury-db-034b9424-prod,treasury,prod,Azure,small,11.04,58.69,42.95,84.03,68.53,2025-06-07
+app-0563,oracle-cloud-retail-db-2e59ddac-prod,retail,prod,Oracle Cloud,large,48.26,47.19,86.14,575.69,99.98,2025-06-07
+app-0564,oracle-cloud-treasury-db-3828943e-prod,treasury,prod,Oracle Cloud,xlarge,84.91,53.35,48.18,1370.75,99.71,2025-06-07
+app-0565,aws-treasury-db-6c1874b7-prod,treasury,prod,AWS,small,51.04,48.17,51.13,114.13,93.89,2025-06-07
+app-0566,aws-retail-db-b56629e1-prod,retail,prod,AWS,small,40.5,46.37,39.82,63.96,80.26,2025-06-07
+app-0567,azure-retail-db-c2c7df20-prod,retail,prod,Azure,xlarge,83.62,82.71,64.27,790.1,82.22,2025-06-07
+app-0568,aws-retail-db-85d1345f-prod,retail,prod,AWS,medium,66.38,59.42,38.11,143.45,98.2,2025-06-07
+app-0569,aws-corporate-db-53dc8f46-prod,corporate,prod,AWS,small,7.86,40.79,50.12,81.65,54.18,2025-06-07
+app-0570,aws-corporate-db-793262ae-prod,corporate,prod,AWS,large,26.8,53.25,49.56,386.63,82.37,2025-06-07
+app-0571,azure-insurance-db-74b37760-prod,insurance,prod,Azure,xlarge,67.87,74.44,29.19,746.42,99.5,2025-06-07
+app-0572,oracle-cloud-treasury-db-449723ac-prod,treasury,prod,Oracle Cloud,small,44.72,77.13,56.67,96.28,99.98,2025-06-07
+app-0573,aws-investment-db-c6c5112c-prod,investment,prod,AWS,small,63.65,39.46,67.94,95.88,99.44,2025-06-07
+app-0574,aws-treasury-db-e914975f-prod,treasury,prod,AWS,large,72.82,79.5,49.17,593.51,96.79,2025-06-07
+app-0575,azure-retail-db-6a55b5be-prod,retail,prod,Azure,small,50.15,59.22,84.3,155.73,98.7,2025-06-07
+app-0576,azure-retail-db-5d34b9f4-prod,retail,prod,Azure,small,70.54,58.29,37.72,71.15,98.74,2025-06-07
+app-0577,azure-corporate-db-fdab6b70-prod,corporate,prod,Azure,small,44.58,59.28,65.92,104.75,99.27,2025-06-07
+app-0578,azure-retail-db-f4ac37c1-prod,retail,prod,Azure,medium,61.93,29.88,25.29,171.68,72.52,2025-06-07
+app-0579,oracle-cloud-investment-db-0d7bcefd-prod,investment,prod,Oracle Cloud,small,50.38,100.0,51.62,70.94,96.64,2025-06-07
+app-0580,aws-investment-db-aae049f9-prod,investment,prod,AWS,medium,51.29,66.85,51.12,170.6,99.2,2025-06-07
+app-0581,azure-insurance-db-049f4806-prod,insurance,prod,Azure,small,58.23,38.04,47.93,89.51,91.1,2025-06-07
+app-0582,aws-investment-db-f7479c4a-prod,investment,prod,AWS,small,35.6,71.67,75.33,77.41,99.95,2025-06-07
+app-0583,aws-retail-db-3f2d3d73-prod,retail,prod,AWS,small,84.13,52.67,52.47,38.39,99.4,2025-06-07
+app-0584,oracle-cloud-corporate-db-7033a599-prod,corporate,prod,Oracle Cloud,medium,68.1,60.58,71.23,196.66,97.25,2025-06-07
+app-0585,oracle-cloud-corporate-db-611ca39a-prod,corporate,prod,Oracle Cloud,small,18.77,74.79,43.95,147.12,87.47,2025-06-07
+app-0586,aws-corporate-db-458837b9-prod,corporate,prod,AWS,large,33.91,79.2,53.77,262.23,98.81,2025-06-07
+app-0587,aws-retail-db-f7b00366-prod,retail,prod,AWS,large,66.84,38.79,40.24,441.36,91.92,2025-06-07
+app-0588,aws-investment-db-f6f2a867-prod,investment,prod,AWS,small,41.09,62.98,41.19,66.11,91.62,2025-06-07
+app-0589,oracle-cloud-retail-db-221f118b-prod,retail,prod,Oracle Cloud,medium,46.85,52.31,69.5,197.41,99.11,2025-06-07
+app-0590,oracle-cloud-insurance-db-e2f8d107-prod,insurance,prod,Oracle Cloud,medium,44.09,65.98,58.17,243.65,99.04,2025-06-07
+app-0591,aws-corporate-db-dc81b228-prod,corporate,prod,AWS,small,39.69,88.43,61.18,73.71,99.4,2025-06-07
+app-0592,oracle-cloud-retail-db-c0e57059-prod,retail,prod,Oracle Cloud,small,66.04,69.98,50.09,98.54,99.74,2025-06-07
+app-0593,azure-investment-db-b1fbc224-prod,investment,prod,Azure,small,72.8,57.67,75.54,114.55,95.3,2025-06-07
+app-0594,azure-retail-db-60707a5d-prod,retail,prod,Azure,small,23.38,56.12,65.21,98.08,91.35,2025-06-07
+app-0595,aws-treasury-db-cad7eed1-prod,treasury,prod,AWS,large,61.16,67.3,63.15,396.35,99.06,2025-06-07
+app-0596,aws-retail-db-bcf5a829-prod,retail,prod,AWS,small,56.1,69.05,41.79,92.69,98.82,2025-06-07
+app-0597,aws-retail-db-029cd4c2-prod,retail,prod,AWS,medium,64.51,64.29,53.63,245.29,99.96,2025-06-07
+app-0598,aws-retail-db-372a92ee-prod,retail,prod,AWS,xlarge,65.69,50.42,45.82,1081.24,97.73,2025-06-07
+app-0599,azure-treasury-db-de655d9e-prod,treasury,prod,Azure,xlarge,52.01,53.32,41.92,793.01,92.55,2025-06-07
+app-0600,aws-corporate-db-d0f04d2b-prod,corporate,prod,AWS,large,60.78,65.65,66.75,263.58,98.79,2025-06-07
+app-0601,aws-retail-db-a5f99586-prod,retail,prod,AWS,medium,59.46,77.49,58.42,211.52,98.36,2025-06-07
+app-0602,azure-corporate-db-adf51b57-prod,corporate,prod,Azure,medium,17.69,64.22,48.56,148.39,82.96,2025-06-07
+app-0603,aws-retail-db-c0e05976-prod,retail,prod,AWS,xlarge,67.39,56.14,63.9,743.58,99.62,2025-06-07
+app-0604,azure-retail-db-1bb6a74f-prod,retail,prod,Azure,xlarge,51.53,50.58,56.69,592.78,96.88,2025-06-07
+app-0605,aws-investment-db-68426711-prod,investment,prod,AWS,medium,53.67,67.79,67.66,129.82,99.42,2025-06-07
+app-0606,oracle-cloud-treasury-db-ef9573b5-prod,treasury,prod,Oracle Cloud,small,29.08,84.68,57.78,72.78,99.5,2025-06-07
+app-0607,aws-corporate-db-47a97e22-prod,corporate,prod,AWS,xlarge,51.35,54.99,65.18,663.59,99.5,2025-06-07
+app-0608,aws-corporate-db-e3294126-prod,corporate,prod,AWS,medium,66.36,45.04,34.98,228.48,92.15,2025-06-07
+app-0609,aws-investment-db-b64dead3-prod,investment,prod,AWS,xlarge,95.81,90.28,27.88,919.05,91.98,2025-06-07
+app-0610,aws-investment-db-773cca19-prod,investment,prod,AWS,large,51.51,76.58,70.05,327.67,97.71,2025-06-07
+app-0611,azure-corporate-db-472a695a-prod,corporate,prod,Azure,xlarge,46.38,39.91,40.33,694.64,80.21,2025-06-07
+app-0612,azure-retail-db-03ae1dc5-prod,retail,prod,Azure,medium,30.83,50.62,100.0,170.54,99.99,2025-06-07
+app-0613,oracle-cloud-retail-db-fb015cf8-prod,retail,prod,Oracle Cloud,xlarge,37.51,57.39,64.0,952.67,96.91,2025-06-07
+app-0614,oracle-cloud-retail-db-90c89623-prod,retail,prod,Oracle Cloud,xlarge,64.72,82.37,73.69,753.3,88.45,2025-06-07
+app-0615,oracle-cloud-corporate-db-f172f58f-prod,corporate,prod,Oracle Cloud,xlarge,50.19,67.98,59.44,638.43,99.96,2025-06-07
+app-0616,aws-corporate-db-0f302b59-prod,corporate,prod,AWS,small,79.33,64.85,90.49,71.72,79.24,2025-06-07
+app-0617,oracle-cloud-corporate-db-d20def7f-prod,corporate,prod,Oracle Cloud,medium,69.8,48.13,75.31,347.13,98.78,2025-06-07
+app-0618,aws-treasury-db-c5660fc7-prod,treasury,prod,AWS,medium,11.44,72.45,51.29,266.1,86.05,2025-06-07
+app-0619,oracle-cloud-corporate-db-5e50f41d-prod,corporate,prod,Oracle Cloud,large,35.62,61.62,28.66,450.62,79.67,2025-06-07
+app-0620,aws-treasury-db-3a73d528-prod,treasury,prod,AWS,xlarge,25.55,71.04,25.01,634.34,76.31,2025-06-07
+app-0621,aws-treasury-db-28c18a0d-prod,treasury,prod,AWS,small,53.32,51.35,67.02,135.46,99.52,2025-06-07
+app-0622,aws-corporate-db-c57e1d3b-prod,corporate,prod,AWS,xlarge,62.29,50.44,46.78,857.09,97.08,2025-06-07
+app-0623,oracle-cloud-retail-db-b64e679f-prod,retail,prod,Oracle Cloud,large,39.2,33.99,52.87,479.46,79.79,2025-06-07
+app-0624,azure-corporate-db-00eafb39-prod,corporate,prod,Azure,medium,100.0,60.54,61.82,128.04,87.54,2025-06-07
+app-0625,oracle-cloud-insurance-db-a6885b0f-prod,insurance,prod,Oracle Cloud,medium,56.44,49.16,37.16,188.36,90.37,2025-06-07
+app-0626,aws-retail-db-3bb373a9-prod,retail,prod,AWS,small,79.15,80.9,34.86,86.28,98.46,2025-06-07
+app-0627,aws-insurance-db-9226ad05-prod,insurance,prod,AWS,small,51.04,58.76,35.07,107.57,91.43,2025-06-07
+app-0628,aws-retail-db-2e1aba43-prod,retail,prod,AWS,small,47.17,64.48,64.92,147.0,99.92,2025-06-07
+app-0629,aws-corporate-db-8d3436f7-prod,corporate,prod,AWS,xlarge,38.96,94.75,49.71,409.03,99.92,2025-06-07
+app-0630,oracle-cloud-corporate-db-0d77e146-prod,corporate,prod,Oracle Cloud,medium,72.39,53.2,54.16,255.47,100.0,2025-06-07
+app-0631,oracle-cloud-insurance-db-7c0e4247-prod,insurance,prod,Oracle Cloud,large,72.02,72.86,61.43,503.34,95.19,2025-06-07
+app-0632,aws-retail-db-f2a7ec14-prod,retail,prod,AWS,medium,0.0,82.39,44.07,172.05,80.1,2025-06-07
+app-0633,aws-corporate-db-490d21a4-prod,corporate,prod,AWS,small,38.02,79.52,55.96,102.97,99.71,2025-06-07
+app-0634,azure-insurance-db-0b770b52-prod,insurance,prod,Azure,xlarge,17.78,63.28,64.46,938.92,91.74,2025-06-07
+app-0635,aws-investment-db-4ece5e26-prod,investment,prod,AWS,small,53.61,62.83,47.95,102.3,98.31,2025-06-07
+app-0636,oracle-cloud-retail-db-d9cae082-prod,retail,prod,Oracle Cloud,small,58.86,68.31,69.96,207.32,97.96,2025-06-07
+app-0637,aws-corporate-db-1c80c6ec-prod,corporate,prod,AWS,large,12.22,80.41,51.25,313.73,90.94,2025-06-07
+app-0638,aws-corporate-db-c12e1ac7-prod,corporate,prod,AWS,medium,17.85,65.06,67.1,209.12,93.76,2025-06-07
+app-0639,oracle-cloud-retail-db-aaef2188-prod,retail,prod,Oracle Cloud,medium,61.01,44.11,67.14,254.65,99.58,2025-06-07
+app-0640,azure-insurance-db-08c3a36c-prod,insurance,prod,Azure,medium,39.47,77.6,53.96,244.0,99.44,2025-06-07
+app-0641,oracle-cloud-corporate-db-d381cf62-prod,corporate,prod,Oracle Cloud,small,59.41,69.44,66.54,111.4,98.35,2025-06-07
+app-0642,oracle-cloud-retail-db-a3f6cd3a-prod,retail,prod,Oracle Cloud,large,48.03,82.04,76.69,435.52,95.03,2025-06-07
+app-0643,aws-insurance-db-0858704a-prod,insurance,prod,AWS,xlarge,38.56,77.74,62.39,683.72,99.99,2025-06-07
+app-0644,azure-treasury-db-09ec6e7c-prod,treasury,prod,Azure,xlarge,82.0,100.0,82.92,998.47,49.92,2025-06-07
+app-0645,aws-retail-db-46cc232f-prod,retail,prod,AWS,large,80.7,49.27,57.71,234.81,99.59,2025-06-07
+app-0646,azure-corporate-db-32fe501b-prod,corporate,prod,Azure,xlarge,70.29,88.42,53.12,408.88,92.97,2025-06-07
+app-0647,aws-insurance-db-a161afa1-prod,insurance,prod,AWS,small,47.07,50.02,75.69,69.31,99.64,2025-06-07
+app-0648,oracle-cloud-treasury-db-b8ab0d56-prod,treasury,prod,Oracle Cloud,medium,48.93,46.67,55.08,239.32,94.03,2025-06-07
+app-0649,aws-treasury-db-2d40645a-prod,treasury,prod,AWS,small,17.4,66.85,54.51,104.98,88.19,2025-06-07
+app-0650,aws-insurance-db-b20417f7-prod,insurance,prod,AWS,small,24.85,47.08,18.58,61.42,44.39,2025-06-07
+app-0651,aws-treasury-db-4aab5039-prod,treasury,prod,AWS,medium,24.71,55.87,41.01,88.23,76.31,2025-06-07
+app-0652,aws-insurance-db-6c49afd3-prod,insurance,prod,AWS,xlarge,39.23,67.95,81.34,760.26,99.5,2025-06-07
+app-0653,oracle-cloud-insurance-db-7403674c-prod,insurance,prod,Oracle Cloud,small,49.34,72.86,54.25,111.11,99.91,2025-06-07
+app-0654,aws-retail-db-b27a367f-prod,retail,prod,AWS,medium,53.51,53.96,39.14,122.77,92.26,2025-06-07
+app-0655,aws-corporate-db-7dbb41e4-prod,corporate,prod,AWS,small,58.68,63.66,57.38,83.17,100.0,2025-06-07
+app-0656,oracle-cloud-treasury-db-ec876daf-prod,treasury,prod,Oracle Cloud,medium,38.75,47.73,45.51,139.44,84.0,2025-06-07
+app-0657,azure-treasury-db-ab6957d8-prod,treasury,prod,Azure,small,39.52,75.56,57.73,73.67,99.64,2025-06-07
+app-0658,aws-treasury-db-785c33d2-prod,treasury,prod,AWS,medium,58.72,61.59,73.23,167.63,98.73,2025-06-07
+app-0659,oracle-cloud-retail-db-2f227441-prod,retail,prod,Oracle Cloud,medium,65.1,63.4,40.93,142.55,99.22,2025-06-07
+app-0660,oracle-cloud-insurance-db-67e0492c-prod,insurance,prod,Oracle Cloud,xlarge,60.98,28.5,63.61,965.51,94.97,2025-06-07
+app-0661,aws-insurance-db-30dd0987-prod,insurance,prod,AWS,small,76.21,68.01,40.97,84.14,99.81,2025-06-07
+app-0662,aws-corporate-db-a813dbda-prod,corporate,prod,AWS,medium,35.92,57.84,49.67,115.21,90.72,2025-06-07
+app-0663,aws-retail-db-4145801c-prod,retail,prod,AWS,xlarge,37.54,73.42,50.73,689.7,97.67,2025-06-07
+app-0664,oracle-cloud-corporate-db-f15d2148-prod,corporate,prod,Oracle Cloud,medium,15.4,52.44,34.42,145.48,58.03,2025-06-07
+app-0665,aws-investment-db-6d313784-prod,investment,prod,AWS,xlarge,23.23,82.46,46.46,803.99,94.61,2025-06-07
+app-0666,aws-retail-db-e7f90525-prod,retail,prod,AWS,large,63.52,75.05,67.63,312.14,95.23,2025-06-07
+app-0667,azure-treasury-db-580e3851-prod,treasury,prod,Azure,xlarge,51.82,70.04,78.01,948.55,97.26,2025-06-07
+app-0668,azure-insurance-db-8894a833-prod,insurance,prod,Azure,small,63.11,46.24,56.31,56.71,98.57,2025-06-07
+app-0669,azure-insurance-db-df971ad5-prod,insurance,prod,Azure,xlarge,79.41,68.84,64.82,483.07,92.41,2025-06-07
+app-0670,aws-investment-db-b8febc69-prod,investment,prod,AWS,medium,38.67,51.47,53.42,111.52,90.78,2025-06-07
+app-0671,azure-treasury-db-b4590d59-prod,treasury,prod,Azure,medium,34.79,97.79,55.03,158.06,99.6,2025-06-07
+app-0672,azure-corporate-db-c0c4b840-prod,corporate,prod,Azure,medium,94.52,59.74,65.64,108.23,88.94,2025-06-07
+app-0673,aws-insurance-db-1102542f-prod,insurance,prod,AWS,small,20.85,45.81,62.75,51.25,82.22,2025-06-07
+app-0674,azure-retail-db-01c7a4f3-prod,retail,prod,Azure,small,31.37,82.31,65.57,82.8,100.0,2025-06-07
+app-0675,aws-insurance-db-3e7b9c41-prod,insurance,prod,AWS,large,37.73,88.19,58.05,503.33,99.89,2025-06-07
+app-0676,aws-insurance-db-7739c3b1-prod,insurance,prod,AWS,small,16.54,47.89,43.68,43.3,64.11,2025-06-07
+app-0677,oracle-cloud-corporate-db-1f90bccb-prod,corporate,prod,Oracle Cloud,large,56.48,65.03,63.46,268.43,99.83,2025-06-07
+app-0678,aws-corporate-db-a2f82192-prod,corporate,prod,AWS,xlarge,32.0,82.89,45.73,442.27,97.39,2025-06-07
+app-0679,oracle-cloud-insurance-db-33abcd92-prod,insurance,prod,Oracle Cloud,small,64.45,69.71,50.9,162.4,99.82,2025-06-07
+app-0680,aws-corporate-db-c85c9308-prod,corporate,prod,AWS,medium,62.11,52.15,61.97,70.29,99.9,2025-06-07
+app-0681,aws-corporate-db-3e67ccff-prod,corporate,prod,AWS,xlarge,48.05,53.39,52.26,685.39,95.2,2025-06-07
+app-0682,aws-retail-db-d4bcc7f2-prod,retail,prod,AWS,medium,24.77,56.2,25.53,228.19,62.48,2025-06-07
+app-0683,azure-retail-db-89062f05-prod,retail,prod,Azure,xlarge,61.85,49.62,75.23,638.06,99.69,2025-06-07
+app-0684,aws-investment-db-a4c13492-prod,investment,prod,AWS,small,42.71,37.12,47.18,95.2,80.5,2025-06-07
+app-0685,oracle-cloud-retail-db-54782f94-prod,retail,prod,Oracle Cloud,large,64.12,83.08,63.52,363.98,93.44,2025-06-07
+app-0686,aws-corporate-db-df66e225-prod,corporate,prod,AWS,medium,48.46,65.74,80.89,121.95,98.42,2025-06-07
+app-0687,aws-corporate-db-e7097d8c-prod,corporate,prod,AWS,xlarge,56.23,72.87,57.59,706.05,99.69,2025-06-07
+app-0688,azure-investment-db-f45d9859-prod,investment,prod,Azure,large,90.75,56.06,70.22,578.04,90.48,2025-06-07
+app-0689,oracle-cloud-retail-db-b0dd1bf0-prod,retail,prod,Oracle Cloud,medium,57.51,26.1,63.72,221.5,92.59,2025-06-07
+app-0690,oracle-cloud-investment-db-388991fe-prod,investment,prod,Oracle Cloud,medium,46.77,52.69,61.5,157.53,97.48,2025-06-07
+app-0691,aws-retail-db-a27f6da8-prod,retail,prod,AWS,small,64.33,54.45,47.22,79.79,98.64,2025-06-07
+app-0692,oracle-cloud-treasury-db-5390a180-prod,treasury,prod,Oracle Cloud,large,28.09,42.44,73.18,225.16,90.85,2025-06-07
+app-0693,aws-insurance-db-718ac590-prod,insurance,prod,AWS,large,66.6,51.24,71.19,469.12,99.43,2025-06-07
+app-0694,aws-corporate-db-a77250a5-prod,corporate,prod,AWS,small,60.41,73.81,74.45,86.69,94.29,2025-06-07
+app-0695,azure-treasury-db-1e559069-prod,treasury,prod,Azure,large,32.89,51.36,50.79,306.86,85.96,2025-06-07
+app-0696,aws-retail-db-c677b33a-prod,retail,prod,AWS,xlarge,38.62,52.26,73.29,661.25,98.26,2025-06-07
+app-0697,aws-corporate-db-a7b4e16c-prod,corporate,prod,AWS,medium,47.12,25.87,37.81,135.38,66.74,2025-06-07
+app-0698,oracle-cloud-investment-db-e6313cab-prod,investment,prod,Oracle Cloud,medium,46.33,94.24,57.41,264.19,97.76,2025-06-07
+app-0699,azure-insurance-db-5ef5c41f-prod,insurance,prod,Azure,xlarge,23.64,60.03,32.38,626.72,71.6,2025-06-07
+app-0700,azure-corporate-db-e18cb07a-prod,corporate,prod,Azure,medium,51.91,44.14,65.27,241.17,97.58,2025-06-07
+app-0701,oracle-cloud-retail-db-4518fd00-prod,retail,prod,Oracle Cloud,large,53.3,43.99,59.93,315.14,96.4,2025-06-07
+app-0702,aws-retail-db-09881224-prod,retail,prod,AWS,xlarge,37.74,69.74,45.66,457.62,94.99,2025-06-07
+app-0703,azure-retail-db-0f33543b-prod,retail,prod,Azure,xlarge,27.7,73.1,48.08,993.19,93.27,2025-06-07
+app-0704,azure-retail-db-f53ffdf0-prod,retail,prod,Azure,small,34.57,70.25,57.05,65.67,97.72,2025-06-07
+app-0705,azure-corporate-db-c60dd1c5-prod,corporate,prod,Azure,xlarge,56.57,34.15,52.14,726.54,90.42,2025-06-07
+app-0706,oracle-cloud-retail-db-6d7c300e-prod,retail,prod,Oracle Cloud,medium,29.29,20.86,59.87,220.54,65.98,2025-06-07
+app-0707,aws-retail-db-a4744027-prod,retail,prod,AWS,large,46.66,76.34,60.63,364.64,99.91,2025-06-07
+app-0708,aws-retail-db-d90213d6-prod,retail,prod,AWS,large,45.12,52.34,66.97,478.91,98.32,2025-06-07
+app-0709,aws-retail-db-31ed3c23-prod,retail,prod,AWS,large,84.34,65.08,68.62,246.37,89.96,2025-06-07
+app-0710,aws-corporate-db-06922bff-prod,corporate,prod,AWS,small,69.89,62.52,73.99,125.63,95.16,2025-06-07
+app-0711,oracle-cloud-retail-db-674839c0-prod,retail,prod,Oracle Cloud,medium,48.22,61.38,48.82,193.34,96.76,2025-06-07
+app-0712,aws-retail-db-9702da6c-prod,retail,prod,AWS,large,34.02,74.73,58.27,346.47,98.83,2025-06-07
+app-0713,azure-investment-db-b0da2fe6-prod,investment,prod,Azure,medium,35.57,69.06,69.96,138.9,99.8,2025-06-07
+app-0714,azure-retail-db-90e7cf34-prod,retail,prod,Azure,small,14.96,63.12,88.41,111.33,98.73,2025-06-07
+app-0715,oracle-cloud-corporate-db-cb4ed4f0-prod,corporate,prod,Oracle Cloud,small,41.07,66.25,56.5,96.46,98.18,2025-06-07
+app-0716,azure-treasury-db-dc4e4c92-prod,treasury,prod,Azure,xlarge,32.62,77.01,50.84,1078.89,97.35,2025-06-07
+app-0717,azure-treasury-db-229dbfa5-prod,treasury,prod,Azure,large,42.64,33.93,53.47,469.64,82.66,2025-06-07
+app-0718,aws-corporate-db-f3182bd0-prod,corporate,prod,AWS,small,6.42,73.73,48.14,64.41,81.43,2025-06-07
+app-0719,azure-retail-db-8d2ab770-prod,retail,prod,Azure,medium,37.71,78.38,56.06,197.67,99.57,2025-06-07
+app-0720,aws-investment-db-1a66b005-prod,investment,prod,AWS,xlarge,43.26,47.55,28.91,871.88,74.76,2025-06-07
+app-0721,aws-insurance-db-a41425b1-prod,insurance,prod,AWS,xlarge,4.84,51.09,57.24,935.24,68.98,2025-06-07
+app-0722,aws-investment-db-198ec1ca-prod,investment,prod,AWS,medium,43.78,68.43,47.34,106.17,97.09,2025-06-07
+app-0723,aws-retail-db-f7ab7b9c-prod,retail,prod,AWS,small,75.83,47.98,78.37,106.78,96.58,2025-06-07
+app-0724,oracle-cloud-corporate-db-95436de0-prod,corporate,prod,Oracle Cloud,small,79.39,56.88,76.8,120.62,92.41,2025-06-07
+app-0725,oracle-cloud-corporate-db-002868c1-prod,corporate,prod,Oracle Cloud,large,47.61,66.73,50.6,615.03,98.43,2025-06-07
+app-0726,aws-treasury-db-96bdeb3f-prod,treasury,prod,AWS,small,28.34,59.79,65.41,18.65,95.14,2025-06-07
+app-0727,aws-corporate-db-a839b5d2-prod,corporate,prod,AWS,medium,43.49,38.15,64.58,169.14,92.08,2025-06-07
+app-0728,aws-retail-db-935eeb66-prod,retail,prod,AWS,large,32.39,44.45,56.14,206.26,84.64,2025-06-07
+app-0729,azure-insurance-db-f9bc94b1-prod,insurance,prod,Azure,large,49.47,42.12,47.06,224.24,88.12,2025-06-07
+app-0730,azure-retail-db-524a4a47-prod,retail,prod,Azure,small,44.78,78.59,46.92,37.02,99.35,2025-06-07
+app-0731,azure-retail-db-76dd6705-prod,retail,prod,Azure,medium,58.86,46.59,78.05,191.59,99.91,2025-06-07
+app-0732,aws-corporate-db-216c287a-prod,corporate,prod,AWS,medium,64.2,40.69,34.37,110.78,88.48,2025-06-07
+app-0733,azure-retail-db-70855a1a-prod,retail,prod,Azure,small,32.06,73.09,62.13,90.21,98.88,2025-06-07
+app-0734,azure-retail-db-80def337-prod,retail,prod,Azure,small,55.79,80.54,58.93,49.24,98.38,2025-06-07
+app-0735,aws-retail-db-6d259c02-prod,retail,prod,AWS,large,85.43,71.6,65.13,624.58,87.66,2025-06-07
+app-0736,aws-retail-db-84236dce-prod,retail,prod,AWS,small,66.29,50.41,49.79,65.18,98.73,2025-06-07
+app-0737,azure-corporate-db-1bc19b6c-prod,corporate,prod,Azure,small,36.54,45.97,52.23,97.79,85.77,2025-06-07
+app-0738,azure-retail-db-295e5a72-prod,retail,prod,Azure,small,89.42,76.34,40.56,125.72,95.19,2025-06-07
+app-0739,aws-retail-db-a2d37263-prod,retail,prod,AWS,small,58.11,43.29,64.6,116.88,98.64,2025-06-07
+app-0740,azure-insurance-db-ae4e1f29-prod,insurance,prod,Azure,medium,78.51,47.74,57.41,283.3,99.91,2025-06-07
+app-0741,oracle-cloud-retail-db-40903f2f-prod,retail,prod,Oracle Cloud,large,62.17,55.84,50.81,355.09,99.13,2025-06-07
+app-0742,oracle-cloud-treasury-db-9d16710f-prod,treasury,prod,Oracle Cloud,xlarge,74.28,65.1,69.49,1519.07,94.21,2025-06-07
+app-0743,azure-investment-db-b8c69d42-prod,investment,prod,Azure,small,64.21,64.66,65.09,86.71,98.65,2025-06-07
+app-0744,azure-investment-db-495faa60-prod,investment,prod,Azure,xlarge,95.17,72.53,35.93,722.41,96.12,2025-06-07
+app-0745,aws-corporate-db-8a49e161-prod,corporate,prod,AWS,medium,21.91,38.1,46.18,140.91,62.17,2025-06-07
+app-0746,oracle-cloud-treasury-db-bc8d0be2-prod,treasury,prod,Oracle Cloud,medium,31.36,79.81,54.75,177.05,98.62,2025-06-07
+app-0747,aws-retail-db-e9307c7f-prod,retail,prod,AWS,large,53.6,43.17,42.61,228.6,88.54,2025-06-07
+app-0748,oracle-cloud-investment-db-cffc903b-prod,investment,prod,Oracle Cloud,small,67.08,73.1,50.02,103.65,99.28,2025-06-07
+app-0749,oracle-cloud-treasury-db-ef3e6a2e-prod,treasury,prod,Oracle Cloud,large,73.41,44.27,57.93,441.3,99.87,2025-06-07
+app-0750,oracle-cloud-investment-db-e5189b40-prod,investment,prod,Oracle Cloud,xlarge,33.06,77.64,60.14,1392.42,99.42,2025-06-07
+app-0751,aws-treasury-db-08153af1-prod,treasury,prod,AWS,large,60.71,56.64,64.55,279.52,99.97,2025-06-07
+app-0752,oracle-cloud-corporate-db-648a1bf5-prod,corporate,prod,Oracle Cloud,small,35.41,54.24,74.52,139.1,98.26,2025-06-07
+app-0753,aws-investment-db-12ebb109-prod,investment,prod,AWS,large,58.99,81.78,70.58,417.74,93.17,2025-06-07
+app-0754,azure-investment-db-4e666bc0-prod,investment,prod,Azure,medium,54.98,48.71,58.53,192.25,97.8,2025-06-07
+app-0755,azure-investment-db-81328938-prod,investment,prod,Azure,medium,56.33,57.93,22.77,114.5,87.17,2025-06-07
+app-0756,aws-insurance-db-35523b4e-prod,insurance,prod,AWS,xlarge,40.28,45.54,51.48,505.02,87.34,2025-06-07
+app-0757,azure-insurance-db-90a8903c-prod,insurance,prod,Azure,xlarge,60.82,58.67,60.78,527.84,100.0,2025-06-07
+app-0758,azure-treasury-db-b5927063-prod,treasury,prod,Azure,xlarge,45.13,56.13,70.69,554.77,99.55,2025-06-07
+app-0759,azure-retail-db-6026ea26-prod,retail,prod,Azure,small,43.89,34.69,60.12,77.59,88.15,2025-06-07
+app-0760,aws-corporate-db-84eaba42-prod,corporate,prod,AWS,medium,84.76,50.27,46.97,204.11,99.97,2025-06-07
+app-0761,azure-investment-db-f4beac2e-prod,investment,prod,Azure,xlarge,57.04,64.46,53.04,530.2,99.79,2025-06-07
+app-0762,azure-investment-db-1980807b-prod,investment,prod,Azure,medium,55.04,68.6,52.28,196.07,99.88,2025-06-07
+app-0763,aws-investment-db-7cbdefdb-prod,investment,prod,AWS,medium,48.14,59.55,52.45,239.01,97.26,2025-06-07
+app-0764,aws-treasury-db-27bb11ce-prod,treasury,prod,AWS,xlarge,53.46,57.47,48.6,807.71,97.09,2025-06-07
+app-0765,azure-retail-db-8a3bf241-prod,retail,prod,Azure,xlarge,84.07,58.95,64.96,621.29,94.56,2025-06-07
+app-0766,aws-insurance-db-5aa631f4-prod,insurance,prod,AWS,medium,9.42,64.8,70.27,113.29,91.24,2025-06-07
+app-0767,aws-investment-db-6f574a91-prod,investment,prod,AWS,medium,70.29,55.54,77.29,213.0,96.29,2025-06-07
+app-0768,aws-retail-db-9930b1a4-prod,retail,prod,AWS,small,58.07,83.66,36.88,80.41,99.99,2025-06-07
+app-0769,azure-insurance-db-9b3d08a8-prod,insurance,prod,Azure,xlarge,26.88,73.85,53.92,651.62,95.54,2025-06-07
+app-0770,aws-insurance-db-68a48627-prod,insurance,prod,AWS,xlarge,67.2,54.83,54.44,454.2,99.91,2025-06-07
+app-0771,azure-corporate-db-3229bdb4-prod,corporate,prod,Azure,small,19.62,42.4,36.83,88.05,54.28,2025-06-07
+app-0772,oracle-cloud-corporate-db-9e675f83-prod,corporate,prod,Oracle Cloud,xlarge,72.71,61.94,48.78,691.9,99.92,2025-06-07
+app-0773,oracle-cloud-corporate-db-fd8383c1-prod,corporate,prod,Oracle Cloud,medium,43.68,52.78,51.79,228.27,93.0,2025-06-07
+app-0774,azure-corporate-db-6365a0b0-prod,corporate,prod,Azure,medium,70.67,50.71,44.15,109.18,98.55,2025-06-07
+app-0775,azure-retail-db-c2d5b441-prod,retail,prod,Azure,medium,51.7,60.15,40.3,166.65,94.61,2025-06-07
+app-0776,azure-investment-db-812a12e2-prod,investment,prod,Azure,large,35.91,88.29,60.33,486.05,99.86,2025-06-07
+app-0777,aws-investment-db-0b4065d6-prod,investment,prod,AWS,large,39.58,35.64,60.6,194.91,86.44,2025-06-07
+app-0778,oracle-cloud-corporate-db-1821a74a-prod,corporate,prod,Oracle Cloud,xlarge,27.58,72.98,44.91,746.96,91.72,2025-06-07
+app-0779,aws-treasury-db-0cdec3c3-prod,treasury,prod,AWS,small,45.62,83.67,85.2,60.24,91.74,2025-06-07
+app-0780,azure-corporate-db-68a78f55-prod,corporate,prod,Azure,medium,100.0,51.29,45.62,114.92,98.01,2025-06-07
+app-0781,aws-retail-db-85f67329-prod,retail,prod,AWS,medium,54.03,51.67,38.25,190.72,90.97,2025-06-07
+app-0782,aws-investment-db-f16ef608-prod,investment,prod,AWS,xlarge,55.85,42.8,12.44,423.68,67.03,2025-06-07
+app-0783,aws-retail-db-631641db-prod,retail,prod,AWS,medium,64.27,54.6,64.48,273.51,99.92,2025-06-07
+app-0784,oracle-cloud-corporate-db-ce2be0a3-prod,corporate,prod,Oracle Cloud,small,69.3,77.36,76.06,147.98,87.33,2025-06-07
+app-0785,aws-retail-db-5f7307d9-prod,retail,prod,AWS,large,48.18,73.9,61.15,336.91,99.93,2025-06-07
+app-0786,aws-investment-db-7337b751-prod,investment,prod,AWS,small,54.3,76.44,40.74,89.01,99.5,2025-06-07
+app-0787,aws-insurance-db-fec48ba4-prod,insurance,prod,AWS,medium,6.67,66.92,61.37,155.44,85.91,2025-06-07
+app-0788,aws-corporate-db-2e14b392-prod,corporate,prod,AWS,large,52.42,59.47,46.35,302.86,96.71,2025-06-07
+app-0789,azure-corporate-db-23b4f8cc-prod,corporate,prod,Azure,xlarge,36.96,65.94,70.68,1093.31,99.71,2025-06-07
+app-0790,aws-treasury-db-f424601b-prod,treasury,prod,AWS,xlarge,31.27,38.02,48.09,817.22,72.77,2025-06-07
+app-0791,azure-retail-db-a8f751b6-prod,retail,prod,Azure,medium,90.53,54.36,47.72,61.57,98.9,2025-06-07
+app-0792,aws-treasury-db-a50eeeeb-prod,treasury,prod,AWS,medium,24.2,63.81,53.26,62.17,89.58,2025-06-07
+app-0793,aws-retail-db-c7b4b142-prod,retail,prod,AWS,small,42.94,71.53,36.52,87.73,94.16,2025-06-07
+app-0794,oracle-cloud-insurance-db-2dc024e7-prod,insurance,prod,Oracle Cloud,xlarge,52.97,48.53,42.07,755.09,90.78,2025-06-07
+app-0795,aws-treasury-db-290a47d9-prod,treasury,prod,AWS,large,56.92,52.86,71.47,389.2,99.99,2025-06-07
+app-0796,azure-retail-db-2d0552b7-prod,retail,prod,Azure,medium,42.98,51.85,47.93,292.85,90.37,2025-06-07
+app-0797,azure-treasury-db-5b9a5535-prod,treasury,prod,Azure,large,69.93,36.28,34.71,209.37,89.39,2025-06-07
+app-0798,azure-investment-db-f342840a-prod,investment,prod,Azure,large,45.54,45.83,46.16,338.85,87.47,2025-06-07
+app-0799,oracle-cloud-insurance-db-25385111-prod,insurance,prod,Oracle Cloud,medium,66.72,41.84,76.84,175.11,99.8,2025-06-07
+app-0800,aws-insurance-db-d2004610-prod,insurance,prod,AWS,large,65.46,51.13,40.55,247.18,96.37,2025-06-07
+app-0801,azure-investment-db-6eb615b7-prod,investment,prod,Azure,large,34.09,71.54,22.96,555.35,81.64,2025-06-07
+app-0802,azure-investment-db-d5e6916b-prod,investment,prod,Azure,xlarge,0.0,44.95,62.53,465.42,63.48,2025-06-07
+app-0803,oracle-cloud-corporate-db-04c1c45e-prod,corporate,prod,Oracle Cloud,small,39.46,49.92,67.97,63.34,96.44,2025-06-07
+app-0804,aws-retail-db-b4b1e61e-prod,retail,prod,AWS,small,51.18,59.37,44.14,68.66,95.55,2025-06-07
+app-0805,aws-treasury-db-1cb4fa30-prod,treasury,prod,AWS,large,65.74,61.85,59.21,368.9,99.68,2025-06-07
+app-0806,oracle-cloud-retail-db-9e70cbbd-prod,retail,prod,Oracle Cloud,large,92.03,70.6,61.97,282.26,86.19,2025-06-07
+app-0807,aws-investment-db-49d42969-prod,investment,prod,AWS,xlarge,18.22,58.41,40.49,888.13,72.55,2025-06-07
+app-0808,aws-retail-db-2ad763d6-prod,retail,prod,AWS,small,32.07,63.71,47.34,89.89,90.55,2025-06-07
+app-0809,aws-retail-db-5a593b12-prod,retail,prod,AWS,xlarge,81.97,73.13,58.04,861.15,92.37,2025-06-07
+app-0810,azure-insurance-db-67323264-prod,insurance,prod,Azure,medium,15.68,78.44,77.82,136.78,99.55,2025-06-07
+app-0811,oracle-cloud-investment-db-cde7058b-prod,investment,prod,Oracle Cloud,small,82.63,61.83,82.09,81.44,84.95,2025-06-07
+app-0812,azure-corporate-db-a004848a-prod,corporate,prod,Azure,medium,29.69,58.45,45.23,273.55,84.9,2025-06-07
+app-0813,azure-corporate-db-5a62b24b-prod,corporate,prod,Azure,medium,30.32,66.17,52.1,207.35,93.15,2025-06-07
+app-0814,aws-retail-db-bfe07668-prod,retail,prod,AWS,xlarge,48.09,50.08,40.92,472.97,88.38,2025-06-07
+app-0815,aws-insurance-db-15e2bbef-prod,insurance,prod,AWS,medium,63.46,66.74,70.32,145.69,97.08,2025-06-07
+app-0816,azure-corporate-db-4b85783a-prod,corporate,prod,Azure,small,67.65,71.21,38.57,89.51,99.95,2025-06-07
+app-0817,oracle-cloud-corporate-db-02ad21b8-prod,corporate,prod,Oracle Cloud,large,28.33,50.81,55.79,418.49,85.89,2025-06-07
+app-0818,azure-insurance-db-49785ba7-prod,insurance,prod,Azure,large,40.57,55.87,66.84,267.26,98.06,2025-06-07
+app-0819,aws-treasury-db-e0416967-prod,treasury,prod,AWS,small,63.3,46.34,65.33,88.83,99.82,2025-06-07
+app-0820,oracle-cloud-retail-db-3abf066d-prod,retail,prod,Oracle Cloud,small,91.55,69.87,67.0,85.32,83.72,2025-06-07
+app-0821,oracle-cloud-corporate-db-53d0c96a-prod,corporate,prod,Oracle Cloud,medium,38.11,54.29,45.93,208.1,87.94,2025-06-07
+app-0822,azure-corporate-db-1a220f77-prod,corporate,prod,Azure,small,70.46,78.58,53.44,68.94,96.49,2025-06-07
+app-0823,aws-insurance-db-54b9da39-prod,insurance,prod,AWS,small,30.2,56.78,64.59,71.69,94.39,2025-06-07
+app-0824,aws-insurance-db-300df1a6-prod,insurance,prod,AWS,xlarge,69.27,55.33,49.81,917.09,99.78,2025-06-07
+app-0825,aws-insurance-db-1f545b11-prod,insurance,prod,AWS,xlarge,72.39,76.15,52.39,802.51,96.96,2025-06-07
+app-0826,oracle-cloud-insurance-db-e9a8f43d-prod,insurance,prod,Oracle Cloud,medium,41.19,52.65,53.94,155.41,92.79,2025-06-07
+app-0827,aws-corporate-db-4c055a1f-prod,corporate,prod,AWS,xlarge,54.43,63.19,41.98,571.32,97.11,2025-06-07
+app-0828,oracle-cloud-treasury-db-eea56363-prod,treasury,prod,Oracle Cloud,small,72.68,37.21,67.06,168.12,99.94,2025-06-07
+app-0829,azure-corporate-db-9ed4718c-prod,corporate,prod,Azure,small,40.94,58.68,44.32,96.06,90.96,2025-06-07
+app-0830,azure-corporate-db-59e95642-prod,corporate,prod,Azure,small,42.76,52.16,33.0,85.18,81.16,2025-06-07
+app-0831,aws-corporate-db-46605108-prod,corporate,prod,AWS,medium,21.41,42.26,59.49,148.71,77.56,2025-06-07
+app-0832,azure-treasury-db-96b588cc-prod,treasury,prod,Azure,xlarge,36.25,68.97,52.59,659.26,96.58,2025-06-07
+app-0833,aws-treasury-db-76a0e8b8-prod,treasury,prod,AWS,small,50.36,47.34,42.1,50.98,88.78,2025-06-07
+app-0834,aws-retail-db-2bcaab2f-prod,retail,prod,AWS,large,52.4,57.92,62.66,387.85,99.66,2025-06-07
+app-0835,oracle-cloud-treasury-db-9695dab5-prod,treasury,prod,Oracle Cloud,small,14.96,54.03,56.13,173.32,79.08,2025-06-07
+app-0836,azure-retail-db-97eae7e7-prod,retail,prod,Azure,small,53.27,64.33,68.52,84.27,99.74,2025-06-07
+app-0837,oracle-cloud-treasury-db-76334c67-prod,treasury,prod,Oracle Cloud,small,29.62,50.9,49.7,85.22,82.79,2025-06-07
+app-0838,aws-insurance-db-45809fa9-prod,insurance,prod,AWS,medium,54.15,77.71,66.0,216.93,97.78,2025-06-07
+app-0839,azure-retail-db-4bec0cf6-prod,retail,prod,Azure,medium,27.45,86.86,59.12,140.92,99.7,2025-06-07
+app-0840,aws-retail-db-2cba0b30-prod,retail,prod,AWS,large,39.81,40.06,62.86,292.17,90.35,2025-06-07
+app-0841,azure-retail-db-5aaf703e-prod,retail,prod,Azure,medium,76.45,51.51,55.74,266.96,99.9,2025-06-07
+app-0842,azure-retail-db-b3d94942-prod,retail,prod,Azure,medium,65.1,48.04,50.1,142.62,98.05,2025-06-07
+app-0843,azure-retail-db-ea1f4346-prod,retail,prod,Azure,medium,82.54,54.86,51.3,154.0,99.48,2025-06-07
+app-0844,azure-corporate-db-18580f4f-prod,corporate,prod,Azure,medium,53.97,65.18,74.11,171.14,98.78,2025-06-07
+app-0845,oracle-cloud-treasury-db-bde4fffb-prod,treasury,prod,Oracle Cloud,small,33.59,55.3,58.98,142.3,92.83,2025-06-07
+app-0846,azure-treasury-db-c8877b19-prod,treasury,prod,Azure,large,68.71,77.01,46.3,423.05,99.0,2025-06-07
+app-0847,aws-retail-db-f3eff033-prod,retail,prod,AWS,xlarge,80.83,59.42,65.48,577.55,95.4,2025-06-07
+app-0848,aws-corporate-db-21537b11-prod,corporate,prod,AWS,small,46.7,66.31,61.02,65.26,99.75,2025-06-07
+app-0849,aws-retail-db-83b49964-prod,retail,prod,AWS,medium,75.34,38.98,42.64,149.71,96.31,2025-06-07
+app-0850,azure-corporate-db-476527cf-prod,corporate,prod,Azure,small,42.8,69.37,61.73,58.76,99.74,2025-06-07
+app-0851,oracle-cloud-corporate-db-08bc62af-prod,corporate,prod,Oracle Cloud,large,60.13,80.94,20.94,240.91,97.75,2025-06-07
+app-0852,aws-investment-db-88a87a7e-prod,investment,prod,AWS,large,46.02,49.94,62.35,252.98,96.73,2025-06-07
+app-0853,azure-insurance-db-7e7bf5eb-prod,insurance,prod,Azure,small,71.26,69.89,58.71,102.48,97.26,2025-06-07
+app-0854,aws-corporate-db-b7f9ff74-prod,corporate,prod,AWS,medium,52.39,90.03,42.73,230.94,99.82,2025-06-07
+app-0855,oracle-cloud-treasury-db-16bc556e-prod,treasury,prod,Oracle Cloud,medium,43.09,35.21,55.51,230.79,85.18,2025-06-07
+app-0856,azure-retail-db-3f198426-prod,retail,prod,Azure,xlarge,26.64,51.14,53.85,759.18,83.76,2025-06-07
+app-0857,aws-retail-db-8675386d-prod,retail,prod,AWS,medium,47.68,58.14,62.46,101.86,99.05,2025-06-07
+app-0858,aws-retail-db-58acad37-prod,retail,prod,AWS,small,58.31,37.88,44.62,85.3,89.34,2025-06-07
+app-0859,aws-treasury-db-8561a22d-prod,treasury,prod,AWS,medium,70.0,88.0,50.99,170.28,94.16,2025-06-07
+app-0860,aws-retail-db-5364f360-prod,retail,prod,AWS,medium,88.87,42.27,64.86,218.64,98.22,2025-06-07
+app-0861,aws-corporate-db-0f2d0927-prod,corporate,prod,AWS,medium,57.18,100.0,64.02,154.07,88.21,2025-06-07
+app-0862,aws-retail-db-501e29ac-prod,retail,prod,AWS,medium,47.21,48.59,70.02,131.42,98.6,2025-06-07
+app-0863,azure-treasury-db-1bc8fadd-prod,treasury,prod,Azure,medium,54.38,45.59,20.52,140.96,75.41,2025-06-07
+app-0864,azure-investment-db-f1f2bd31-prod,investment,prod,Azure,medium,17.53,44.44,65.92,134.47,81.14,2025-06-07
+app-0865,aws-retail-db-49a407d8-prod,retail,prod,AWS,xlarge,79.28,46.49,67.3,447.47,98.81,2025-06-07
+app-0866,aws-corporate-db-23881e05-prod,corporate,prod,AWS,small,13.13,64.85,41.95,54.04,74.94,2025-06-07
+app-0867,azure-retail-db-0ae0eda9-prod,retail,prod,Azure,small,100.0,6.95,41.1,141.0,92.91,2025-06-07
+app-0868,oracle-cloud-treasury-db-271df404-prod,treasury,prod,Oracle Cloud,large,27.29,48.24,43.06,359.26,73.81,2025-06-07
+app-0869,aws-corporate-db-06eaca9e-prod,corporate,prod,AWS,medium,52.86,73.92,70.02,185.32,98.04,2025-06-07
+app-0870,oracle-cloud-investment-db-e47be5ef-prod,investment,prod,Oracle Cloud,xlarge,66.88,69.59,59.27,789.82,98.28,2025-06-07
+app-0871,azure-retail-db-26fc0563-prod,retail,prod,Azure,small,64.26,75.84,55.51,73.9,98.31,2025-06-07
+app-0872,aws-retail-db-194ad526-prod,retail,prod,AWS,xlarge,22.47,60.92,69.45,828.36,94.88,2025-06-07
+app-0873,azure-corporate-db-a96ea11a-prod,corporate,prod,Azure,small,48.47,64.73,45.93,100.95,96.97,2025-06-07
+app-0874,aws-insurance-db-383211bd-prod,insurance,prod,AWS,xlarge,37.0,58.16,71.77,492.34,98.82,2025-06-07
+app-0875,aws-retail-db-67ea2342-prod,retail,prod,AWS,medium,31.54,86.04,41.61,131.33,97.0,2025-06-07
+app-0876,aws-investment-db-29dcd153-prod,investment,prod,AWS,large,75.06,81.0,58.95,218.43,91.49,2025-06-07
+app-0877,aws-investment-db-3809e1d0-prod,investment,prod,AWS,small,51.45,59.64,54.44,95.14,98.55,2025-06-07
+app-0878,aws-treasury-db-66aa1198-prod,treasury,prod,AWS,large,51.43,92.49,58.63,264.16,96.47,2025-06-07
+app-0879,oracle-cloud-investment-db-8e464bc9-prod,investment,prod,Oracle Cloud,medium,28.93,31.22,59.66,272.3,74.85,2025-06-07
+app-0880,oracle-cloud-treasury-db-79263472-prod,treasury,prod,Oracle Cloud,xlarge,99.52,89.2,50.48,782.55,75.67,2025-06-07
+app-0881,oracle-cloud-retail-db-0ca5ac4c-prod,retail,prod,Oracle Cloud,large,33.7,30.26,44.19,511.72,64.14,2025-06-07
+app-0882,azure-retail-db-e3922a06-prod,retail,prod,Azure,large,55.07,56.58,58.13,329.88,99.27,2025-06-07
+app-0883,oracle-cloud-corporate-db-af2c1efe-prod,corporate,prod,Oracle Cloud,medium,60.82,62.53,21.88,150.89,91.61,2025-06-07
+app-0884,azure-investment-db-101e795a-prod,investment,prod,Azure,medium,73.68,58.24,59.11,229.45,99.15,2025-06-07
+app-0885,azure-investment-db-1acffe9e-prod,investment,prod,Azure,xlarge,50.83,73.56,68.23,691.51,98.89,2025-06-07
+app-0886,azure-corporate-db-c458cafb-prod,corporate,prod,Azure,large,58.54,57.24,31.45,214.05,92.54,2025-06-07
+app-0887,aws-investment-db-79a04cea-prod,investment,prod,AWS,xlarge,47.49,73.84,61.24,563.79,99.95,2025-06-07
+app-0888,azure-corporate-db-8b4e4416-prod,corporate,prod,Azure,large,38.25,52.46,59.38,247.39,93.79,2025-06-07
+app-0889,azure-insurance-db-23c82784-prod,insurance,prod,Azure,small,14.72,70.23,44.68,46.21,82.38,2025-06-07
+app-0890,aws-retail-db-a2a73797-prod,retail,prod,AWS,medium,64.6,60.8,60.58,225.75,99.75,2025-06-07
+app-0891,azure-retail-db-382d91fa-prod,retail,prod,Azure,medium,34.84,70.79,59.36,212.73,98.44,2025-06-07
+app-0892,azure-investment-db-908a837b-prod,investment,prod,Azure,small,34.71,44.39,57.41,131.27,86.87,2025-06-07
+app-0893,azure-treasury-db-7164650d-prod,treasury,prod,Azure,medium,18.42,44.56,46.22,181.95,65.18,2025-06-07
+app-0894,aws-insurance-db-ff98f62f-prod,insurance,prod,AWS,medium,33.73,55.46,51.69,219.39,89.37,2025-06-07
+app-0895,oracle-cloud-investment-db-425298fd-prod,investment,prod,Oracle Cloud,medium,34.66,56.47,70.41,342.73,97.63,2025-06-07
+app-0896,aws-corporate-db-57e63520-prod,corporate,prod,AWS,medium,41.49,70.98,61.04,152.19,99.71,2025-06-07
+app-0897,azure-investment-db-5990cad2-prod,investment,prod,Azure,small,47.93,63.04,54.65,94.01,98.56,2025-06-07
+app-0898,oracle-cloud-insurance-db-171c871f-prod,insurance,prod,Oracle Cloud,xlarge,34.78,60.12,39.52,707.4,85.57,2025-06-07
+app-0899,aws-retail-db-01c4fe47-prod,retail,prod,AWS,small,58.77,96.16,38.92,77.38,98.67,2025-06-07
+app-0900,aws-corporate-db-5901f97f-prod,corporate,prod,AWS,small,22.19,47.78,55.77,80.7,79.56,2025-06-07
+app-0901,oracle-cloud-insurance-db-933e5ee7-prod,insurance,prod,Oracle Cloud,xlarge,66.5,58.53,28.48,1195.77,95.13,2025-06-07
+app-0902,aws-retail-db-cf7cce54-prod,retail,prod,AWS,medium,53.01,64.48,79.03,183.9,98.11,2025-06-07
+app-0903,azure-investment-db-224344ce-prod,investment,prod,Azure,large,67.6,86.44,59.52,486.92,92.18,2025-06-07
+app-0904,oracle-cloud-investment-db-0010a559-prod,investment,prod,Oracle Cloud,small,29.77,90.87,63.24,77.55,99.9,2025-06-07
+app-0905,aws-investment-db-e55a01b1-prod,investment,prod,AWS,medium,62.45,46.94,71.77,145.87,99.99,2025-06-07
+app-0906,oracle-cloud-insurance-db-0e620667-prod,insurance,prod,Oracle Cloud,medium,45.76,56.45,56.11,181.15,96.74,2025-06-07
+app-0907,azure-insurance-db-e8d1f78e-prod,insurance,prod,Azure,xlarge,40.95,44.89,65.11,980.99,94.14,2025-06-07
+app-0908,oracle-cloud-treasury-db-2e3d1542-prod,treasury,prod,Oracle Cloud,small,30.33,64.93,63.36,136.06,96.83,2025-06-07
+app-0909,oracle-cloud-insurance-db-56d8aee9-prod,insurance,prod,Oracle Cloud,xlarge,73.54,76.89,36.9,896.43,99.63,2025-06-07
+app-0910,oracle-cloud-retail-db-626763b9-prod,retail,prod,Oracle Cloud,small,60.32,71.77,59.04,76.81,99.14,2025-06-07
+app-0911,azure-treasury-db-79067456-prod,treasury,prod,Azure,xlarge,79.75,65.24,66.1,760.77,93.29,2025-06-07
+app-0912,oracle-cloud-insurance-db-219e77ae-prod,insurance,prod,Oracle Cloud,xlarge,63.25,56.29,65.45,949.38,99.83,2025-06-07
+app-0913,oracle-cloud-retail-db-4c4ea2d7-prod,retail,prod,Oracle Cloud,large,46.47,63.3,38.3,272.07,92.92,2025-06-07
+app-0914,oracle-cloud-corporate-db-3e682e53-prod,corporate,prod,Oracle Cloud,medium,36.14,67.47,30.08,299.61,85.11,2025-06-07
+app-0915,aws-treasury-db-50a55568-prod,treasury,prod,AWS,small,35.99,58.56,68.16,71.95,97.92,2025-06-07
+app-0916,azure-treasury-db-0e5a7c14-prod,treasury,prod,Azure,medium,55.09,58.07,69.88,213.7,99.94,2025-06-07
+app-0917,aws-retail-db-3e2e92a2-prod,retail,prod,AWS,large,63.75,44.99,63.84,502.83,99.62,2025-06-07
+app-0918,aws-corporate-db-d71cb131-prod,corporate,prod,AWS,small,18.76,60.46,52.44,42.58,83.78,2025-06-07
+app-0919,aws-treasury-db-ff9bb318-prod,treasury,prod,AWS,large,50.12,39.71,48.87,302.64,88.16,2025-06-07
+app-0920,azure-corporate-db-64f19ae9-prod,corporate,prod,Azure,small,23.09,67.61,51.85,80.5,90.26,2025-06-07
+app-0921,aws-insurance-db-aebaedb9-prod,insurance,prod,AWS,small,61.79,58.94,57.14,90.67,99.97,2025-06-07
+app-0922,azure-retail-db-ac86804c-prod,retail,prod,Azure,medium,24.54,61.9,85.65,231.71,99.57,2025-06-07
+app-0923,aws-investment-db-59499196-prod,investment,prod,AWS,large,37.4,82.84,47.46,223.82,98.95,2025-06-07
+app-0924,oracle-cloud-investment-db-9af482fa-prod,investment,prod,Oracle Cloud,small,2.73,78.87,50.08,122.79,83.79,2025-06-07
+app-0925,aws-corporate-db-69d79c2f-prod,corporate,prod,AWS,small,65.69,35.02,53.62,65.58,95.42,2025-06-07
+app-0926,aws-corporate-db-0dbd7d0a-prod,corporate,prod,AWS,large,54.21,84.37,39.85,400.31,99.98,2025-06-07
+app-0927,azure-corporate-db-39d4a1bd-prod,corporate,prod,Azure,small,43.81,61.91,67.58,86.19,99.69,2025-06-07
+app-0928,azure-treasury-db-f9c7930d-prod,treasury,prod,Azure,medium,31.13,70.97,61.6,172.09,98.16,2025-06-07
+app-0929,aws-retail-db-ac2d0214-prod,retail,prod,AWS,small,91.66,47.67,50.09,58.56,99.38,2025-06-07
+app-0930,oracle-cloud-treasury-db-d6ffebf5-prod,treasury,prod,Oracle Cloud,small,7.24,61.56,74.01,192.82,90.4,2025-06-07
+app-0931,azure-investment-db-071ee768-prod,investment,prod,Azure,xlarge,48.29,47.48,64.36,637.38,97.26,2025-06-07
+app-0932,aws-treasury-db-6efaa1d2-prod,treasury,prod,AWS,medium,25.01,68.28,29.72,124.02,77.45,2025-06-07
+app-0933,azure-retail-db-6ef363ba-prod,retail,prod,Azure,medium,18.51,66.01,65.84,156.15,93.9,2025-06-07
+app-0934,oracle-cloud-corporate-db-4d6659b9-prod,corporate,prod,Oracle Cloud,small,51.48,61.36,29.66,128.69,90.24,2025-06-07
+app-0935,aws-insurance-db-156b82bd-prod,insurance,prod,AWS,large,40.96,45.06,66.94,265.09,94.92,2025-06-07
+app-0936,azure-investment-db-a4822225-prod,investment,prod,Azure,xlarge,32.07,29.53,43.78,729.68,61.33,2025-06-07
+app-0937,azure-insurance-db-56ce94b7-prod,insurance,prod,Azure,small,66.83,48.99,38.91,77.44,95.57,2025-06-07
+app-0938,azure-retail-db-728a0713-prod,retail,prod,Azure,large,28.65,87.04,36.22,341.29,94.52,2025-06-07
+app-0939,aws-corporate-db-fcebb22e-prod,corporate,prod,AWS,small,67.45,48.34,59.37,131.14,99.84,2025-06-07
+app-0940,azure-insurance-db-9d83668d-prod,insurance,prod,Azure,large,79.04,48.4,61.86,348.99,99.4,2025-06-07
+app-0941,aws-investment-db-1d02d64d-prod,investment,prod,AWS,large,9.37,55.18,59.12,304.87,77.96,2025-06-07
+app-0942,aws-insurance-db-916c420d-prod,insurance,prod,AWS,medium,65.9,70.84,59.01,125.68,98.28,2025-06-07
+app-0943,azure-retail-db-877acec4-prod,retail,prod,Azure,small,43.99,50.51,56.63,73.87,94.21,2025-06-07
+app-0944,azure-corporate-db-2e2894b3-prod,corporate,prod,Azure,medium,43.26,52.4,46.42,162.99,90.02,2025-06-07
+app-0945,oracle-cloud-corporate-db-3555fd08-prod,corporate,prod,Oracle Cloud,large,46.1,41.55,49.23,410.31,87.09,2025-06-07
+app-0946,aws-retail-db-8cdd6237-prod,retail,prod,AWS,large,70.49,63.95,54.59,258.71,99.43,2025-06-07
+app-0947,aws-treasury-db-31be6656-prod,treasury,prod,AWS,medium,55.25,36.79,37.86,121.78,82.57,2025-06-07
+app-0948,azure-retail-db-96c1ef63-prod,retail,prod,Azure,xlarge,40.19,49.51,46.05,897.11,86.4,2025-06-07
+app-0949,aws-treasury-db-a91a430e-prod,treasury,prod,AWS,medium,45.16,97.32,64.03,51.98,95.12,2025-06-07
+app-0950,aws-treasury-db-72efdb4e-prod,treasury,prod,AWS,xlarge,19.88,78.34,61.71,514.04,97.2,2025-06-07
+app-0951,azure-retail-db-efe7c34e-prod,retail,prod,Azure,medium,58.59,50.5,61.43,288.37,99.38,2025-06-07
+app-0952,azure-treasury-db-d3935911-prod,treasury,prod,Azure,medium,5.19,79.11,72.53,199.32,96.27,2025-06-07
+app-0953,azure-retail-db-2c469ab2-prod,retail,prod,Azure,medium,40.92,49.86,52.28,215.28,90.53,2025-06-07
+app-0954,azure-retail-db-04747093-prod,retail,prod,Azure,small,48.76,48.53,49.66,99.61,92.41,2025-06-07
+app-0955,oracle-cloud-investment-db-7a71ef8a-prod,investment,prod,Oracle Cloud,large,48.65,50.92,59.4,298.14,96.93,2025-06-07
+app-0956,azure-retail-db-85538d5e-prod,retail,prod,Azure,medium,58.94,72.81,51.72,230.21,99.92,2025-06-07
+app-0957,aws-retail-db-21d89c9e-prod,retail,prod,AWS,small,99.12,38.57,76.81,54.64,91.74,2025-06-07
+app-0958,aws-retail-db-53135640-prod,retail,prod,AWS,large,46.34,53.92,54.87,358.21,95.7,2025-06-07
+app-0959,aws-retail-db-ebdcce76-prod,retail,prod,AWS,large,67.12,50.15,81.46,192.03,97.57,2025-06-07
+app-0960,oracle-cloud-treasury-db-60e5dad8-prod,treasury,prod,Oracle Cloud,small,70.37,43.77,55.63,102.74,99.27,2025-06-07
+app-0961,aws-corporate-db-02379493-prod,corporate,prod,AWS,large,32.81,49.74,36.66,248.54,74.34,2025-06-07
+app-0962,azure-corporate-db-70550bcb-prod,corporate,prod,Azure,small,31.76,55.96,56.6,121.96,91.16,2025-06-07
+app-0963,azure-treasury-db-2801d961-prod,treasury,prod,Azure,medium,18.44,37.74,27.48,103.71,35.54,2025-06-07
+app-0964,aws-corporate-db-edc69f1d-prod,corporate,prod,AWS,medium,29.17,70.21,57.21,149.96,96.2,2025-06-07
+app-0965,azure-retail-db-d767932f-prod,retail,prod,Azure,xlarge,26.52,47.54,35.42,799.75,65.47,2025-06-07
+app-0966,oracle-cloud-insurance-db-81071e96-prod,insurance,prod,Oracle Cloud,xlarge,37.83,52.05,70.29,486.55,97.27,2025-06-07
+app-0967,aws-retail-db-6fb0c58d-prod,retail,prod,AWS,small,71.53,69.75,53.46,90.25,98.49,2025-06-07
+app-0968,azure-retail-db-b594c96c-prod,retail,prod,Azure,xlarge,10.37,58.95,56.26,1151.67,79.43,2025-06-07
+app-0969,azure-corporate-db-8a522ef2-prod,corporate,prod,Azure,xlarge,49.45,64.58,54.3,811.57,99.05,2025-06-07
+app-0970,azure-treasury-db-fbe25772-prod,treasury,prod,Azure,xlarge,60.36,77.62,47.17,838.82,99.82,2025-06-07
+app-0971,azure-retail-db-55727657-prod,retail,prod,Azure,small,42.32,73.1,32.17,111.58,92.7,2025-06-07
+app-0972,azure-insurance-db-955c5812-prod,insurance,prod,Azure,small,85.06,38.44,71.69,123.0,98.4,2025-06-07
+app-0973,azure-investment-db-8a20cab0-prod,investment,prod,Azure,small,39.32,52.89,35.65,111.65,81.12,2025-06-07
+app-0974,azure-retail-db-6f6ebd3c-prod,retail,prod,Azure,medium,75.28,53.36,52.54,184.79,99.99,2025-06-07
+app-0975,aws-investment-db-38342c6c-prod,investment,prod,AWS,medium,44.14,77.41,54.87,203.62,99.91,2025-06-07
+app-0976,oracle-cloud-corporate-db-49be3dd0-prod,corporate,prod,Oracle Cloud,xlarge,38.9,46.43,67.1,614.24,94.72,2025-06-07
+app-0977,aws-retail-db-7d73d0b2-prod,retail,prod,AWS,large,46.04,65.85,45.23,459.03,96.36,2025-06-07
+app-0978,azure-corporate-db-48afdb16-prod,corporate,prod,Azure,small,54.32,61.0,61.88,61.86,99.95,2025-06-07
+app-0979,oracle-cloud-corporate-db-08712893-prod,corporate,prod,Oracle Cloud,xlarge,42.2,65.08,39.36,664.04,92.27,2025-06-07
+app-0980,aws-corporate-db-0b65fc52-prod,corporate,prod,AWS,large,50.83,46.43,57.36,435.63,95.53,2025-06-07
+app-0981,azure-insurance-db-9bb1b2a7-prod,insurance,prod,Azure,medium,67.03,39.41,62.96,245.27,99.22,2025-06-07
+app-0982,aws-retail-db-73c7bf32-prod,retail,prod,AWS,large,19.21,99.31,71.29,228.15,99.33,2025-06-07
+app-0983,aws-treasury-db-a159c98a-prod,treasury,prod,AWS,small,62.59,67.6,69.9,52.72,97.2,2025-06-07
+app-0984,azure-corporate-db-20cf097a-prod,corporate,prod,Azure,xlarge,72.11,50.12,55.36,748.22,99.96,2025-06-07
+app-0985,aws-treasury-db-e6a1ac26-prod,treasury,prod,AWS,xlarge,49.39,43.15,42.35,373.61,85.87,2025-06-07
+app-0986,azure-corporate-db-a64bdbc4-prod,corporate,prod,Azure,medium,32.17,61.48,55.69,177.9,93.47,2025-06-07
+app-0987,aws-treasury-db-03aba412-prod,treasury,prod,AWS,large,53.22,49.68,68.23,314.44,99.45,2025-06-07
+app-0988,azure-retail-db-e41bd903-prod,retail,prod,Azure,small,59.02,60.25,72.17,86.11,99.09,2025-06-07
+app-0989,azure-retail-db-ecb1e742-prod,retail,prod,Azure,large,99.02,67.82,55.69,387.27,87.44,2025-06-07
+app-0990,aws-investment-db-d5aaa51a-prod,investment,prod,AWS,xlarge,29.54,63.03,82.23,625.22,99.81,2025-06-07
+app-0991,oracle-cloud-insurance-db-e5354499-prod,insurance,prod,Oracle Cloud,xlarge,55.61,71.87,28.49,961.52,95.99,2025-06-07
+app-0992,azure-insurance-db-2628e868-prod,insurance,prod,Azure,small,31.27,64.07,73.18,62.57,99.08,2025-06-07
+app-0993,azure-corporate-db-8c261985-prod,corporate,prod,Azure,large,20.97,52.03,47.81,342.69,75.68,2025-06-07
+app-0994,azure-corporate-db-c3bf0a52-prod,corporate,prod,Azure,small,59.77,66.04,61.65,84.7,99.61,2025-06-07
+app-0995,aws-retail-db-512cb74e-prod,retail,prod,AWS,xlarge,41.1,79.75,70.21,749.63,99.15,2025-06-07
+app-0996,oracle-cloud-retail-db-3917b273-prod,retail,prod,Oracle Cloud,large,72.47,40.43,67.32,236.56,100.0,2025-06-07
+app-0997,aws-retail-db-b8b9125f-prod,retail,prod,AWS,small,71.26,66.77,58.16,95.96,98.18,2025-06-07
+app-0998,oracle-cloud-insurance-db-f3ff87cf-prod,insurance,prod,Oracle Cloud,small,98.05,54.67,74.77,94.47,84.34,2025-06-07
+app-0999,aws-insurance-db-cf4f6257-prod,insurance,prod,AWS,medium,12.75,70.11,56.61,105.89,88.6,2025-06-07
