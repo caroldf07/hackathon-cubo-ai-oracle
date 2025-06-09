@@ -20,15 +20,20 @@ import axios from 'axios';
 
 interface AnalysisResult {
   resource_name: string;
-  guardrails: string;
-  eligibility_status: string;
-  reasoning: string;
+  application_tier: string;
+  tier_justification: string;
+  guardrail_status: string;
+  motivos: string;
+  efficiency_score: number;
   recommendations: string[];
+  optimization_opportunities: string[];
+  cost_impact: string;
 }
 
 interface Resource {
   resource_name: string;
-  analysis: any;
+  analysis: AnalysisResult;
+  raw_response: string;
   raw_data: {
     datadog: any[];
     finops: any[];
@@ -77,231 +82,59 @@ function App() {
   const handleResourceChange = (resourceName: string) => {
     setSelectedResource(resourceName);
     setAnalysis(null);
-  };
-  const extractAnalysisContent = (analysisData: any) => {
+  };  const extractAnalysisContent = (analysisData: AnalysisResult) => {
     try {
-      let analysisResult: AnalysisResult | null = null;
-
-      // Tentar extrair dados da nova estrutura do backend
-      if (analysisData?.choices?.[0]?.message?.tool_calls?.[0]?.function?.arguments) {
-        try {
-          const argumentsStr = analysisData.choices[0].message.tool_calls[0].function.arguments;
-          analysisResult = JSON.parse(argumentsStr);
-        } catch (parseError) {
-          console.error('Error parsing tool_calls arguments:', parseError);
-        }
-      }
-
-      // Fallback para estrutura antiga ou dados diretos
-      if (!analysisResult) {
-        if (analysisData?.resource_name && analysisData?.eligibility_status) {
-          analysisResult = analysisData;
-        } else {
-          // Fallback para análise de texto antiga
-          return extractLegacyAnalysisContent(analysisData);
-        }
-      }
-
-      if (!analysisResult) {
-        throw new Error('Unable to parse analysis data');
-      }
-
-      const isEligible = analysisResult.eligibility_status?.toLowerCase() === 'eligible';
+      // O backend agora retorna diretamente o JSON estruturado
+      const isApproved = analysisData.guardrail_status === "aprovado pelo guardrail";
       
       // Organizar recomendações por categorias
       const recommendationTopics: { [key: string]: string[] } = {
-        'Processamento': [],
-        'Memória': [],
-        'Armazenamento': [],
-        'Rede': [],
-        'Configuração Geral': []
+        'Geral': [],
+        'Otimizações': []
       };
 
-      // Categorizar recomendações
-      if (analysisResult.recommendations && Array.isArray(analysisResult.recommendations)) {
-        analysisResult.recommendations.forEach(rec => {
-          const recLower = rec.toLowerCase();
-          if (/\b(vcpu|cores?|cpu|processamento|processor|compute)\b/i.test(rec)) {
-            recommendationTopics['Processamento'].push(rec);
-          } else if (/\b(memória|memory|ram|gb.*mem|mem.*gb)\b/i.test(rec)) {
-            recommendationTopics['Memória'].push(rec);
-          } else if (/\b(armazenamento|storage|disco|disk|tb|volume)\b/i.test(rec)) {
-            recommendationTopics['Armazenamento'].push(rec);
-          } else if (/\b(rede|network|bandwidth|largura.*banda|gbps|conectividade)\b/i.test(rec)) {
-            recommendationTopics['Rede'].push(rec);
-          } else {
-            recommendationTopics['Configuração Geral'].push(rec);
-          }
-        });
+      // Categorizar recomendações gerais
+      if (analysisData.recommendations && Array.isArray(analysisData.recommendations)) {
+        recommendationTopics['Geral'] = analysisData.recommendations.slice(0, 5);
+      }
+
+      // Categorizar oportunidades de otimização
+      if (analysisData.optimization_opportunities && Array.isArray(analysisData.optimization_opportunities)) {
+        recommendationTopics['Otimizações'] = analysisData.optimization_opportunities.slice(0, 5);
       }
 
       // Filtrar tópicos vazios
       const filteredTopics: { [key: string]: string[] } = {};
       Object.entries(recommendationTopics).forEach(([topic, items]) => {
         if (items.length > 0) {
-          filteredTopics[topic] = items.slice(0, 3); // Mostrar até 3 itens por categoria
+          filteredTopics[topic] = items;
         }
       });
 
-      // Processar razões de inelegibilidade
-      const ineligibilityReasons: string[] = [];
-      if (!isEligible && analysisResult.reasoning) {
-        // Dividir o reasoning em frases mais legíveis
-        const sentences = analysisResult.reasoning.split(/[.!?]+/).filter(s => s.trim().length > 20);
-        ineligibilityReasons.push(...sentences.slice(0, 3).map(s => s.trim()));
-      }
-
       return {
-        isEligible,
+        isApproved,
         recommendationTopics: filteredTopics,
-        ineligibilityReasons,
-        summary: analysisResult.reasoning || 'Análise concluída.',
-        guardrails: analysisResult.guardrails || '',
-        resourceName: analysisResult.resource_name || ''
+        reasons: [analysisData.motivos],
+        summary: analysisData.tier_justification,
+        applicationTier: analysisData.application_tier,
+        efficiencyScore: analysisData.efficiency_score,
+        costImpact: analysisData.cost_impact,
+        resourceName: analysisData.resource_name
       };
 
     } catch (error) {
       console.error('Error extracting analysis content:', error);
       return {
-        isEligible: false,
+        isApproved: false,
         recommendationTopics: {},
-        ineligibilityReasons: ['Erro ao processar análise: ' + error.message],
+        reasons: ['Erro ao processar análise: ' + error.message],
         summary: 'Erro ao processar análise',
-        guardrails: '',
+        applicationTier: '',
+        efficiencyScore: 0,
+        costImpact: '',
         resourceName: ''
       };
-    }
-  };
-  // Função auxiliar para compatibilidade com formato antigo
-  const extractLegacyAnalysisContent = (analysisData: any) => {
-    try {
-      // Extrair o conteúdo da análise (formato antigo)
-      let content = '';
-      if (analysisData.choices && analysisData.choices[0] && analysisData.choices[0].message) {
-        content = analysisData.choices[0].message.content;
-      } else if (typeof analysisData === 'string') {
-        content = analysisData;
-      } else {
-        content = JSON.stringify(analysisData);
-      }
-
-      // Determinar elegibilidade com maior precisão
-      const contentLower = content.toLowerCase();
-      const isEligible = (contentLower.includes('elegível') || contentLower.includes('eligible')) && 
-                        !contentLower.includes('não elegível') && 
-                        !contentLower.includes('inelegível') &&
-                        !contentLower.includes('not eligible');
-
-      // Agrupar recomendações por tópicos de forma mais inteligente
-      const recommendationTopics: { [key: string]: string[] } = {
-        'Processamento': [],
-        'Memória': [],
-        'Armazenamento': [],
-        'Rede': [],
-        'Configuração Geral': []
-      };
-
-      const ineligibilityReasons: string[] = [];
-      const lines = content.split('\n').map(line => line.trim()).filter(line => line.length > 50);
-
-      // Extrair informações de forma mais inteligente
-      if (isEligible) {
-        for (const line of lines) {
-          const cleanLine = line.replace(/^[\s*+\-•►]\s*/, '').trim();
-          if (cleanLine.length < 20) continue;
-
-          // Categorizar por palavras-chave mais específicas
-          if (/\b(vCPU|cores?|CPU|processamento|processor|compute)\b/i.test(cleanLine)) {
-            if (!recommendationTopics['Processamento'].some(item => item.includes(cleanLine.substring(0, 30)))) {
-              recommendationTopics['Processamento'].push(cleanLine);
-            }
-          } else if (/\b(memória|memory|RAM|GB.*mem|mem.*GB)\b/i.test(cleanLine)) {
-            if (!recommendationTopics['Memória'].some(item => item.includes(cleanLine.substring(0, 30)))) {
-              recommendationTopics['Memória'].push(cleanLine);
-            }
-          } else if (/\b(armazenamento|storage|disco|disk|TB|volume)\b/i.test(cleanLine)) {
-            if (!recommendationTopics['Armazenamento'].some(item => item.includes(cleanLine.substring(0, 30)))) {
-              recommendationTopics['Armazenamento'].push(cleanLine);
-            }
-          } else if (/\b(rede|network|bandwidth|largura.*banda|Gbps|conectividade)\b/i.test(cleanLine)) {
-            if (!recommendationTopics['Rede'].some(item => item.includes(cleanLine.substring(0, 30)))) {
-              recommendationTopics['Rede'].push(cleanLine);
-            }
-          } else if (/\b(configuração|config|otimização|optimization|sugest|recomend|tier|instance|scaling)\b/i.test(cleanLine)) {
-            if (!recommendationTopics['Configuração Geral'].some(item => item.includes(cleanLine.substring(0, 30)))) {
-              recommendationTopics['Configuração Geral'].push(cleanLine);
-            }
-          }
-        }
-      } else {
-        // Extrair razões de inelegibilidade de forma mais precisa
-        for (const line of lines) {
-          const cleanLine = line.replace(/^[\s*+\-•►]\s*/, '').trim();
-          if (cleanLine.length < 30) continue;
-
-          if (/\b(não.*elegível|inelegível|não.*otimiz|adequado|eficiente|within.*limits|already.*optimized|sufficient|appropriate)\b/i.test(cleanLine) ||
-              /\b(utilização.*adequada|performance.*satisfatória|recursos.*suficientes|dentro.*limites|bem.*dimensionado)\b/i.test(cleanLine)) {
-            if (!ineligibilityReasons.some(reason => reason.includes(cleanLine.substring(0, 30)))) {
-              ineligibilityReasons.push(cleanLine);
-            }
-          }
-        }
-      }
-
-      // Limitar e filtrar tópicos
-      const filteredTopics: { [key: string]: string[] } = {};
-      Object.entries(recommendationTopics).forEach(([topic, items]) => {
-        if (items.length > 0) {
-          filteredTopics[topic] = items.slice(0, 2).map(item => 
-            item.length > 80 ? item.substring(0, 80) + '...' : item
-          );
-        }
-      });
-
-      // Extrair resumo conciso focado no resultado final
-      let summary = '';
-      const summaryPatterns = [
-        /(?:resposta\s+final|conclusão|resultado|avaliação):\s*(.+?)(?:\n\n|\*\*|$)/i,
-        /(?:elegível|inelegível).*?\.(.+?)(?:\n\n|\*\*|$)/i,
-        /(?:portanto|assim|dessa\s+forma|em\s+resumo)[\s:,]*(.+?)(?:\n\n|\*\*|$)/i
-      ];
-
-      for (const pattern of summaryPatterns) {
-        const match = content.match(pattern);
-        if (match && match[1]) {
-          summary = match[1].trim();
-          break;
-        }
-      }
-
-      if (!summary) {
-        // Fallback: pegar as últimas frases significativas
-        const sentences = content.split(/[.!?]+/).filter(s => s.trim().length > 30);
-        summary = sentences.slice(-2).join('. ').trim() + '.';
-      }
-
-      return {
-        isEligible,
-        recommendationTopics: filteredTopics,
-        ineligibilityReasons: ineligibilityReasons.slice(0, 4).map(reason => 
-          reason.length > 120 ? reason.substring(0, 120) + '...' : reason
-        ),
-        summary: summary.substring(0, 350) + (summary.length > 350 ? '...' : ''),
-        guardrails: '',
-        resourceName: ''
-      };
-    } catch (error) {
-      console.error('Error extracting legacy analysis content:', error);
-      return {
-        isEligible: false,
-        recommendationTopics: {},
-        ineligibilityReasons: ['Erro ao processar análise'],
-        summary: 'Erro ao processar análise',
-        guardrails: '',
-        resourceName: ''
-      };
-    }
-  };
+    }  };
 
   if (loading) {
     return (
@@ -387,11 +220,11 @@ function App() {
                   <Box>
                     <Typography variant="subtitle1" gutterBottom>
                       Resource: <strong>{analysis.resource_name}</strong>
-                    </Typography>
-                    {(() => {
+                    </Typography>                    {(() => {
                       const analysisResult = extractAnalysisContent(analysis.analysis);
                       return (
-                        <Box mt={2}>                          {/* Status de Elegibilidade */}
+                        <Box mt={2}>
+                          {/* Status de Conformidade com Guardrails */}
                           <Box 
                             display="flex" 
                             alignItems="center" 
@@ -400,8 +233,8 @@ function App() {
                             sx={{
                               p: 1.5,
                               borderRadius: 2,
-                              backgroundColor: analysisResult.isEligible ? '#e8f5e8' : '#ffebee',
-                              border: `2px solid ${analysisResult.isEligible ? '#4caf50' : '#f44336'}`
+                              backgroundColor: analysisResult.isApproved ? '#e8f5e8' : '#ffebee',
+                              border: `2px solid ${analysisResult.isApproved ? '#4caf50' : '#f44336'}`
                             }}
                           >
                             <Box 
@@ -409,7 +242,7 @@ function App() {
                                 width: 20,
                                 height: 20,
                                 borderRadius: '50%',
-                                backgroundColor: analysisResult.isEligible ? '#4caf50' : '#f44336',
+                                backgroundColor: analysisResult.isApproved ? '#4caf50' : '#f44336',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -418,28 +251,29 @@ function App() {
                                 fontWeight: 'bold'
                               }}
                             >
-                              {analysisResult.isEligible ? '✓' : '✗'}                            </Box>
+                              {analysisResult.isApproved ? '✓' : '✗'}
+                            </Box>
                             <Typography 
                               variant="h6" 
                               sx={{ 
-                                color: analysisResult.isEligible ? '#2e7d32' : '#d32f2f',
+                                color: analysisResult.isApproved ? '#2e7d32' : '#d32f2f',
                                 fontWeight: 'bold',
                                 fontSize: '1rem'
                               }}
                             >
-                              {analysisResult.isEligible ? '🚀 ELEGÍVEL PARA OTIMIZAÇÃO' : '⚠️ NÃO ELEGÍVEL PARA OTIMIZAÇÃO'}
+                              {analysisResult.isApproved ? '✅ APROVADO PELO GUARDRAIL' : '❌ REPROVADO PELO GUARDRAIL'}
                             </Typography>
                           </Box>
 
-                          {/* Informações dos Guardrails */}
-                          {analysisResult.guardrails && (
+                          {/* Informações do Tier da Aplicação */}
+                          {analysisResult.applicationTier && (
                             <Box 
                               mb={2}
                               sx={{
                                 p: 2,
                                 borderRadius: 2,
-                                backgroundColor: '#f5f5f5',
-                                border: '1px solid #e0e0e0'
+                                backgroundColor: '#e3f2fd',
+                                border: '1px solid #2196f3'
                               }}
                             >
                               <Typography 
@@ -453,25 +287,102 @@ function App() {
                                   gap: 0.5
                                 }}
                               >
-                                🛡️ Guardrails de Infraestrutura
+                                🏗️ Tier da Aplicação: {analysisResult.applicationTier}
+                              </Typography>
+                              <Typography 
+                                variant="body2" 
+                                sx={{ 
+                                  fontSize: '0.85rem',
+                                  lineHeight: 1.4,
+                                  color: '#424242'
+                                }}
+                              >
+                                {analysisResult.summary}
+                              </Typography>
+                            </Box>
+                          )}
+
+                          {/* Score de Eficiência */}
+                          {analysisResult.efficiencyScore > 0 && (
+                            <Box 
+                              mb={2}
+                              sx={{
+                                p: 2,
+                                borderRadius: 2,
+                                backgroundColor: analysisResult.efficiencyScore >= 90 ? '#e8f5e8' : '#fff3e0',
+                                border: `1px solid ${analysisResult.efficiencyScore >= 90 ? '#4caf50' : '#ff9800'}`
+                              }}
+                            >
+                              <Typography 
+                                variant="subtitle2" 
+                                gutterBottom 
+                                sx={{ 
+                                  fontWeight: 'bold', 
+                                  color: analysisResult.efficiencyScore >= 90 ? '#2e7d32' : '#f57c00',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 0.5
+                                }}
+                              >
+                                📊 Score de Eficiência: {analysisResult.efficiencyScore}%
                               </Typography>
                               <Typography 
                                 variant="body2" 
                                 sx={{ 
                                   fontSize: '0.8rem',
-                                  lineHeight: 1.4,
-                                  color: '#424242',
-                                  whiteSpace: 'pre-line'
+                                  color: '#424242'
                                 }}
                               >
-                                {analysisResult.guardrails}
+                                {analysisResult.efficiencyScore >= 90 
+                                  ? 'Recurso com alta eficiência operacional'
+                                  : 'Recurso com oportunidades de otimização'
+                                }
                               </Typography>
                             </Box>
-                          )}{/* Recomendações por tópicos ou razões de inelegibilidade */}
-                          {analysisResult.isEligible && Object.keys(analysisResult.recommendationTopics).length > 0 && (
+                          )}
+
+                          {/* Motivos da Aprovação/Reprovação */}
+                          {analysisResult.reasons && analysisResult.reasons.length > 0 && (
+                            <Box mb={2}>
+                              <Typography 
+                                variant="subtitle2" 
+                                gutterBottom 
+                                sx={{ 
+                                  fontWeight: 'bold', 
+                                  color: analysisResult.isApproved ? '#2e7d32' : '#d32f2f',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 0.5
+                                }}
+                              >
+                                {analysisResult.isApproved ? '📋' : '⚠️'} 
+                                {analysisResult.isApproved ? 'Motivos da Aprovação:' : 'Motivos da Reprovação:'}
+                              </Typography>
+                              <Box component="ul" sx={{ pl: 2, mt: 1 }}>
+                                {analysisResult.reasons.map((reason, index) => (
+                                  <Typography 
+                                    component="li" 
+                                    key={index} 
+                                    variant="body2" 
+                                    sx={{ 
+                                      mb: 0.5, 
+                                      color: analysisResult.isApproved ? '#2e7d32' : '#d32f2f',
+                                      fontSize: '0.85rem',
+                                      lineHeight: 1.4
+                                    }}
+                                  >
+                                    {reason}
+                                  </Typography>
+                                ))}
+                              </Box>
+                            </Box>
+                          )}
+
+                          {/* Recomendações e Oportunidades de Otimização */}
+                          {Object.keys(analysisResult.recommendationTopics).length > 0 && (
                             <Box mb={2}>
                               <Typography variant="subtitle2" gutterBottom sx={{ fontWeight: 'bold', color: '#1976d2' }}>
-                                📋 Recomendações de Otimização por Categoria:
+                                💡 Recomendações:
                               </Typography>
                               {Object.entries(analysisResult.recommendationTopics).map(([topic, recommendations]) => (
                                 <Box key={topic} mb={1.5}>
@@ -483,11 +394,8 @@ function App() {
                                     gap: 0.5,
                                     mb: 0.5
                                   }}>
-                                    {topic === 'Processamento' && '⚙️'}
-                                    {topic === 'Memória' && '🧠'}
-                                    {topic === 'Armazenamento' && '💾'}
-                                    {topic === 'Rede' && '🌐'}
-                                    {topic === 'Configuração Geral' && '🔧'}
+                                    {topic === 'Geral' && '📋'}
+                                    {topic === 'Otimizações' && '⚡'}
                                     {topic}
                                   </Typography>
                                   <Box component="ul" sx={{ pl: 2, mt: 0.5, mb: 0 }}>
@@ -512,84 +420,42 @@ function App() {
                             </Box>
                           )}
 
-                          {analysisResult.isEligible && Object.keys(analysisResult.recommendationTopics).length === 0 && (
-                            <Box mb={2}>
-                              <Typography variant="body2" sx={{ 
-                                color: '#2e7d32',
-                                fontStyle: 'italic',
-                                textAlign: 'center',
-                                p: 2,
-                                backgroundColor: '#f1f8e9',
-                                borderRadius: 1
-                              }}>
-                                ✅ Recurso elegível para otimização. Consulte o resumo abaixo para detalhes específicos.
-                              </Typography>
-                            </Box>
-                          )}                          {!analysisResult.isEligible && analysisResult.ineligibilityReasons.length > 0 && (
-                            <Box mb={2}>
-                              <Typography variant="subtitle2" gutterBottom sx={{ 
-                                fontWeight: 'bold', 
-                                color: '#d32f2f',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 0.5
-                              }}>
-                                ❌ Razões da Inelegibilidade:
-                              </Typography>
-                              <Box component="ul" sx={{ pl: 2, mt: 1 }}>
-                                {analysisResult.ineligibilityReasons.map((reason, index) => (
-                                  <Typography 
-                                    component="li" 
-                                    key={index} 
-                                    variant="body2" 
-                                    sx={{ 
-                                      mb: 0.5, 
-                                      color: '#d32f2f',
-                                      fontSize: '0.85rem',
-                                      lineHeight: 1.4
-                                    }}
-                                  >
-                                    {reason}
-                                  </Typography>
-                                ))}
-                              </Box>
-                            </Box>
-                          )}{/* Resumo da análise */}
-                          <Paper 
-                            variant="outlined" 
-                            sx={{ 
-                              p: 2, 
-                              backgroundColor: analysisResult.isEligible ? '#f1f8e9' : '#ffebee',
-                              border: `1px solid ${analysisResult.isEligible ? '#4caf50' : '#f44336'}`,
-                              borderRadius: 2,
-                              maxHeight: 150,
-                              overflow: 'auto'
-                            }}
-                          >
-                            <Typography 
-                              variant="subtitle2" 
+                          {/* Impacto de Custo */}
+                          {analysisResult.costImpact && (
+                            <Paper 
+                              variant="outlined" 
                               sx={{ 
-                                fontWeight: 'bold', 
-                                mb: 1,
-                                color: analysisResult.isEligible ? '#2e7d32' : '#d32f2f',
-                                display: 'flex',
-                                alignItems: 'center',
-                                gap: 0.5
+                                p: 2, 
+                                backgroundColor: '#f3e5f5',
+                                border: '1px solid #9c27b0',
+                                borderRadius: 2
                               }}
                             >
-                              📝 Resumo da Análise:
-                            </Typography>
-                            <Typography 
-                              variant="body2" 
-                              sx={{ 
-                                fontSize: '0.8rem', 
-                                lineHeight: 1.4,
-                                color: '#424242'
-                              }}
-                            >
-                              {analysisResult.summary}
-                            </Typography>
-                          </Paper>
+                              <Typography 
+                                variant="subtitle2" 
+                                sx={{ 
+                                  fontWeight: 'bold', 
+                                  mb: 1,
+                                  color: '#7b1fa2',
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: 0.5
+                                }}
+                              >
+                                💰 Impacto Financeiro:
+                              </Typography>
+                              <Typography 
+                                variant="body2" 
+                                sx={{ 
+                                  fontSize: '0.85rem', 
+                                  lineHeight: 1.4,
+                                  color: '#424242'
+                                }}
+                              >
+                                {analysisResult.costImpact}
+                              </Typography>
+                            </Paper>
+                          )}
                         </Box>
                       );
                     })()}
