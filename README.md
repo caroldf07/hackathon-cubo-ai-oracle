@@ -152,9 +152,10 @@ O sistema utiliza guardrails estruturados em 4 tiers de criticidade:
 - **TIER 2 - MÉDIA CRITICIDADE**: Aplicações Corporativas (8-32 vCPUs, 64-256GB RAM)
 - **TIER 3 - BAIXA CRITICIDADE**: Desenvolvimento, Testes (2-16 vCPUs, 16-128GB RAM)
 
-## 🖼️ Interface do Frontend
+## 🖼️ Agente em ação
 
-![Resource Analyzer Interface](docs/frontend-screenshot.png)
+https://github.com/user-attachments/assets/a46f15d8-3c10-4487-ad41-4829f845062f
+
 
 *A interface permite selecionar recursos, visualizar análises detalhadas com scores de eficiência, status de conformidade com guardrails e recomendações de otimização.*
 
