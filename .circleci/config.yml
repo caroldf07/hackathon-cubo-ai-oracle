@@ -1,6 +1,18 @@
 version: 2.1
 
 jobs:
+  security-audit:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run:
+          name: Install pip-audit
+          command: pip install pip-audit
+      - run:
+          name: Backend security audit
+          command: cd aplicacao/backend && pip-audit -r requirements.txt --desc
+
   backend-check:
     docker:
       - image: cimg/python:3.11
@@ -12,10 +24,13 @@ jobs:
       - run:
           name: Check syntax
           command: cd aplicacao/backend && python -m py_compile main.py
+      - run:
+          name: Import check
+          command: cd aplicacao/backend && python -c "import main; print('OK')"
 
   frontend-build-test:
     docker:
-      - image: cimg/node:18.17
+      - image: cimg/node:20.18
     steps:
       - checkout
       - restore_cache:
@@ -29,11 +44,36 @@ jobs:
             - aplicacao/frontend/node_modules
           key: v1-frontend-{{ checksum "aplicacao/frontend/package-lock.json" }}
       - run:
+          name: Security audit
+          command: cd aplicacao/frontend && npm audit --audit-level=high
+      - run:
           name: Build
           command: cd aplicacao/frontend && npm run build
 
+  deploy-vercel:
+    docker:
+      - image: cimg/node:20.18
+    steps:
+      - checkout
+      - run:
+          name: Deploy frontend to Vercel
+          command: |
+            cd aplicacao/frontend
+            npm install -g vercel@latest
+            vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+            vercel build --prod --token=$VERCEL_TOKEN
+            vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+
 workflows:
-  build-test:
+  ci-cd:
     jobs:
+      - security-audit
       - backend-check
       - frontend-build-test
+      - deploy-vercel:
+          requires:
+            - security-audit
+            - frontend-build-test
+          filters:
+            branches:
+              only: main
