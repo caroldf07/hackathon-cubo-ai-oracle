@@ -1,0 +1,39 @@
+version: 2.1
+
+jobs:
+  backend-check:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: cd aplicacao/backend && pip install -r requirements.txt
+      - run:
+          name: Check syntax
+          command: cd aplicacao/backend && python -m py_compile main.py
+
+  frontend-build-test:
+    docker:
+      - image: cimg/node:18.17
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-frontend-{{ checksum "aplicacao/frontend/package-lock.json" }}
+      - run:
+          name: Install dependencies
+          command: cd aplicacao/frontend && npm ci
+      - save_cache:
+          paths:
+            - aplicacao/frontend/node_modules
+          key: v1-frontend-{{ checksum "aplicacao/frontend/package-lock.json" }}
+      - run:
+          name: Build
+          command: cd aplicacao/frontend && npm run build
+
+workflows:
+  build-test:
+    jobs:
+      - backend-check
+      - frontend-build-test

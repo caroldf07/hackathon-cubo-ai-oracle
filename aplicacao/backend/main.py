@@ -15,7 +15,6 @@ load_dotenv()
 app = FastAPI()
 
 api_key = os.getenv("OPENAI_API_KEY")
-print(f"api_key: {api_key}")
 # Configurar cliente OpenAI
 client = OpenAI(api_key=api_key)
               
