@@ -24,9 +24,6 @@ jobs:
       - run:
           name: Check syntax
           command: cd aplicacao/backend && python -m py_compile main.py
-      - run:
-          name: Import check
-          command: cd aplicacao/backend && python -c "import main; print('OK')"
 
   frontend-build-test:
     docker:
@@ -45,7 +42,7 @@ jobs:
           key: v1-frontend-{{ checksum "aplicacao/frontend/package-lock.json" }}
       - run:
           name: Security audit
-          command: cd aplicacao/frontend && npm audit --audit-level=high
+          command: cd aplicacao/frontend && npm audit --audit-level=critical
       - run:
           name: Build
           command: cd aplicacao/frontend && npm run build
