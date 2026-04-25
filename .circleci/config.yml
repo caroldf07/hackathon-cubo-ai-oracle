@@ -49,14 +49,14 @@ jobs:
 
   deploy-vercel:
     docker:
-      - image: cimg/node:20.18
+      - image: cimg/node:22.14
     steps:
       - checkout
       - run:
           name: Deploy frontend to Vercel
           command: |
             cd aplicacao/frontend
-            sudo npm install -g vercel@latest
+            npm install -g vercel@latest
             vercel pull --yes --environment=production --token=$VERCEL_TOKEN
             vercel build --prod --token=$VERCEL_TOKEN
             vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
